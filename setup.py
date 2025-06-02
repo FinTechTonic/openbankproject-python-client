@@ -7,13 +7,13 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="openbankproject-client",
-    version="0.1.1",
+    version="0.1.2",
     description="A comprehensive Python client for the OpenBankProject API",
     long_description=long_description,
     long_description_content_type="text/markdown",
     author="Joseph Pollack",
     author_email="joseph.pollack@emle.eu",
-    url="https://github.com/yourusername/openbankproject-client",
+    url="https://github.com/FinTechTonic/openbankproject-python-client",
     packages=find_packages(),
     install_requires=[
         "requests>=2.25.0",
