@@ -1,32 +1,25 @@
-Metadata-Version: 2.4
-Name: openbankproject-client
-Version: 0.1.2
-Summary: A comprehensive Python client for the OpenBankProject API
+Metadata-Version: 2.1
+Name: openbankproject_client
+Version: 1.0.0
+Summary: Python client for the OpenBankProject API
 Home-page: https://github.com/FinTechTonic/openbankproject-python-client
 Author: Joseph Pollack
 Author-email: joseph.pollack@emle.eu
-Classifier: Development Status :: 5 - Production/Stable
-Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Development Status :: 4 - Beta
 Classifier: Intended Audience :: Developers
-Classifier: License :: Other/Proprietary License
+Classifier: License :: OSI Approved :: MIT License
 Classifier: Programming Language :: Python :: 3
-Classifier: Programming Language :: Python :: 3.7
 Classifier: Programming Language :: Python :: 3.8
 Classifier: Programming Language :: Python :: 3.9
 Classifier: Programming Language :: Python :: 3.10
 Classifier: Programming Language :: Python :: 3.11
-Requires-Python: >=3.7
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
 Description-Content-Type: text/markdown
-Requires-Dist: requests>=2.25.0
-Dynamic: author
-Dynamic: author-email
-Dynamic: classifier
-Dynamic: description
-Dynamic: description-content-type
-Dynamic: home-page
-Dynamic: requires-dist
-Dynamic: requires-python
-Dynamic: summary
+Requires-Dist: requests>=2.30.0
+Provides-Extra: docs
+Requires-Dist: sphinx>=8.2.3; extra == "docs"
+Requires-Dist: sphinx-rtd-theme>=3.0.2; extra == "docs"
 
 # OpenBankProject API Python Client
 

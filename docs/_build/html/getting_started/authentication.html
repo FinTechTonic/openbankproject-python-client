@@ -1,0 +1,204 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Authentication &mdash; OpenBankProject Client 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=8d563738"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Quickstart Guide" href="quickstart.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #2980B9" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            OpenBankProject Client
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart Guide</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Authentication</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#oauth1-authentication">OAuth1 Authentication</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#direct-authentication">Direct Authentication</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#token-based-authentication">Token-based Authentication</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#getting-consumer-keys">Getting Consumer Keys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#security-best-practices">Security Best Practices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#example-with-environment-variables">Example with Environment Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#error-handling">Error Handling</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #2980B9" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">OpenBankProject Client</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Authentication</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/getting_started/authentication.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
+        <a href="quickstart.html" class="btn btn-neutral float-left" title="Quickstart Guide" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="authentication">
+<h1>Authentication<a class="headerlink" href="#authentication" title="Link to this heading"></a></h1>
+<p>The OpenBankProject Client uses OAuth1 for authentication. This guide explains how to authenticate with the API.</p>
+<section id="oauth1-authentication">
+<h2>OAuth1 Authentication<a class="headerlink" href="#oauth1-authentication" title="Link to this heading"></a></h2>
+<p>The client supports OAuth1 authentication with the following methods:</p>
+<section id="direct-authentication">
+<h3>Direct Authentication<a class="headerlink" href="#direct-authentication" title="Link to this heading"></a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">openbankproject_client</span> <span class="kn">import</span> <span class="n">OpenBankProjectClient</span>
+
+<span class="n">client</span> <span class="o">=</span> <span class="n">OpenBankProjectClient</span><span class="p">(</span>
+    <span class="n">base_url</span><span class="o">=</span><span class="s2">&quot;https://your-obp-instance.com&quot;</span><span class="p">,</span>
+    <span class="n">consumer_key</span><span class="o">=</span><span class="s2">&quot;your-consumer-key&quot;</span><span class="p">,</span>
+    <span class="n">consumer_secret</span><span class="o">=</span><span class="s2">&quot;your-consumer-secret&quot;</span>
+<span class="p">)</span>
+
+<span class="c1"># Authenticate with username and password</span>
+<span class="n">client</span><span class="o">.</span><span class="n">authenticate</span><span class="p">(</span>
+    <span class="n">username</span><span class="o">=</span><span class="s2">&quot;your-username&quot;</span><span class="p">,</span>
+    <span class="n">password</span><span class="o">=</span><span class="s2">&quot;your-password&quot;</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="token-based-authentication">
+<h3>Token-based Authentication<a class="headerlink" href="#token-based-authentication" title="Link to this heading"></a></h3>
+<p>If you already have OAuth tokens:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">client</span> <span class="o">=</span> <span class="n">OpenBankProjectClient</span><span class="p">(</span>
+    <span class="n">base_url</span><span class="o">=</span><span class="s2">&quot;https://your-obp-instance.com&quot;</span><span class="p">,</span>
+    <span class="n">consumer_key</span><span class="o">=</span><span class="s2">&quot;your-consumer-key&quot;</span><span class="p">,</span>
+    <span class="n">consumer_secret</span><span class="o">=</span><span class="s2">&quot;your-consumer-secret&quot;</span><span class="p">,</span>
+    <span class="n">oauth_token</span><span class="o">=</span><span class="s2">&quot;your-oauth-token&quot;</span><span class="p">,</span>
+    <span class="n">oauth_token_secret</span><span class="o">=</span><span class="s2">&quot;your-oauth-token-secret&quot;</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="getting-consumer-keys">
+<h2>Getting Consumer Keys<a class="headerlink" href="#getting-consumer-keys" title="Link to this heading"></a></h2>
+<p>To get consumer keys for your application:</p>
+<ol class="arabic simple">
+<li><p>Log in to your OpenBankProject instance</p></li>
+<li><p>Go to the API Explorer</p></li>
+<li><p>Register a new application</p></li>
+<li><p>Note down the consumer key and secret</p></li>
+</ol>
+</section>
+<section id="security-best-practices">
+<h2>Security Best Practices<a class="headerlink" href="#security-best-practices" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Never commit consumer keys or secrets to version control</p></li>
+<li><p>Use environment variables or a secure configuration management system</p></li>
+<li><p>Rotate credentials regularly</p></li>
+<li><p>Use the minimum required permissions for your application</p></li>
+</ul>
+</section>
+<section id="example-with-environment-variables">
+<h2>Example with Environment Variables<a class="headerlink" href="#example-with-environment-variables" title="Link to this heading"></a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">openbankproject_client</span> <span class="kn">import</span> <span class="n">OpenBankProjectClient</span>
+
+<span class="n">client</span> <span class="o">=</span> <span class="n">OpenBankProjectClient</span><span class="p">(</span>
+    <span class="n">base_url</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;OBP_BASE_URL&quot;</span><span class="p">],</span>
+    <span class="n">consumer_key</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;OBP_CONSUMER_KEY&quot;</span><span class="p">],</span>
+    <span class="n">consumer_secret</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;OBP_CONSUMER_SECRET&quot;</span><span class="p">]</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="error-handling">
+<h2>Error Handling<a class="headerlink" href="#error-handling" title="Link to this heading"></a></h2>
+<p>The client provides specific exceptions for authentication errors:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">openbankproject_client.errors</span> <span class="kn">import</span> <span class="n">AuthenticationError</span><span class="p">,</span> <span class="n">OBPError</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">client</span><span class="o">.</span><span class="n">authenticate</span><span class="p">(</span><span class="n">username</span><span class="o">=</span><span class="s2">&quot;user&quot;</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s2">&quot;pass&quot;</span><span class="p">)</span>
+<span class="k">except</span> <span class="n">AuthenticationError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Authentication failed: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="k">except</span> <span class="n">OBPError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;API error: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="quickstart.html" class="btn btn-neutral float-left" title="Quickstart Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Joseph Pollack.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

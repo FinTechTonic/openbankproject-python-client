@@ -21,11 +21,20 @@ def build_docs():
     """Build the documentation."""
     print("Building documentation...")
     try:
-        # Install documentation requirements
-        subprocess.run([sys.executable, "-m", "pip", "install", "-e", ".[docs]"], check=True)
+        # Get the project root directory (parent of docs directory)
+        project_root = Path(__file__).parent.parent
+        
+        # Install documentation requirements from project root
+        subprocess.run([
+            sys.executable, "-m", "pip", "install", "-e", 
+            str(project_root) + "[docs]"
+        ], check=True)
         
         # Build HTML documentation
-        subprocess.run([sys.executable, "-m", "sphinx.cmd.build", "-b", "html", ".", "_build/html"], check=True)
+        subprocess.run([
+            sys.executable, "-m", "sphinx.cmd.build", 
+            "-b", "html", ".", "_build/html"
+        ], check=True)
         
         print("\nDocumentation built successfully!")
         print("You can view the documentation by opening _build/html/index.html in your web browser.")
