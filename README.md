@@ -46,7 +46,7 @@ banks = client.get_banks()
 
 ## Documentation
 
-For detailed documentation, including API reference and examples, visit our [documentation site](https://openbankproject-client.readthedocs.io/).
+For detailed documentation, including API reference and examples, visit our [documentation site](https://the-open-bank-project-python-client.readthedocs.io/en/latest/).
 
 ## Contributing
 
