@@ -1,56 +1,51 @@
 #!/usr/bin/env python
 """
-Script to build and test documentation locally.
-This script helps ensure the documentation builds correctly before pushing to Read the Docs.
+Script to clean, generate API docs, and build Sphinx documentation.
 """
-
 import os
 import shutil
 import subprocess
 import sys
 from pathlib import Path
 
-def clean_build():
-    """Clean the build directory."""
-    build_dir = Path("_build")
-    if build_dir.exists():
-        print("Cleaning build directory...")
-        shutil.rmtree(build_dir)
+def clean():
+    """Remove _build and modules directories in docs."""
+    docs_dir = Path(__file__).parent
+    build_dir = docs_dir / "_build"
+    modules_dir = docs_dir / "modules"
+    for d in [build_dir, modules_dir]:
+        if d.exists():
+            print(f"Removing {d} ...")
+            shutil.rmtree(d)
 
-def build_docs():
-    """Build the documentation."""
-    print("Building documentation...")
-    try:
-        # Get the project root directory (parent of docs directory)
-        project_root = Path(__file__).parent.parent
-        
-        # Install documentation requirements from project root
-        subprocess.run([
-            sys.executable, "-m", "pip", "install", "-e", 
-            str(project_root) + "[docs]"
-        ], check=True)
-        
-        # Build HTML documentation
-        subprocess.run([
-            sys.executable, "-m", "sphinx.cmd.build", 
-            "-b", "html", ".", "_build/html"
-        ], check=True)
-        
-        print("\nDocumentation built successfully!")
-        print("You can view the documentation by opening _build/html/index.html in your web browser.")
-        
-    except subprocess.CalledProcessError as e:
-        print(f"Error building documentation: {e}")
-        sys.exit(1)
+def generate_apidocs():
+    """Run sphinx-apidoc to generate .rst files for all modules."""
+    docs_dir = Path(__file__).parent
+    project_root = docs_dir.parent
+    modules_dir = docs_dir / "modules"
+    print("Generating API docs with sphinx-apidoc ...")
+    subprocess.run([
+        sys.executable, "-m", "sphinx.ext.apidoc",
+        "-o", str(modules_dir),
+        str(project_root),
+        "--separate", "--module-first", "--no-toc", "-f"
+    ], check=True)
+
+def build_html():
+    """Build the HTML documentation."""
+    docs_dir = Path(__file__).parent
+    print("Building HTML documentation ...")
+    subprocess.run([
+        sys.executable, "-m", "sphinx.cmd.build",
+        "-b", "html", str(docs_dir), str(docs_dir / "_build" / "html")
+    ], check=True)
 
 def main():
-    """Main function to build documentation."""
-    # Change to the docs directory
     os.chdir(Path(__file__).parent)
-    
-    # Clean and build
-    clean_build()
-    build_docs()
+    clean()
+    generate_apidocs()
+    build_html()
+    print("\nDocumentation built successfully! Open docs/_build/html/index.html in your browser.")
 
 if __name__ == "__main__":
     main() 

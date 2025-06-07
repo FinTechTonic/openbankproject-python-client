@@ -1,4 +1,4 @@
-Metadata-Version: 2.1
+Metadata-Version: 2.4
 Name: openbankproject_client
 Version: 1.0.0
 Summary: Python client for the OpenBankProject API
@@ -20,6 +20,16 @@ Requires-Dist: requests>=2.30.0
 Provides-Extra: docs
 Requires-Dist: sphinx>=8.2.3; extra == "docs"
 Requires-Dist: sphinx-rtd-theme>=3.0.2; extra == "docs"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
 
 # OpenBankProject API Python Client
 
