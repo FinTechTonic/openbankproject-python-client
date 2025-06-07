@@ -1,13 +1,14 @@
 Metadata-Version: 2.4
 Name: openbankproject-client
-Version: 0.1.1
+Version: 0.1.2
 Summary: A comprehensive Python client for the OpenBankProject API
-Home-page: https://github.com/yourusername/openbankproject-client
+Home-page: https://github.com/FinTechTonic/openbankproject-python-client
 Author: Joseph Pollack
 Author-email: joseph.pollack@emle.eu
-Classifier: Development Status :: 4 - Beta
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Financial and Insurance Industry
 Classifier: Intended Audience :: Developers
-Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: Other/Proprietary License
 Classifier: Programming Language :: Python :: 3
 Classifier: Programming Language :: Python :: 3.7
 Classifier: Programming Language :: Python :: 3.8
