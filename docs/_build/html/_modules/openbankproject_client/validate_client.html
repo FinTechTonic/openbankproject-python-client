@@ -1,0 +1,426 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>openbankproject_client.validate_client &mdash; OpenBankProject Client 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+
+  
+      <script src="../../_static/jquery.js"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+      <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+      <script src="../../_static/doctools.js"></script>
+      <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #2980B9" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            OpenBankProject Client
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/quickstart.html">Quickstart Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/authentication.html">Authentication</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules.html">API Reference</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Core Components</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.client.html">openbankproject_client.client module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.auth.html">openbankproject_client.auth module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.errors.html">openbankproject_client.errors module</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Account Management</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.extended_account.html">openbankproject_client.extended_account module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.extended_bank.html">openbankproject_client.extended_bank module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.account_holder.html">openbankproject_client.account_holder module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.account_metadata.html">openbankproject_client.account_metadata module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.account_public.html">openbankproject_client.account_public module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.account_application.html">openbankproject_client.account_application module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.account_access.html">openbankproject_client.account_access module</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Transaction Management</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.transaction.html">openbankproject_client.transaction module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.transaction_metadata.html">openbankproject_client.transaction_metadata module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.transaction_request.html">openbankproject_client.transaction_request module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.standing_order.html">openbankproject_client.standing_order module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.direct_debit.html">openbankproject_client.direct_debit module</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">User Management</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.user.html">openbankproject_client.user module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.customer.html">openbankproject_client.customer module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.role.html">openbankproject_client.role module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.kyc.html">openbankproject_client.kyc module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.user_invitation.html">openbankproject_client.user_invitation module</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Management</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.api_management.html">openbankproject_client.api_management module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.api_favorite.html">openbankproject_client.api_favorite module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.api_collection.html">openbankproject_client.api_collection module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.api_configuration.html">openbankproject_client.api_configuration module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.dynamic_endpoint.html">openbankproject_client.dynamic_endpoint module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.dynamic_entity.html">openbankproject_client.dynamic_entity module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.dynamic_message_doc.html">openbankproject_client.dynamic_message_doc module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.dynamic_resource_doc.html">openbankproject_client.dynamic_resource_doc module</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Additional Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.atm.html">openbankproject_client.atm module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.branch.html">openbankproject_client.branch module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.card.html">openbankproject_client.card module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.consent.html">openbankproject_client.consent module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.counterparty.html">openbankproject_client.counterparty module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.counterparty_metadata.html">openbankproject_client.counterparty_metadata module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.counterparty_limits.html">openbankproject_client.counterparty_limits module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.customer_meeting.html">openbankproject_client.customer_meeting module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.customer_message.html">openbankproject_client.customer_message module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.fx.html">openbankproject_client.fx module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.metric.html">openbankproject_client.metric module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.product.html">openbankproject_client.product module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.scope.html">openbankproject_client.scope module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.view_custom.html">openbankproject_client.view_custom module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.view_system.html">openbankproject_client.view_system module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.webhook.html">openbankproject_client.webhook module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.webui_props.html">openbankproject_client.webui_props module</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.examples.html">openbankproject_client.examples module</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #2980B9" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">OpenBankProject Client</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Module code</a></li>
+      <li class="breadcrumb-item active">openbankproject_client.validate_client</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for openbankproject_client.validate_client</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Test script for validating the OpenBankProject API client functionality.</span>
+
+<span class="sd">This script performs basic validation of the client structure and imports</span>
+<span class="sd">to ensure all endpoint modules are correctly integrated.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">importlib</span>
+<span class="kn">import</span> <span class="nn">inspect</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">Any</span>
+
+<span class="c1"># Add the parent directory to the path so we can import the client</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">))))</span>
+
+<div class="viewcode-block" id="validate_client_structure"><a class="viewcode-back" href="../../modules/openbankproject_client.validate_client.html#openbankproject_client.validate_client.validate_client_structure">[docs]</a><span class="k">def</span> <span class="nf">validate_client_structure</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Validate the overall structure of the client package.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Validating client structure...&quot;</span><span class="p">)</span>
+    
+    <span class="c1"># Check that all expected files exist</span>
+    <span class="n">required_files</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s2">&quot;__init__.py&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;client.py&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;auth.py&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;errors.py&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;examples.py&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;README.md&quot;</span>
+    <span class="p">]</span>
+    
+    <span class="n">missing_files</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">required_files</span><span class="p">:</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&quot;openbankproject_client&quot;</span><span class="p">,</span> <span class="n">file</span><span class="p">)):</span>
+            <span class="n">missing_files</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
+    
+    <span class="k">if</span> <span class="n">missing_files</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;ERROR: Missing required files: </span><span class="si">{</span><span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">missing_files</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">False</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;✓ All required files exist&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="kc">True</span></div>
+
+
+<div class="viewcode-block" id="validate_endpoint_modules"><a class="viewcode-back" href="../../modules/openbankproject_client.validate_client.html#openbankproject_client.validate_client.validate_endpoint_modules">[docs]</a><span class="k">def</span> <span class="nf">validate_endpoint_modules</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Validate that all endpoint modules can be imported and contain expected classes.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Validating endpoint modules...&quot;</span><span class="p">)</span>
+    
+    <span class="c1"># Get all Python files in the directory</span>
+    <span class="n">endpoint_files</span> <span class="o">=</span> <span class="p">[</span><span class="n">f</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="s2">&quot;openbankproject_client&quot;</span><span class="p">)</span> 
+                     <span class="k">if</span> <span class="n">f</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;.py&quot;</span><span class="p">)</span> <span class="ow">and</span> <span class="n">f</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;__init__.py&quot;</span><span class="p">,</span> <span class="s2">&quot;client.py&quot;</span><span class="p">,</span> <span class="s2">&quot;auth.py&quot;</span><span class="p">,</span> <span class="s2">&quot;errors.py&quot;</span><span class="p">,</span> <span class="s2">&quot;examples.py&quot;</span><span class="p">,</span> <span class="s2">&quot;validate_client.py&quot;</span><span class="p">,</span> <span class="s2">&quot;setup.py&quot;</span><span class="p">]]</span>
+    
+    <span class="c1"># Try to import each module and check for endpoint class</span>
+    <span class="n">successful_imports</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">failed_imports</span> <span class="o">=</span> <span class="p">[]</span>
+    
+    <span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">endpoint_files</span><span class="p">:</span>
+        <span class="n">module_name</span> <span class="o">=</span> <span class="n">file</span><span class="p">[:</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span>  <span class="c1"># Remove .py extension</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="c1"># Force reload the module to ensure we get the latest version</span>
+            <span class="k">if</span> <span class="sa">f</span><span class="s2">&quot;openbankproject_client.</span><span class="si">{</span><span class="n">module_name</span><span class="si">}</span><span class="s2">&quot;</span> <span class="ow">in</span> <span class="n">sys</span><span class="o">.</span><span class="n">modules</span><span class="p">:</span>
+                <span class="k">del</span> <span class="n">sys</span><span class="o">.</span><span class="n">modules</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;openbankproject_client.</span><span class="si">{</span><span class="n">module_name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">]</span>
+                
+            <span class="c1"># Import the module</span>
+            <span class="n">module</span> <span class="o">=</span> <span class="n">importlib</span><span class="o">.</span><span class="n">import_module</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;openbankproject_client.</span><span class="si">{</span><span class="n">module_name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            
+            <span class="c1"># Special case for webui_props module</span>
+            <span class="k">if</span> <span class="n">module_name</span> <span class="o">==</span> <span class="s2">&quot;webui_props&quot;</span><span class="p">:</span>
+                <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">module</span><span class="p">,</span> <span class="s2">&quot;WebUiPropsEndpoints&quot;</span><span class="p">):</span>
+                    <span class="n">successful_imports</span> <span class="o">+=</span> <span class="mi">1</span>
+                    <span class="k">continue</span>
+            
+            <span class="c1"># Check if it contains an endpoints class</span>
+            <span class="n">class_name</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">word</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">module_name</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">))</span> <span class="o">+</span> <span class="s1">&#39;Endpoints&#39;</span>
+            
+            <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">module</span><span class="p">,</span> <span class="n">class_name</span><span class="p">):</span>
+                <span class="n">successful_imports</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">failed_imports</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">module_name</span><span class="si">}</span><span class="s2"> (missing </span><span class="si">{</span><span class="n">class_name</span><span class="si">}</span><span class="s2"> class)&quot;</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="n">failed_imports</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">module_name</span><span class="si">}</span><span class="s2"> (error: </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">)</span>
+    
+    <span class="k">if</span> <span class="n">failed_imports</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;ERROR: Failed to validate </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">failed_imports</span><span class="p">)</span><span class="si">}</span><span class="s2"> modules:&quot;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">module</span> <span class="ow">in</span> <span class="n">failed_imports</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  - </span><span class="si">{</span><span class="n">module</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;✓ Successfully validated all </span><span class="si">{</span><span class="n">successful_imports</span><span class="si">}</span><span class="s2"> endpoint modules&quot;</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="n">failed_imports</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span></div>
+
+
+<div class="viewcode-block" id="validate_client_initialization"><a class="viewcode-back" href="../../modules/openbankproject_client.validate_client.html#openbankproject_client.validate_client.validate_client_initialization">[docs]</a><span class="k">def</span> <span class="nf">validate_client_initialization</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Validate that the client can be initialized and contains all endpoint groups.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Validating client initialization...&quot;</span><span class="p">)</span>
+    
+    <span class="k">try</span><span class="p">:</span>
+        <span class="kn">from</span> <span class="nn">openbankproject_client</span> <span class="kn">import</span> <span class="n">OpenBankProjectClient</span>
+        
+        <span class="c1"># Initialize client without authentication</span>
+        <span class="n">client</span> <span class="o">=</span> <span class="n">OpenBankProjectClient</span><span class="p">(</span><span class="n">base_url</span><span class="o">=</span><span class="s2">&quot;https://example.com&quot;</span><span class="p">)</span>
+        
+        <span class="c1"># Get all attributes that are endpoint groups</span>
+        <span class="n">endpoint_groups</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">attr_name</span> <span class="ow">in</span> <span class="nb">dir</span><span class="p">(</span><span class="n">client</span><span class="p">):</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">attr_name</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">)</span> <span class="ow">and</span> <span class="ow">not</span> <span class="nb">callable</span><span class="p">(</span><span class="nb">getattr</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">attr_name</span><span class="p">)):</span>
+                <span class="n">attr</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">attr_name</span><span class="p">)</span>
+                <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">attr</span><span class="p">,</span> <span class="s1">&#39;__class__&#39;</span><span class="p">)</span> <span class="ow">and</span> <span class="s1">&#39;Endpoints&#39;</span> <span class="ow">in</span> <span class="n">attr</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">:</span>
+                    <span class="n">endpoint_groups</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">attr_name</span><span class="p">)</span>
+        
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;✓ Client initialized with </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">endpoint_groups</span><span class="p">)</span><span class="si">}</span><span class="s2"> endpoint groups&quot;</span><span class="p">)</span>
+        
+        <span class="c1"># Print all endpoint groups for verification</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Endpoint groups found:&quot;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">group</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">endpoint_groups</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  - </span><span class="si">{</span><span class="n">group</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        
+        <span class="k">return</span> <span class="kc">True</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;ERROR: Failed to initialize client: </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">False</span></div>
+
+
+<div class="viewcode-block" id="validate_auth_methods"><a class="viewcode-back" href="../../modules/openbankproject_client.validate_client.html#openbankproject_client.validate_client.validate_auth_methods">[docs]</a><span class="k">def</span> <span class="nf">validate_auth_methods</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Validate that authentication methods are correctly implemented.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Validating authentication methods...&quot;</span><span class="p">)</span>
+    
+    <span class="k">try</span><span class="p">:</span>
+        <span class="kn">from</span> <span class="nn">openbankproject_client</span> <span class="kn">import</span> <span class="n">DirectLoginAuth</span><span class="p">,</span> <span class="n">GatewayLoginAuth</span>
+        
+        <span class="c1"># Check DirectLoginAuth</span>
+        <span class="n">direct_auth</span> <span class="o">=</span> <span class="n">DirectLoginAuth</span><span class="p">(</span><span class="n">token</span><span class="o">=</span><span class="s2">&quot;test_token&quot;</span><span class="p">)</span>
+        <span class="n">headers</span> <span class="o">=</span> <span class="n">direct_auth</span><span class="o">.</span><span class="n">get_headers</span><span class="p">()</span>
+        <span class="k">if</span> <span class="s1">&#39;Authorization&#39;</span> <span class="ow">in</span> <span class="n">headers</span> <span class="ow">and</span> <span class="s1">&#39;DirectLogin&#39;</span> <span class="ow">in</span> <span class="n">headers</span><span class="p">[</span><span class="s1">&#39;Authorization&#39;</span><span class="p">]:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;✓ DirectLoginAuth implementation validated&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ERROR: DirectLoginAuth headers not correctly formatted&quot;</span><span class="p">)</span>
+            <span class="k">return</span> <span class="kc">False</span>
+        
+        <span class="c1"># Check GatewayLoginAuth</span>
+        <span class="n">gateway_auth</span> <span class="o">=</span> <span class="n">GatewayLoginAuth</span><span class="p">(</span><span class="n">token</span><span class="o">=</span><span class="s2">&quot;test_token&quot;</span><span class="p">)</span>
+        <span class="n">headers</span> <span class="o">=</span> <span class="n">gateway_auth</span><span class="o">.</span><span class="n">get_headers</span><span class="p">()</span>
+        <span class="k">if</span> <span class="s1">&#39;Authorization&#39;</span> <span class="ow">in</span> <span class="n">headers</span> <span class="ow">and</span> <span class="s1">&#39;GatewayLogin&#39;</span> <span class="ow">in</span> <span class="n">headers</span><span class="p">[</span><span class="s1">&#39;Authorization&#39;</span><span class="p">]:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;✓ GatewayLoginAuth implementation validated&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ERROR: GatewayLoginAuth headers not correctly formatted&quot;</span><span class="p">)</span>
+            <span class="k">return</span> <span class="kc">False</span>
+        
+        <span class="k">return</span> <span class="kc">True</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;ERROR: Failed to validate authentication methods: </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">False</span></div>
+
+
+<div class="viewcode-block" id="validate_error_classes"><a class="viewcode-back" href="../../modules/openbankproject_client.validate_client.html#openbankproject_client.validate_client.validate_error_classes">[docs]</a><span class="k">def</span> <span class="nf">validate_error_classes</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Validate that error classes are correctly implemented.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Validating error classes...&quot;</span><span class="p">)</span>
+    
+    <span class="k">try</span><span class="p">:</span>
+        <span class="kn">from</span> <span class="nn">openbankproject_client</span> <span class="kn">import</span> <span class="p">(</span>
+            <span class="n">ApiError</span><span class="p">,</span> <span class="n">AuthenticationError</span><span class="p">,</span> <span class="n">ResourceNotFoundError</span><span class="p">,</span> 
+            <span class="n">ValidationError</span><span class="p">,</span> <span class="ne">PermissionError</span><span class="p">,</span> <span class="n">ServerError</span>
+        <span class="p">)</span>
+        
+        <span class="c1"># Check inheritance</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nb">issubclass</span><span class="p">(</span><span class="n">AuthenticationError</span><span class="p">,</span> <span class="n">ApiError</span><span class="p">)</span> <span class="ow">and</span>
+            <span class="nb">issubclass</span><span class="p">(</span><span class="n">ResourceNotFoundError</span><span class="p">,</span> <span class="n">ApiError</span><span class="p">)</span> <span class="ow">and</span>
+            <span class="nb">issubclass</span><span class="p">(</span><span class="n">ValidationError</span><span class="p">,</span> <span class="n">ApiError</span><span class="p">)</span> <span class="ow">and</span>
+            <span class="nb">issubclass</span><span class="p">(</span><span class="ne">PermissionError</span><span class="p">,</span> <span class="n">ApiError</span><span class="p">)</span> <span class="ow">and</span>
+            <span class="nb">issubclass</span><span class="p">(</span><span class="n">ServerError</span><span class="p">,</span> <span class="n">ApiError</span><span class="p">)):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;✓ Error class hierarchy validated&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ERROR: Error class hierarchy is incorrect&quot;</span><span class="p">)</span>
+            <span class="k">return</span> <span class="kc">False</span>
+        
+        <span class="c1"># Check error instantiation</span>
+        <span class="n">error</span> <span class="o">=</span> <span class="n">ApiError</span><span class="p">(</span><span class="s2">&quot;Test error&quot;</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;error&quot;</span><span class="p">:</span> <span class="s2">&quot;test&quot;</span><span class="p">})</span>
+        <span class="k">if</span> <span class="n">error</span><span class="o">.</span><span class="n">message</span> <span class="o">==</span> <span class="s2">&quot;Test error&quot;</span> <span class="ow">and</span> <span class="n">error</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">400</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;✓ Error class instantiation validated&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ERROR: Error class instantiation is incorrect&quot;</span><span class="p">)</span>
+            <span class="k">return</span> <span class="kc">False</span>
+        
+        <span class="k">return</span> <span class="kc">True</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;ERROR: Failed to validate error classes: </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">False</span></div>
+
+
+<div class="viewcode-block" id="validate_client_methods"><a class="viewcode-back" href="../../modules/openbankproject_client.validate_client.html#openbankproject_client.validate_client.validate_client_methods">[docs]</a><span class="k">def</span> <span class="nf">validate_client_methods</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Validate that the client&#39;s core methods are correctly implemented.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Validating client methods...&quot;</span><span class="p">)</span>
+    
+    <span class="k">try</span><span class="p">:</span>
+        <span class="kn">from</span> <span class="nn">openbankproject_client</span> <span class="kn">import</span> <span class="n">OpenBankProjectClient</span>
+        
+        <span class="n">client</span> <span class="o">=</span> <span class="n">OpenBankProjectClient</span><span class="p">(</span><span class="n">base_url</span><span class="o">=</span><span class="s2">&quot;https://example.com&quot;</span><span class="p">)</span>
+        
+        <span class="c1"># Check that the client has the expected HTTP methods</span>
+        <span class="n">required_methods</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;get&#39;</span><span class="p">,</span> <span class="s1">&#39;post&#39;</span><span class="p">,</span> <span class="s1">&#39;put&#39;</span><span class="p">,</span> <span class="s1">&#39;delete&#39;</span><span class="p">,</span> <span class="s1">&#39;request&#39;</span><span class="p">]</span>
+        <span class="n">missing_methods</span> <span class="o">=</span> <span class="p">[]</span>
+        
+        <span class="k">for</span> <span class="n">method</span> <span class="ow">in</span> <span class="n">required_methods</span><span class="p">:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">method</span><span class="p">)</span> <span class="ow">or</span> <span class="ow">not</span> <span class="nb">callable</span><span class="p">(</span><span class="nb">getattr</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">method</span><span class="p">)):</span>
+                <span class="n">missing_methods</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">method</span><span class="p">)</span>
+        
+        <span class="k">if</span> <span class="n">missing_methods</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;ERROR: Missing required methods: </span><span class="si">{</span><span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">missing_methods</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">return</span> <span class="kc">False</span>
+        
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;✓ All required HTTP methods are implemented&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">True</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;ERROR: Failed to validate client methods: </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">False</span></div>
+
+
+<div class="viewcode-block" id="run_all_validations"><a class="viewcode-back" href="../../modules/openbankproject_client.validate_client.html#openbankproject_client.validate_client.run_all_validations">[docs]</a><span class="k">def</span> <span class="nf">run_all_validations</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Run all validation checks and report overall status.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=== OpenBankProject API Client Validation ===</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    
+    <span class="n">validations</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="n">validate_client_structure</span><span class="p">(),</span>
+        <span class="n">validate_endpoint_modules</span><span class="p">(),</span>
+        <span class="n">validate_client_initialization</span><span class="p">(),</span>
+        <span class="n">validate_auth_methods</span><span class="p">(),</span>
+        <span class="n">validate_error_classes</span><span class="p">(),</span>
+        <span class="n">validate_client_methods</span><span class="p">()</span>
+    <span class="p">]</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">=== Validation Summary ===&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">all</span><span class="p">(</span><span class="n">validations</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;✅ All validations passed successfully!&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">True</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;❌ Some validations failed. Please check the errors above.&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">False</span></div>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">success</span> <span class="o">=</span> <span class="n">run_all_validations</span><span class="p">()</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">0</span> <span class="k">if</span> <span class="n">success</span> <span class="k">else</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Joseph Pollack.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

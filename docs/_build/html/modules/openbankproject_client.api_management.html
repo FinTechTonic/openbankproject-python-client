@@ -1,26 +1,26 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" data-content_root="../">
+<html class="writer-html5" lang="en">
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>openbankproject_client.api_management module &mdash; OpenBankProject Client 1.0.0 documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
 
   
-      <script src="../_static/jquery.js?v=5d32c60e"></script>
-      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=8d563738"></script>
-      <script src="../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/jquery.js"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+      <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+      <script src="../_static/doctools.js"></script>
+      <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="openbankproject_client.api_favorite module" href="openbankproject_client.api_favorite.html" />
-    <link rel="prev" title="openbankproject_client.user_invitation module" href="openbankproject_client.user_invitation.html" /> 
+    <link rel="next" title="openbankproject_client.atm module" href="openbankproject_client.atm.html" />
+    <link rel="prev" title="openbankproject_client.api_favorite module" href="openbankproject_client.api_favorite.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -42,11 +42,57 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
-<ul>
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/quickstart.html">Quickstart Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/authentication.html">Authentication</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../modules.html">API Reference</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../modules.html#core-modules">Core Modules</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="openbankproject_client.html">openbankproject_client package</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject-client-library">OpenBankProject Client Library</a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.OpenBankProjectClient"><code class="docutils literal notranslate"><span class="pre">OpenBankProjectClient</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.DirectLoginAuth"><code class="docutils literal notranslate"><span class="pre">DirectLoginAuth</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.GatewayLoginAuth"><code class="docutils literal notranslate"><span class="pre">GatewayLoginAuth</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.Authentication"><code class="docutils literal notranslate"><span class="pre">Authentication</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.ApiError"><code class="docutils literal notranslate"><span class="pre">ApiError</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.AuthenticationError"><code class="docutils literal notranslate"><span class="pre">AuthenticationError</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.ResourceNotFoundError"><code class="docutils literal notranslate"><span class="pre">ResourceNotFoundError</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.ValidationError"><code class="docutils literal notranslate"><span class="pre">ValidationError</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.PermissionError"><code class="docutils literal notranslate"><span class="pre">PermissionError</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.RateLimitError"><code class="docutils literal notranslate"><span class="pre">RateLimitError</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.ServerError"><code class="docutils literal notranslate"><span class="pre">ServerError</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.ErrorHandler"><code class="docutils literal notranslate"><span class="pre">ErrorHandler</span></code></a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="openbankproject_client.html#submodules">Submodules</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="openbankproject_client.auth.html">openbankproject_client.auth module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="openbankproject_client.client.html">openbankproject_client.client module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="openbankproject_client.errors.html">openbankproject_client.errors module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../modules.html#account-management">Account Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules.html#bank-management">Bank Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules.html#transaction-management">Transaction Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules.html#customer-management">Customer Management</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../modules.html#api-management">API Management</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="openbankproject_client.api_collection.html">openbankproject_client.api_collection module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="openbankproject_client.api_configuration.html">openbankproject_client.api_configuration module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="openbankproject_client.api_favorite.html">openbankproject_client.api_favorite module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">openbankproject_client.api_management module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#openbankproject_client.api_management.ApiManagementEndpoints"><code class="docutils literal notranslate"><span class="pre">ApiManagementEndpoints</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="openbankproject_client.dynamic_endpoint.html">openbankproject_client.dynamic_endpoint module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="openbankproject_client.dynamic_entity.html">openbankproject_client.dynamic_entity module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="openbankproject_client.dynamic_message_doc.html">openbankproject_client.dynamic_message_doc module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="openbankproject_client.dynamic_resource_doc.html">openbankproject_client.dynamic_resource_doc module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../modules.html#user-management">User Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules.html#additional-features">Additional Features</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Core Components</span></p>
 <ul>
@@ -82,7 +128,33 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">API Management</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">openbankproject_client.api_management module</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">openbankproject_client.api_management module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#openbankproject_client.api_management.ApiManagementEndpoints"><code class="docutils literal notranslate"><span class="pre">ApiManagementEndpoints</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.api_management.ApiManagementEndpoints.__init__"><code class="docutils literal notranslate"><span class="pre">ApiManagementEndpoints.__init__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.api_management.ApiManagementEndpoints.create_bank_level_endpoint_tag"><code class="docutils literal notranslate"><span class="pre">ApiManagementEndpoints.create_bank_level_endpoint_tag()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.api_management.ApiManagementEndpoints.create_system_level_endpoint_tag"><code class="docutils literal notranslate"><span class="pre">ApiManagementEndpoints.create_system_level_endpoint_tag()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.api_management.ApiManagementEndpoints.delete_bank_level_endpoint_tag"><code class="docutils literal notranslate"><span class="pre">ApiManagementEndpoints.delete_bank_level_endpoint_tag()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.api_management.ApiManagementEndpoints.delete_system_level_endpoint_tag"><code class="docutils literal notranslate"><span class="pre">ApiManagementEndpoints.delete_system_level_endpoint_tag()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.api_management.ApiManagementEndpoints.get_api_configuration"><code class="docutils literal notranslate"><span class="pre">ApiManagementEndpoints.get_api_configuration()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.api_management.ApiManagementEndpoints.get_api_info"><code class="docutils literal notranslate"><span class="pre">ApiManagementEndpoints.get_api_info()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.api_management.ApiManagementEndpoints.get_api_tags"><code class="docutils literal notranslate"><span class="pre">ApiManagementEndpoints.get_api_tags()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.api_management.ApiManagementEndpoints.get_adapter_info_for_bank"><code class="docutils literal notranslate"><span class="pre">ApiManagementEndpoints.get_adapter_info_for_bank()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.api_management.ApiManagementEndpoints.get_bank_level_endpoint_tags"><code class="docutils literal notranslate"><span class="pre">ApiManagementEndpoints.get_bank_level_endpoint_tags()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.api_management.ApiManagementEndpoints.get_connector_status"><code class="docutils literal notranslate"><span class="pre">ApiManagementEndpoints.get_connector_status()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.api_management.ApiManagementEndpoints.get_json_web_key"><code class="docutils literal notranslate"><span class="pre">ApiManagementEndpoints.get_json_web_key()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.api_management.ApiManagementEndpoints.get_json_web_key_uris"><code class="docutils literal notranslate"><span class="pre">ApiManagementEndpoints.get_json_web_key_uris()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.api_management.ApiManagementEndpoints.get_mapper_database_info"><code class="docutils literal notranslate"><span class="pre">ApiManagementEndpoints.get_mapper_database_info()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.api_management.ApiManagementEndpoints.get_rate_limiting_info"><code class="docutils literal notranslate"><span class="pre">ApiManagementEndpoints.get_rate_limiting_info()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.api_management.ApiManagementEndpoints.get_suggested_session_timeout"><code class="docutils literal notranslate"><span class="pre">ApiManagementEndpoints.get_suggested_session_timeout()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.api_management.ApiManagementEndpoints.get_system_level_endpoint_tags"><code class="docutils literal notranslate"><span class="pre">ApiManagementEndpoints.get_system_level_endpoint_tags()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.api_management.ApiManagementEndpoints.get_call_context"><code class="docutils literal notranslate"><span class="pre">ApiManagementEndpoints.get_call_context()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.api_management.ApiManagementEndpoints.update_bank_level_endpoint_tag"><code class="docutils literal notranslate"><span class="pre">ApiManagementEndpoints.update_bank_level_endpoint_tag()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.api_management.ApiManagementEndpoints.update_system_level_endpoint_tag"><code class="docutils literal notranslate"><span class="pre">ApiManagementEndpoints.update_system_level_endpoint_tag()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.api_management.ApiManagementEndpoints.verify_request_and_sign_response"><code class="docutils literal notranslate"><span class="pre">ApiManagementEndpoints.verify_request_and_sign_response()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="openbankproject_client.api_favorite.html">openbankproject_client.api_favorite module</a></li>
 <li class="toctree-l1"><a class="reference internal" href="openbankproject_client.api_collection.html">openbankproject_client.api_collection module</a></li>
 <li class="toctree-l1"><a class="reference internal" href="openbankproject_client.api_configuration.html">openbankproject_client.api_configuration module</a></li>
@@ -130,29 +202,310 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../modules.html">API Reference</a></li>
+          <li class="breadcrumb-item"><a href="openbankproject_client.html">openbankproject_client package</a></li>
       <li class="breadcrumb-item active">openbankproject_client.api_management module</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/modules/openbankproject_client.api_management.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
-        <a href="openbankproject_client.user_invitation.html" class="btn btn-neutral float-left" title="openbankproject_client.user_invitation module" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="openbankproject_client.api_favorite.html" class="btn btn-neutral float-right" title="openbankproject_client.api_favorite module" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="openbankproject_client.api_favorite.html" class="btn btn-neutral float-left" title="openbankproject_client.api_favorite module" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="openbankproject_client.atm.html" class="btn btn-neutral float-right" title="openbankproject_client.atm module" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
   </div>
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="openbankproject-client-api-management-module">
-<h1>openbankproject_client.api_management module<a class="headerlink" href="#openbankproject-client-api-management-module" title="Link to this heading"></a></h1>
+  <section id="module-openbankproject_client.api_management">
+<span id="openbankproject-client-api-management-module"></span><h1>openbankproject_client.api_management module<a class="headerlink" href="#module-openbankproject_client.api_management" title="Permalink to this heading"></a></h1>
+<p>API Management endpoints for the OpenBankProject API Client.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="openbankproject_client.api_management.ApiManagementEndpoints">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">openbankproject_client.api_management.</span></span><span class="sig-name descname"><span class="pre">ApiManagementEndpoints</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/openbankproject_client/api_management.html#ApiManagementEndpoints"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.api_management.ApiManagementEndpoints" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.13)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>API Management-related API endpoints.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.api_management.ApiManagementEndpoints.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/openbankproject_client/api_management.html#ApiManagementEndpoints.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.api_management.ApiManagementEndpoints.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Initialize the endpoint group.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>client</strong> – OpenBankProjectClient instance</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.api_management.ApiManagementEndpoints.create_bank_level_endpoint_tag">
+<span class="sig-name descname"><span class="pre">create_bank_level_endpoint_tag</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/api_management.html#ApiManagementEndpoints.create_bank_level_endpoint_tag"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.api_management.ApiManagementEndpoints.create_bank_level_endpoint_tag" title="Permalink to this definition"></a></dt>
+<dd><p>Create a bank level endpoint tag.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>data</strong> – Endpoint tag data</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing created endpoint tag information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.api_management.ApiManagementEndpoints.create_system_level_endpoint_tag">
+<span class="sig-name descname"><span class="pre">create_system_level_endpoint_tag</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/api_management.html#ApiManagementEndpoints.create_system_level_endpoint_tag"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.api_management.ApiManagementEndpoints.create_system_level_endpoint_tag" title="Permalink to this definition"></a></dt>
+<dd><p>Create a system level endpoint tag.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>data</strong> – Endpoint tag data</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing created endpoint tag information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.api_management.ApiManagementEndpoints.delete_bank_level_endpoint_tag">
+<span class="sig-name descname"><span class="pre">delete_bank_level_endpoint_tag</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">tag_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/api_management.html#ApiManagementEndpoints.delete_bank_level_endpoint_tag"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.api_management.ApiManagementEndpoints.delete_bank_level_endpoint_tag" title="Permalink to this definition"></a></dt>
+<dd><p>Delete a bank level endpoint tag.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>tag_id</strong> – Tag identifier</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing deletion status</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.api_management.ApiManagementEndpoints.delete_system_level_endpoint_tag">
+<span class="sig-name descname"><span class="pre">delete_system_level_endpoint_tag</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tag_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/api_management.html#ApiManagementEndpoints.delete_system_level_endpoint_tag"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.api_management.ApiManagementEndpoints.delete_system_level_endpoint_tag" title="Permalink to this definition"></a></dt>
+<dd><p>Delete a system level endpoint tag.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>tag_id</strong> – Tag identifier</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing deletion status</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.api_management.ApiManagementEndpoints.get_api_configuration">
+<span class="sig-name descname"><span class="pre">get_api_configuration</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/api_management.html#ApiManagementEndpoints.get_api_configuration"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.api_management.ApiManagementEndpoints.get_api_configuration" title="Permalink to this definition"></a></dt>
+<dd><p>Get API configuration.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dict containing API configuration information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.api_management.ApiManagementEndpoints.get_api_info">
+<span class="sig-name descname"><span class="pre">get_api_info</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/api_management.html#ApiManagementEndpoints.get_api_info"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.api_management.ApiManagementEndpoints.get_api_info" title="Permalink to this definition"></a></dt>
+<dd><p>Get API info (root).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dict containing API information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.api_management.ApiManagementEndpoints.get_api_tags">
+<span class="sig-name descname"><span class="pre">get_api_tags</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/api_management.html#ApiManagementEndpoints.get_api_tags"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.api_management.ApiManagementEndpoints.get_api_tags" title="Permalink to this definition"></a></dt>
+<dd><p>Get API tags.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dict containing API tag information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.api_management.ApiManagementEndpoints.get_adapter_info_for_bank">
+<span class="sig-name descname"><span class="pre">get_adapter_info_for_bank</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/api_management.html#ApiManagementEndpoints.get_adapter_info_for_bank"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.api_management.ApiManagementEndpoints.get_adapter_info_for_bank" title="Permalink to this definition"></a></dt>
+<dd><p>Get adapter info for a bank.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>bank_id</strong> – Bank identifier</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing adapter information for the bank</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.api_management.ApiManagementEndpoints.get_bank_level_endpoint_tags">
+<span class="sig-name descname"><span class="pre">get_bank_level_endpoint_tags</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/api_management.html#ApiManagementEndpoints.get_bank_level_endpoint_tags"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.api_management.ApiManagementEndpoints.get_bank_level_endpoint_tags" title="Permalink to this definition"></a></dt>
+<dd><p>Get bank level endpoint tags.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>bank_id</strong> – Bank identifier</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing bank level endpoint tag information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.api_management.ApiManagementEndpoints.get_connector_status">
+<span class="sig-name descname"><span class="pre">get_connector_status</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/api_management.html#ApiManagementEndpoints.get_connector_status"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.api_management.ApiManagementEndpoints.get_connector_status" title="Permalink to this definition"></a></dt>
+<dd><p>Get connector status (Loopback).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dict containing connector status information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.api_management.ApiManagementEndpoints.get_json_web_key">
+<span class="sig-name descname"><span class="pre">get_json_web_key</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/api_management.html#ApiManagementEndpoints.get_json_web_key"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.api_management.ApiManagementEndpoints.get_json_web_key" title="Permalink to this definition"></a></dt>
+<dd><p>Get JSON Web Key (JWK).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dict containing JWK information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.api_management.ApiManagementEndpoints.get_json_web_key_uris">
+<span class="sig-name descname"><span class="pre">get_json_web_key_uris</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/api_management.html#ApiManagementEndpoints.get_json_web_key_uris"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.api_management.ApiManagementEndpoints.get_json_web_key_uris" title="Permalink to this definition"></a></dt>
+<dd><p>Get JSON Web Key (JWK) URIs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dict containing JWK URI information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.api_management.ApiManagementEndpoints.get_mapper_database_info">
+<span class="sig-name descname"><span class="pre">get_mapper_database_info</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/api_management.html#ApiManagementEndpoints.get_mapper_database_info"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.api_management.ApiManagementEndpoints.get_mapper_database_info" title="Permalink to this definition"></a></dt>
+<dd><p>Get mapper database info.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dict containing mapper database information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.api_management.ApiManagementEndpoints.get_rate_limiting_info">
+<span class="sig-name descname"><span class="pre">get_rate_limiting_info</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/api_management.html#ApiManagementEndpoints.get_rate_limiting_info"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.api_management.ApiManagementEndpoints.get_rate_limiting_info" title="Permalink to this definition"></a></dt>
+<dd><p>Get rate limiting info.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dict containing rate limiting information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.api_management.ApiManagementEndpoints.get_suggested_session_timeout">
+<span class="sig-name descname"><span class="pre">get_suggested_session_timeout</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/api_management.html#ApiManagementEndpoints.get_suggested_session_timeout"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.api_management.ApiManagementEndpoints.get_suggested_session_timeout" title="Permalink to this definition"></a></dt>
+<dd><p>Get suggested session timeout.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dict containing suggested session timeout information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.api_management.ApiManagementEndpoints.get_system_level_endpoint_tags">
+<span class="sig-name descname"><span class="pre">get_system_level_endpoint_tags</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/api_management.html#ApiManagementEndpoints.get_system_level_endpoint_tags"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.api_management.ApiManagementEndpoints.get_system_level_endpoint_tags" title="Permalink to this definition"></a></dt>
+<dd><p>Get system level endpoint tags.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dict containing system level endpoint tag information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.api_management.ApiManagementEndpoints.get_call_context">
+<span class="sig-name descname"><span class="pre">get_call_context</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/api_management.html#ApiManagementEndpoints.get_call_context"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.api_management.ApiManagementEndpoints.get_call_context" title="Permalink to this definition"></a></dt>
+<dd><p>Get the call context of a current call.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dict containing call context information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.api_management.ApiManagementEndpoints.update_bank_level_endpoint_tag">
+<span class="sig-name descname"><span class="pre">update_bank_level_endpoint_tag</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">tag_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/api_management.html#ApiManagementEndpoints.update_bank_level_endpoint_tag"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.api_management.ApiManagementEndpoints.update_bank_level_endpoint_tag" title="Permalink to this definition"></a></dt>
+<dd><p>Update a bank level endpoint tag.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>tag_id</strong> – Tag identifier</p></li>
+<li><p><strong>data</strong> – Updated endpoint tag data</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing updated endpoint tag information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.api_management.ApiManagementEndpoints.update_system_level_endpoint_tag">
+<span class="sig-name descname"><span class="pre">update_system_level_endpoint_tag</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tag_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/api_management.html#ApiManagementEndpoints.update_system_level_endpoint_tag"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.api_management.ApiManagementEndpoints.update_system_level_endpoint_tag" title="Permalink to this definition"></a></dt>
+<dd><p>Update a system level endpoint tag.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tag_id</strong> – Tag identifier</p></li>
+<li><p><strong>data</strong> – Updated endpoint tag data</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing updated endpoint tag information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.api_management.ApiManagementEndpoints.verify_request_and_sign_response">
+<span class="sig-name descname"><span class="pre">verify_request_and_sign_response</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/api_management.html#ApiManagementEndpoints.verify_request_and_sign_response"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.api_management.ApiManagementEndpoints.verify_request_and_sign_response" title="Permalink to this definition"></a></dt>
+<dd><p>Verify request and sign response of a current call.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>data</strong> – Verification data</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing verification and signature information</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="openbankproject_client.user_invitation.html" class="btn btn-neutral float-left" title="openbankproject_client.user_invitation module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="openbankproject_client.api_favorite.html" class="btn btn-neutral float-right" title="openbankproject_client.api_favorite module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="openbankproject_client.api_favorite.html" class="btn btn-neutral float-left" title="openbankproject_client.api_favorite module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="openbankproject_client.atm.html" class="btn btn-neutral float-right" title="openbankproject_client.atm module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

@@ -1,0 +1,588 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>openbankproject_client.transaction &mdash; OpenBankProject Client 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+
+  
+      <script src="../../_static/jquery.js"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+      <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+      <script src="../../_static/doctools.js"></script>
+      <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #2980B9" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            OpenBankProject Client
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/quickstart.html">Quickstart Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/authentication.html">Authentication</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules.html">API Reference</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Core Components</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.client.html">openbankproject_client.client module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.auth.html">openbankproject_client.auth module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.errors.html">openbankproject_client.errors module</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Account Management</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.extended_account.html">openbankproject_client.extended_account module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.extended_bank.html">openbankproject_client.extended_bank module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.account_holder.html">openbankproject_client.account_holder module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.account_metadata.html">openbankproject_client.account_metadata module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.account_public.html">openbankproject_client.account_public module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.account_application.html">openbankproject_client.account_application module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.account_access.html">openbankproject_client.account_access module</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Transaction Management</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.transaction.html">openbankproject_client.transaction module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.transaction_metadata.html">openbankproject_client.transaction_metadata module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.transaction_request.html">openbankproject_client.transaction_request module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.standing_order.html">openbankproject_client.standing_order module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.direct_debit.html">openbankproject_client.direct_debit module</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">User Management</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.user.html">openbankproject_client.user module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.customer.html">openbankproject_client.customer module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.role.html">openbankproject_client.role module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.kyc.html">openbankproject_client.kyc module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.user_invitation.html">openbankproject_client.user_invitation module</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Management</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.api_management.html">openbankproject_client.api_management module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.api_favorite.html">openbankproject_client.api_favorite module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.api_collection.html">openbankproject_client.api_collection module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.api_configuration.html">openbankproject_client.api_configuration module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.dynamic_endpoint.html">openbankproject_client.dynamic_endpoint module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.dynamic_entity.html">openbankproject_client.dynamic_entity module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.dynamic_message_doc.html">openbankproject_client.dynamic_message_doc module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.dynamic_resource_doc.html">openbankproject_client.dynamic_resource_doc module</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Additional Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.atm.html">openbankproject_client.atm module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.branch.html">openbankproject_client.branch module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.card.html">openbankproject_client.card module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.consent.html">openbankproject_client.consent module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.counterparty.html">openbankproject_client.counterparty module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.counterparty_metadata.html">openbankproject_client.counterparty_metadata module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.counterparty_limits.html">openbankproject_client.counterparty_limits module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.customer_meeting.html">openbankproject_client.customer_meeting module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.customer_message.html">openbankproject_client.customer_message module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.fx.html">openbankproject_client.fx module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.metric.html">openbankproject_client.metric module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.product.html">openbankproject_client.product module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.scope.html">openbankproject_client.scope module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.view_custom.html">openbankproject_client.view_custom module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.view_system.html">openbankproject_client.view_system module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.webhook.html">openbankproject_client.webhook module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.webui_props.html">openbankproject_client.webui_props module</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.examples.html">openbankproject_client.examples module</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #2980B9" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">OpenBankProject Client</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Module code</a></li>
+      <li class="breadcrumb-item active">openbankproject_client.transaction</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for openbankproject_client.transaction</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Transaction endpoints for the OpenBankProject API Client.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">List</span><span class="p">,</span> <span class="n">Optional</span><span class="p">,</span> <span class="n">Union</span><span class="p">,</span> <span class="n">Any</span>
+
+
+<div class="viewcode-block" id="TransactionEndpoints"><a class="viewcode-back" href="../../modules/openbankproject_client.transaction.html#openbankproject_client.transaction.TransactionEndpoints">[docs]</a><span class="k">class</span> <span class="nc">TransactionEndpoints</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Transaction-related API endpoints.&quot;&quot;&quot;</span>
+    
+<div class="viewcode-block" id="TransactionEndpoints.__init__"><a class="viewcode-back" href="../../modules/openbankproject_client.transaction.html#openbankproject_client.transaction.TransactionEndpoints.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">client</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Initialize the endpoint group.</span>
+<span class="sd">        </span>
+<span class="sd">        Args:</span>
+<span class="sd">            client: OpenBankProjectClient instance</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">client</span> <span class="o">=</span> <span class="n">client</span></div>
+    
+<div class="viewcode-block" id="TransactionEndpoints.get_transactions"><a class="viewcode-back" href="../../modules/openbankproject_client.transaction.html#openbankproject_client.transaction.TransactionEndpoints.get_transactions">[docs]</a>    <span class="k">def</span> <span class="nf">get_transactions</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">account_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">view_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">params</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Dict</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Get transactions for an account.</span>
+<span class="sd">        </span>
+<span class="sd">        Args:</span>
+<span class="sd">            bank_id: Bank identifier</span>
+<span class="sd">            account_id: Account identifier</span>
+<span class="sd">            view_id: View identifier</span>
+<span class="sd">            params: Optional query parameters like from_date, to_date, limit, offset, etc.</span>
+<span class="sd">            </span>
+<span class="sd">        Returns:</span>
+<span class="sd">            Dict containing transaction information</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;banks/</span><span class="si">{</span><span class="n">bank_id</span><span class="si">}</span><span class="s2">/accounts/</span><span class="si">{</span><span class="n">account_id</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">view_id</span><span class="si">}</span><span class="s2">/transactions&quot;</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="TransactionEndpoints.get_transaction"><a class="viewcode-back" href="../../modules/openbankproject_client.transaction.html#openbankproject_client.transaction.TransactionEndpoints.get_transaction">[docs]</a>    <span class="k">def</span> <span class="nf">get_transaction</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">account_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">view_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">transaction_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Get transaction by ID.</span>
+<span class="sd">        </span>
+<span class="sd">        Args:</span>
+<span class="sd">            bank_id: Bank identifier</span>
+<span class="sd">            account_id: Account identifier</span>
+<span class="sd">            view_id: View identifier</span>
+<span class="sd">            transaction_id: Transaction identifier</span>
+<span class="sd">            </span>
+<span class="sd">        Returns:</span>
+<span class="sd">            Dict containing transaction information</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;banks/</span><span class="si">{</span><span class="n">bank_id</span><span class="si">}</span><span class="s2">/accounts/</span><span class="si">{</span><span class="n">account_id</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">view_id</span><span class="si">}</span><span class="s2">/transactions/</span><span class="si">{</span><span class="n">transaction_id</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="TransactionEndpoints.create_transaction"><a class="viewcode-back" href="../../modules/openbankproject_client.transaction.html#openbankproject_client.transaction.TransactionEndpoints.create_transaction">[docs]</a>    <span class="k">def</span> <span class="nf">create_transaction</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">account_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">view_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="n">Dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Create a transaction.</span>
+<span class="sd">        </span>
+<span class="sd">        Args:</span>
+<span class="sd">            bank_id: Bank identifier</span>
+<span class="sd">            account_id: Account identifier</span>
+<span class="sd">            view_id: View identifier</span>
+<span class="sd">            data: Transaction data</span>
+<span class="sd">            </span>
+<span class="sd">        Returns:</span>
+<span class="sd">            Dict containing created transaction information</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;banks/</span><span class="si">{</span><span class="n">bank_id</span><span class="si">}</span><span class="s2">/accounts/</span><span class="si">{</span><span class="n">account_id</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">view_id</span><span class="si">}</span><span class="s2">/transactions&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="TransactionEndpoints.update_transaction"><a class="viewcode-back" href="../../modules/openbankproject_client.transaction.html#openbankproject_client.transaction.TransactionEndpoints.update_transaction">[docs]</a>    <span class="k">def</span> <span class="nf">update_transaction</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">account_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">view_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">transaction_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="n">Dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Update a transaction.</span>
+<span class="sd">        </span>
+<span class="sd">        Args:</span>
+<span class="sd">            bank_id: Bank identifier</span>
+<span class="sd">            account_id: Account identifier</span>
+<span class="sd">            view_id: View identifier</span>
+<span class="sd">            transaction_id: Transaction identifier</span>
+<span class="sd">            data: Updated transaction data</span>
+<span class="sd">            </span>
+<span class="sd">        Returns:</span>
+<span class="sd">            Dict containing updated transaction information</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;banks/</span><span class="si">{</span><span class="n">bank_id</span><span class="si">}</span><span class="s2">/accounts/</span><span class="si">{</span><span class="n">account_id</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">view_id</span><span class="si">}</span><span class="s2">/transactions/</span><span class="si">{</span><span class="n">transaction_id</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="TransactionEndpoints.delete_transaction"><a class="viewcode-back" href="../../modules/openbankproject_client.transaction.html#openbankproject_client.transaction.TransactionEndpoints.delete_transaction">[docs]</a>    <span class="k">def</span> <span class="nf">delete_transaction</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">account_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">view_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">transaction_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Delete a transaction.</span>
+<span class="sd">        </span>
+<span class="sd">        Args:</span>
+<span class="sd">            bank_id: Bank identifier</span>
+<span class="sd">            account_id: Account identifier</span>
+<span class="sd">            view_id: View identifier</span>
+<span class="sd">            transaction_id: Transaction identifier</span>
+<span class="sd">            </span>
+<span class="sd">        Returns:</span>
+<span class="sd">            Dict containing deletion status</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;banks/</span><span class="si">{</span><span class="n">bank_id</span><span class="si">}</span><span class="s2">/accounts/</span><span class="si">{</span><span class="n">account_id</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">view_id</span><span class="si">}</span><span class="s2">/transactions/</span><span class="si">{</span><span class="n">transaction_id</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="TransactionEndpoints.get_transaction_attributes"><a class="viewcode-back" href="../../modules/openbankproject_client.transaction.html#openbankproject_client.transaction.TransactionEndpoints.get_transaction_attributes">[docs]</a>    <span class="k">def</span> <span class="nf">get_transaction_attributes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">account_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">view_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">transaction_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Get attributes for a transaction.</span>
+<span class="sd">        </span>
+<span class="sd">        Args:</span>
+<span class="sd">            bank_id: Bank identifier</span>
+<span class="sd">            account_id: Account identifier</span>
+<span class="sd">            view_id: View identifier</span>
+<span class="sd">            transaction_id: Transaction identifier</span>
+<span class="sd">            </span>
+<span class="sd">        Returns:</span>
+<span class="sd">            Dict containing transaction attribute information</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;banks/</span><span class="si">{</span><span class="n">bank_id</span><span class="si">}</span><span class="s2">/accounts/</span><span class="si">{</span><span class="n">account_id</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">view_id</span><span class="si">}</span><span class="s2">/transactions/</span><span class="si">{</span><span class="n">transaction_id</span><span class="si">}</span><span class="s2">/attributes&quot;</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="TransactionEndpoints.add_transaction_attribute"><a class="viewcode-back" href="../../modules/openbankproject_client.transaction.html#openbankproject_client.transaction.TransactionEndpoints.add_transaction_attribute">[docs]</a>    <span class="k">def</span> <span class="nf">add_transaction_attribute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">account_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">view_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">transaction_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="n">Dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Add an attribute to a transaction.</span>
+<span class="sd">        </span>
+<span class="sd">        Args:</span>
+<span class="sd">            bank_id: Bank identifier</span>
+<span class="sd">            account_id: Account identifier</span>
+<span class="sd">            view_id: View identifier</span>
+<span class="sd">            transaction_id: Transaction identifier</span>
+<span class="sd">            data: Attribute data</span>
+<span class="sd">            </span>
+<span class="sd">        Returns:</span>
+<span class="sd">            Dict containing added attribute information</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;banks/</span><span class="si">{</span><span class="n">bank_id</span><span class="si">}</span><span class="s2">/accounts/</span><span class="si">{</span><span class="n">account_id</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">view_id</span><span class="si">}</span><span class="s2">/transactions/</span><span class="si">{</span><span class="n">transaction_id</span><span class="si">}</span><span class="s2">/attributes&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="TransactionEndpoints.update_transaction_attribute"><a class="viewcode-back" href="../../modules/openbankproject_client.transaction.html#openbankproject_client.transaction.TransactionEndpoints.update_transaction_attribute">[docs]</a>    <span class="k">def</span> <span class="nf">update_transaction_attribute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">account_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">view_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">transaction_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">attribute_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="n">Dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Update an attribute of a transaction.</span>
+<span class="sd">        </span>
+<span class="sd">        Args:</span>
+<span class="sd">            bank_id: Bank identifier</span>
+<span class="sd">            account_id: Account identifier</span>
+<span class="sd">            view_id: View identifier</span>
+<span class="sd">            transaction_id: Transaction identifier</span>
+<span class="sd">            attribute_id: Attribute identifier</span>
+<span class="sd">            data: Updated attribute data</span>
+<span class="sd">            </span>
+<span class="sd">        Returns:</span>
+<span class="sd">            Dict containing updated attribute information</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;banks/</span><span class="si">{</span><span class="n">bank_id</span><span class="si">}</span><span class="s2">/accounts/</span><span class="si">{</span><span class="n">account_id</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">view_id</span><span class="si">}</span><span class="s2">/transactions/</span><span class="si">{</span><span class="n">transaction_id</span><span class="si">}</span><span class="s2">/attributes/</span><span class="si">{</span><span class="n">attribute_id</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="TransactionEndpoints.delete_transaction_attribute"><a class="viewcode-back" href="../../modules/openbankproject_client.transaction.html#openbankproject_client.transaction.TransactionEndpoints.delete_transaction_attribute">[docs]</a>    <span class="k">def</span> <span class="nf">delete_transaction_attribute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">account_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">view_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">transaction_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">attribute_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Delete an attribute from a transaction.</span>
+<span class="sd">        </span>
+<span class="sd">        Args:</span>
+<span class="sd">            bank_id: Bank identifier</span>
+<span class="sd">            account_id: Account identifier</span>
+<span class="sd">            view_id: View identifier</span>
+<span class="sd">            transaction_id: Transaction identifier</span>
+<span class="sd">            attribute_id: Attribute identifier</span>
+<span class="sd">            </span>
+<span class="sd">        Returns:</span>
+<span class="sd">            Dict containing deletion status</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;banks/</span><span class="si">{</span><span class="n">bank_id</span><span class="si">}</span><span class="s2">/accounts/</span><span class="si">{</span><span class="n">account_id</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">view_id</span><span class="si">}</span><span class="s2">/transactions/</span><span class="si">{</span><span class="n">transaction_id</span><span class="si">}</span><span class="s2">/attributes/</span><span class="si">{</span><span class="n">attribute_id</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="TransactionEndpoints.get_transaction_tags"><a class="viewcode-back" href="../../modules/openbankproject_client.transaction.html#openbankproject_client.transaction.TransactionEndpoints.get_transaction_tags">[docs]</a>    <span class="k">def</span> <span class="nf">get_transaction_tags</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">account_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">view_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">transaction_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Get tags for a transaction.</span>
+<span class="sd">        </span>
+<span class="sd">        Args:</span>
+<span class="sd">            bank_id: Bank identifier</span>
+<span class="sd">            account_id: Account identifier</span>
+<span class="sd">            view_id: View identifier</span>
+<span class="sd">            transaction_id: Transaction identifier</span>
+<span class="sd">            </span>
+<span class="sd">        Returns:</span>
+<span class="sd">            Dict containing transaction tag information</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;banks/</span><span class="si">{</span><span class="n">bank_id</span><span class="si">}</span><span class="s2">/accounts/</span><span class="si">{</span><span class="n">account_id</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">view_id</span><span class="si">}</span><span class="s2">/transactions/</span><span class="si">{</span><span class="n">transaction_id</span><span class="si">}</span><span class="s2">/tags&quot;</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="TransactionEndpoints.add_transaction_tag"><a class="viewcode-back" href="../../modules/openbankproject_client.transaction.html#openbankproject_client.transaction.TransactionEndpoints.add_transaction_tag">[docs]</a>    <span class="k">def</span> <span class="nf">add_transaction_tag</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">account_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">view_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">transaction_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="n">Dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Add a tag to a transaction.</span>
+<span class="sd">        </span>
+<span class="sd">        Args:</span>
+<span class="sd">            bank_id: Bank identifier</span>
+<span class="sd">            account_id: Account identifier</span>
+<span class="sd">            view_id: View identifier</span>
+<span class="sd">            transaction_id: Transaction identifier</span>
+<span class="sd">            data: Tag data</span>
+<span class="sd">            </span>
+<span class="sd">        Returns:</span>
+<span class="sd">            Dict containing added tag information</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;banks/</span><span class="si">{</span><span class="n">bank_id</span><span class="si">}</span><span class="s2">/accounts/</span><span class="si">{</span><span class="n">account_id</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">view_id</span><span class="si">}</span><span class="s2">/transactions/</span><span class="si">{</span><span class="n">transaction_id</span><span class="si">}</span><span class="s2">/tags&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="TransactionEndpoints.delete_transaction_tag"><a class="viewcode-back" href="../../modules/openbankproject_client.transaction.html#openbankproject_client.transaction.TransactionEndpoints.delete_transaction_tag">[docs]</a>    <span class="k">def</span> <span class="nf">delete_transaction_tag</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">account_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">view_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">transaction_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">tag_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Delete a tag from a transaction.</span>
+<span class="sd">        </span>
+<span class="sd">        Args:</span>
+<span class="sd">            bank_id: Bank identifier</span>
+<span class="sd">            account_id: Account identifier</span>
+<span class="sd">            view_id: View identifier</span>
+<span class="sd">            transaction_id: Transaction identifier</span>
+<span class="sd">            tag_id: Tag identifier</span>
+<span class="sd">            </span>
+<span class="sd">        Returns:</span>
+<span class="sd">            Dict containing deletion status</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;banks/</span><span class="si">{</span><span class="n">bank_id</span><span class="si">}</span><span class="s2">/accounts/</span><span class="si">{</span><span class="n">account_id</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">view_id</span><span class="si">}</span><span class="s2">/transactions/</span><span class="si">{</span><span class="n">transaction_id</span><span class="si">}</span><span class="s2">/tags/</span><span class="si">{</span><span class="n">tag_id</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="TransactionEndpoints.get_transaction_images"><a class="viewcode-back" href="../../modules/openbankproject_client.transaction.html#openbankproject_client.transaction.TransactionEndpoints.get_transaction_images">[docs]</a>    <span class="k">def</span> <span class="nf">get_transaction_images</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">account_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">view_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">transaction_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Get images for a transaction.</span>
+<span class="sd">        </span>
+<span class="sd">        Args:</span>
+<span class="sd">            bank_id: Bank identifier</span>
+<span class="sd">            account_id: Account identifier</span>
+<span class="sd">            view_id: View identifier</span>
+<span class="sd">            transaction_id: Transaction identifier</span>
+<span class="sd">            </span>
+<span class="sd">        Returns:</span>
+<span class="sd">            Dict containing transaction image information</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;banks/</span><span class="si">{</span><span class="n">bank_id</span><span class="si">}</span><span class="s2">/accounts/</span><span class="si">{</span><span class="n">account_id</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">view_id</span><span class="si">}</span><span class="s2">/transactions/</span><span class="si">{</span><span class="n">transaction_id</span><span class="si">}</span><span class="s2">/images&quot;</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="TransactionEndpoints.add_transaction_image"><a class="viewcode-back" href="../../modules/openbankproject_client.transaction.html#openbankproject_client.transaction.TransactionEndpoints.add_transaction_image">[docs]</a>    <span class="k">def</span> <span class="nf">add_transaction_image</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">account_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">view_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">transaction_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="n">Dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Add an image to a transaction.</span>
+<span class="sd">        </span>
+<span class="sd">        Args:</span>
+<span class="sd">            bank_id: Bank identifier</span>
+<span class="sd">            account_id: Account identifier</span>
+<span class="sd">            view_id: View identifier</span>
+<span class="sd">            transaction_id: Transaction identifier</span>
+<span class="sd">            data: Image data</span>
+<span class="sd">            </span>
+<span class="sd">        Returns:</span>
+<span class="sd">            Dict containing added image information</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;banks/</span><span class="si">{</span><span class="n">bank_id</span><span class="si">}</span><span class="s2">/accounts/</span><span class="si">{</span><span class="n">account_id</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">view_id</span><span class="si">}</span><span class="s2">/transactions/</span><span class="si">{</span><span class="n">transaction_id</span><span class="si">}</span><span class="s2">/images&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="TransactionEndpoints.delete_transaction_image"><a class="viewcode-back" href="../../modules/openbankproject_client.transaction.html#openbankproject_client.transaction.TransactionEndpoints.delete_transaction_image">[docs]</a>    <span class="k">def</span> <span class="nf">delete_transaction_image</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">account_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">view_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">transaction_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">image_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Delete an image from a transaction.</span>
+<span class="sd">        </span>
+<span class="sd">        Args:</span>
+<span class="sd">            bank_id: Bank identifier</span>
+<span class="sd">            account_id: Account identifier</span>
+<span class="sd">            view_id: View identifier</span>
+<span class="sd">            transaction_id: Transaction identifier</span>
+<span class="sd">            image_id: Image identifier</span>
+<span class="sd">            </span>
+<span class="sd">        Returns:</span>
+<span class="sd">            Dict containing deletion status</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;banks/</span><span class="si">{</span><span class="n">bank_id</span><span class="si">}</span><span class="s2">/accounts/</span><span class="si">{</span><span class="n">account_id</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">view_id</span><span class="si">}</span><span class="s2">/transactions/</span><span class="si">{</span><span class="n">transaction_id</span><span class="si">}</span><span class="s2">/images/</span><span class="si">{</span><span class="n">image_id</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="TransactionEndpoints.get_transaction_comments"><a class="viewcode-back" href="../../modules/openbankproject_client.transaction.html#openbankproject_client.transaction.TransactionEndpoints.get_transaction_comments">[docs]</a>    <span class="k">def</span> <span class="nf">get_transaction_comments</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">account_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">view_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">transaction_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Get comments for a transaction.</span>
+<span class="sd">        </span>
+<span class="sd">        Args:</span>
+<span class="sd">            bank_id: Bank identifier</span>
+<span class="sd">            account_id: Account identifier</span>
+<span class="sd">            view_id: View identifier</span>
+<span class="sd">            transaction_id: Transaction identifier</span>
+<span class="sd">            </span>
+<span class="sd">        Returns:</span>
+<span class="sd">            Dict containing transaction comment information</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;banks/</span><span class="si">{</span><span class="n">bank_id</span><span class="si">}</span><span class="s2">/accounts/</span><span class="si">{</span><span class="n">account_id</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">view_id</span><span class="si">}</span><span class="s2">/transactions/</span><span class="si">{</span><span class="n">transaction_id</span><span class="si">}</span><span class="s2">/comments&quot;</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="TransactionEndpoints.add_transaction_comment"><a class="viewcode-back" href="../../modules/openbankproject_client.transaction.html#openbankproject_client.transaction.TransactionEndpoints.add_transaction_comment">[docs]</a>    <span class="k">def</span> <span class="nf">add_transaction_comment</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">account_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">view_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">transaction_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="n">Dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Add a comment to a transaction.</span>
+<span class="sd">        </span>
+<span class="sd">        Args:</span>
+<span class="sd">            bank_id: Bank identifier</span>
+<span class="sd">            account_id: Account identifier</span>
+<span class="sd">            view_id: View identifier</span>
+<span class="sd">            transaction_id: Transaction identifier</span>
+<span class="sd">            data: Comment data</span>
+<span class="sd">            </span>
+<span class="sd">        Returns:</span>
+<span class="sd">            Dict containing added comment information</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;banks/</span><span class="si">{</span><span class="n">bank_id</span><span class="si">}</span><span class="s2">/accounts/</span><span class="si">{</span><span class="n">account_id</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">view_id</span><span class="si">}</span><span class="s2">/transactions/</span><span class="si">{</span><span class="n">transaction_id</span><span class="si">}</span><span class="s2">/comments&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="TransactionEndpoints.delete_transaction_comment"><a class="viewcode-back" href="../../modules/openbankproject_client.transaction.html#openbankproject_client.transaction.TransactionEndpoints.delete_transaction_comment">[docs]</a>    <span class="k">def</span> <span class="nf">delete_transaction_comment</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">account_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">view_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">transaction_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">comment_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Delete a comment from a transaction.</span>
+<span class="sd">        </span>
+<span class="sd">        Args:</span>
+<span class="sd">            bank_id: Bank identifier</span>
+<span class="sd">            account_id: Account identifier</span>
+<span class="sd">            view_id: View identifier</span>
+<span class="sd">            transaction_id: Transaction identifier</span>
+<span class="sd">            comment_id: Comment identifier</span>
+<span class="sd">            </span>
+<span class="sd">        Returns:</span>
+<span class="sd">            Dict containing deletion status</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;banks/</span><span class="si">{</span><span class="n">bank_id</span><span class="si">}</span><span class="s2">/accounts/</span><span class="si">{</span><span class="n">account_id</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">view_id</span><span class="si">}</span><span class="s2">/transactions/</span><span class="si">{</span><span class="n">transaction_id</span><span class="si">}</span><span class="s2">/comments/</span><span class="si">{</span><span class="n">comment_id</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="TransactionEndpoints.get_transaction_narratives"><a class="viewcode-back" href="../../modules/openbankproject_client.transaction.html#openbankproject_client.transaction.TransactionEndpoints.get_transaction_narratives">[docs]</a>    <span class="k">def</span> <span class="nf">get_transaction_narratives</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">account_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">view_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">transaction_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Get narratives for a transaction.</span>
+<span class="sd">        </span>
+<span class="sd">        Args:</span>
+<span class="sd">            bank_id: Bank identifier</span>
+<span class="sd">            account_id: Account identifier</span>
+<span class="sd">            view_id: View identifier</span>
+<span class="sd">            transaction_id: Transaction identifier</span>
+<span class="sd">            </span>
+<span class="sd">        Returns:</span>
+<span class="sd">            Dict containing transaction narrative information</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;banks/</span><span class="si">{</span><span class="n">bank_id</span><span class="si">}</span><span class="s2">/accounts/</span><span class="si">{</span><span class="n">account_id</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">view_id</span><span class="si">}</span><span class="s2">/transactions/</span><span class="si">{</span><span class="n">transaction_id</span><span class="si">}</span><span class="s2">/narrative&quot;</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="TransactionEndpoints.add_transaction_narrative"><a class="viewcode-back" href="../../modules/openbankproject_client.transaction.html#openbankproject_client.transaction.TransactionEndpoints.add_transaction_narrative">[docs]</a>    <span class="k">def</span> <span class="nf">add_transaction_narrative</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">account_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">view_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">transaction_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="n">Dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Add a narrative to a transaction.</span>
+<span class="sd">        </span>
+<span class="sd">        Args:</span>
+<span class="sd">            bank_id: Bank identifier</span>
+<span class="sd">            account_id: Account identifier</span>
+<span class="sd">            view_id: View identifier</span>
+<span class="sd">            transaction_id: Transaction identifier</span>
+<span class="sd">            data: Narrative data</span>
+<span class="sd">            </span>
+<span class="sd">        Returns:</span>
+<span class="sd">            Dict containing added narrative information</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;banks/</span><span class="si">{</span><span class="n">bank_id</span><span class="si">}</span><span class="s2">/accounts/</span><span class="si">{</span><span class="n">account_id</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">view_id</span><span class="si">}</span><span class="s2">/transactions/</span><span class="si">{</span><span class="n">transaction_id</span><span class="si">}</span><span class="s2">/narrative&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="TransactionEndpoints.update_transaction_narrative"><a class="viewcode-back" href="../../modules/openbankproject_client.transaction.html#openbankproject_client.transaction.TransactionEndpoints.update_transaction_narrative">[docs]</a>    <span class="k">def</span> <span class="nf">update_transaction_narrative</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">account_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">view_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">transaction_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="n">Dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Update the narrative of a transaction.</span>
+<span class="sd">        </span>
+<span class="sd">        Args:</span>
+<span class="sd">            bank_id: Bank identifier</span>
+<span class="sd">            account_id: Account identifier</span>
+<span class="sd">            view_id: View identifier</span>
+<span class="sd">            transaction_id: Transaction identifier</span>
+<span class="sd">            data: Updated narrative data</span>
+<span class="sd">            </span>
+<span class="sd">        Returns:</span>
+<span class="sd">            Dict containing updated narrative information</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;banks/</span><span class="si">{</span><span class="n">bank_id</span><span class="si">}</span><span class="s2">/accounts/</span><span class="si">{</span><span class="n">account_id</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">view_id</span><span class="si">}</span><span class="s2">/transactions/</span><span class="si">{</span><span class="n">transaction_id</span><span class="si">}</span><span class="s2">/narrative&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="TransactionEndpoints.delete_transaction_narrative"><a class="viewcode-back" href="../../modules/openbankproject_client.transaction.html#openbankproject_client.transaction.TransactionEndpoints.delete_transaction_narrative">[docs]</a>    <span class="k">def</span> <span class="nf">delete_transaction_narrative</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">account_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">view_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">transaction_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Delete the narrative from a transaction.</span>
+<span class="sd">        </span>
+<span class="sd">        Args:</span>
+<span class="sd">            bank_id: Bank identifier</span>
+<span class="sd">            account_id: Account identifier</span>
+<span class="sd">            view_id: View identifier</span>
+<span class="sd">            transaction_id: Transaction identifier</span>
+<span class="sd">            </span>
+<span class="sd">        Returns:</span>
+<span class="sd">            Dict containing deletion status</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;banks/</span><span class="si">{</span><span class="n">bank_id</span><span class="si">}</span><span class="s2">/accounts/</span><span class="si">{</span><span class="n">account_id</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">view_id</span><span class="si">}</span><span class="s2">/transactions/</span><span class="si">{</span><span class="n">transaction_id</span><span class="si">}</span><span class="s2">/narrative&quot;</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="TransactionEndpoints.get_transaction_types"><a class="viewcode-back" href="../../modules/openbankproject_client.transaction.html#openbankproject_client.transaction.TransactionEndpoints.get_transaction_types">[docs]</a>    <span class="k">def</span> <span class="nf">get_transaction_types</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Get all transaction types.</span>
+<span class="sd">        </span>
+<span class="sd">        Returns:</span>
+<span class="sd">            Dict containing transaction type information</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;transaction-types&quot;</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="TransactionEndpoints.get_transaction_status"><a class="viewcode-back" href="../../modules/openbankproject_client.transaction.html#openbankproject_client.transaction.TransactionEndpoints.get_transaction_status">[docs]</a>    <span class="k">def</span> <span class="nf">get_transaction_status</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">account_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">view_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">transaction_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Get the status of a transaction.</span>
+<span class="sd">        </span>
+<span class="sd">        Args:</span>
+<span class="sd">            bank_id: Bank identifier</span>
+<span class="sd">            account_id: Account identifier</span>
+<span class="sd">            view_id: View identifier</span>
+<span class="sd">            transaction_id: Transaction identifier</span>
+<span class="sd">            </span>
+<span class="sd">        Returns:</span>
+<span class="sd">            Dict containing transaction status information</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;banks/</span><span class="si">{</span><span class="n">bank_id</span><span class="si">}</span><span class="s2">/accounts/</span><span class="si">{</span><span class="n">account_id</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">view_id</span><span class="si">}</span><span class="s2">/transactions/</span><span class="si">{</span><span class="n">transaction_id</span><span class="si">}</span><span class="s2">/status&quot;</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="TransactionEndpoints.get_transaction_challenges"><a class="viewcode-back" href="../../modules/openbankproject_client.transaction.html#openbankproject_client.transaction.TransactionEndpoints.get_transaction_challenges">[docs]</a>    <span class="k">def</span> <span class="nf">get_transaction_challenges</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">account_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">view_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">transaction_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Get challenges for a transaction.</span>
+<span class="sd">        </span>
+<span class="sd">        Args:</span>
+<span class="sd">            bank_id: Bank identifier</span>
+<span class="sd">            account_id: Account identifier</span>
+<span class="sd">            view_id: View identifier</span>
+<span class="sd">            transaction_id: Transaction identifier</span>
+<span class="sd">            </span>
+<span class="sd">        Returns:</span>
+<span class="sd">            Dict containing transaction challenge information</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;banks/</span><span class="si">{</span><span class="n">bank_id</span><span class="si">}</span><span class="s2">/accounts/</span><span class="si">{</span><span class="n">account_id</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">view_id</span><span class="si">}</span><span class="s2">/transactions/</span><span class="si">{</span><span class="n">transaction_id</span><span class="si">}</span><span class="s2">/challenges&quot;</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="TransactionEndpoints.answer_transaction_challenge"><a class="viewcode-back" href="../../modules/openbankproject_client.transaction.html#openbankproject_client.transaction.TransactionEndpoints.answer_transaction_challenge">[docs]</a>    <span class="k">def</span> <span class="nf">answer_transaction_challenge</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">account_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">view_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">transaction_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">challenge_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="n">Dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Answer a challenge for a transaction.</span>
+<span class="sd">        </span>
+<span class="sd">        Args:</span>
+<span class="sd">            bank_id: Bank identifier</span>
+<span class="sd">            account_id: Account identifier</span>
+<span class="sd">            view_id: View identifier</span>
+<span class="sd">            transaction_id: Transaction identifier</span>
+<span class="sd">            challenge_id: Challenge identifier</span>
+<span class="sd">            data: Challenge answer data</span>
+<span class="sd">            </span>
+<span class="sd">        Returns:</span>
+<span class="sd">            Dict containing challenge response information</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;banks/</span><span class="si">{</span><span class="n">bank_id</span><span class="si">}</span><span class="s2">/accounts/</span><span class="si">{</span><span class="n">account_id</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">view_id</span><span class="si">}</span><span class="s2">/transactions/</span><span class="si">{</span><span class="n">transaction_id</span><span class="si">}</span><span class="s2">/challenges/</span><span class="si">{</span><span class="n">challenge_id</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">)</span></div></div>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Joseph Pollack.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

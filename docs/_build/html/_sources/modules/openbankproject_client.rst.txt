@@ -3,8 +3,8 @@ openbankproject\_client package
 
 .. automodule:: openbankproject_client
    :members:
-   :show-inheritance:
    :undoc-members:
+   :show-inheritance:
 
 Submodules
 ----------

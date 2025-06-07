@@ -1,15 +1,16 @@
 Welcome to OpenBankProject Client Documentation
-============================================
+=============================================
 
-The OpenBankProject Client is a Python library that provides a comprehensive interface to the OpenBankProject API. This documentation will help you understand how to use the client effectively.
+This library provides a Python client for interacting with the OpenBankProject API. It supports various authentication methods and provides a comprehensive set of features for working with banks, accounts, transactions, and more.
 
 .. toctree::
    :maxdepth: 2
-   :caption: Getting Started
+   :caption: Contents:
 
    getting_started/installation
    getting_started/quickstart
    getting_started/authentication
+   modules
 
 .. toctree::
    :maxdepth: 2

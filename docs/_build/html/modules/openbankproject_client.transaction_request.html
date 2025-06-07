@@ -1,25 +1,25 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" data-content_root="../">
+<html class="writer-html5" lang="en">
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>openbankproject_client.transaction_request module &mdash; OpenBankProject Client 1.0.0 documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
 
   
-      <script src="../_static/jquery.js?v=5d32c60e"></script>
-      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=8d563738"></script>
-      <script src="../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/jquery.js"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+      <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+      <script src="../_static/doctools.js"></script>
+      <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="openbankproject_client.standing_order module" href="openbankproject_client.standing_order.html" />
+    <link rel="next" title="openbankproject_client.user module" href="openbankproject_client.user.html" />
     <link rel="prev" title="openbankproject_client.transaction_metadata module" href="openbankproject_client.transaction_metadata.html" /> 
 </head>
 
@@ -42,11 +42,54 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
-<ul>
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/quickstart.html">Quickstart Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/authentication.html">Authentication</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../modules.html">API Reference</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../modules.html#core-modules">Core Modules</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="openbankproject_client.html">openbankproject_client package</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject-client-library">OpenBankProject Client Library</a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.OpenBankProjectClient"><code class="docutils literal notranslate"><span class="pre">OpenBankProjectClient</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.DirectLoginAuth"><code class="docutils literal notranslate"><span class="pre">DirectLoginAuth</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.GatewayLoginAuth"><code class="docutils literal notranslate"><span class="pre">GatewayLoginAuth</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.Authentication"><code class="docutils literal notranslate"><span class="pre">Authentication</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.ApiError"><code class="docutils literal notranslate"><span class="pre">ApiError</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.AuthenticationError"><code class="docutils literal notranslate"><span class="pre">AuthenticationError</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.ResourceNotFoundError"><code class="docutils literal notranslate"><span class="pre">ResourceNotFoundError</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.ValidationError"><code class="docutils literal notranslate"><span class="pre">ValidationError</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.PermissionError"><code class="docutils literal notranslate"><span class="pre">PermissionError</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.RateLimitError"><code class="docutils literal notranslate"><span class="pre">RateLimitError</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.ServerError"><code class="docutils literal notranslate"><span class="pre">ServerError</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.ErrorHandler"><code class="docutils literal notranslate"><span class="pre">ErrorHandler</span></code></a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="openbankproject_client.html#submodules">Submodules</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="openbankproject_client.auth.html">openbankproject_client.auth module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="openbankproject_client.client.html">openbankproject_client.client module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="openbankproject_client.errors.html">openbankproject_client.errors module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../modules.html#account-management">Account Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules.html#bank-management">Bank Management</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../modules.html#transaction-management">Transaction Management</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="openbankproject_client.transaction.html">openbankproject_client.transaction module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="openbankproject_client.transaction_metadata.html">openbankproject_client.transaction_metadata module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">openbankproject_client.transaction_request module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints"><code class="docutils literal notranslate"><span class="pre">TransactionRequestEndpoints</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="openbankproject_client.standing_order.html">openbankproject_client.standing_order module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="openbankproject_client.direct_debit.html">openbankproject_client.direct_debit module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../modules.html#customer-management">Customer Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules.html#api-management">API Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules.html#user-management">User Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules.html#additional-features">Additional Features</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Core Components</span></p>
 <ul>
@@ -68,7 +111,39 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="openbankproject_client.transaction.html">openbankproject_client.transaction module</a></li>
 <li class="toctree-l1"><a class="reference internal" href="openbankproject_client.transaction_metadata.html">openbankproject_client.transaction_metadata module</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">openbankproject_client.transaction_request module</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">openbankproject_client.transaction_request module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints"><code class="docutils literal notranslate"><span class="pre">TransactionRequestEndpoints</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.__init__"><code class="docutils literal notranslate"><span class="pre">TransactionRequestEndpoints.__init__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.create_transaction_request_account"><code class="docutils literal notranslate"><span class="pre">TransactionRequestEndpoints.create_transaction_request_account()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.create_transaction_request_account_otp"><code class="docutils literal notranslate"><span class="pre">TransactionRequestEndpoints.create_transaction_request_account_otp()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.create_transaction_request_agent_cash_withdrawal"><code class="docutils literal notranslate"><span class="pre">TransactionRequestEndpoints.create_transaction_request_agent_cash_withdrawal()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.create_transaction_request_card"><code class="docutils literal notranslate"><span class="pre">TransactionRequestEndpoints.create_transaction_request_card()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.create_transaction_request_counterparty"><code class="docutils literal notranslate"><span class="pre">TransactionRequestEndpoints.create_transaction_request_counterparty()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.create_transaction_request_free_form"><code class="docutils literal notranslate"><span class="pre">TransactionRequestEndpoints.create_transaction_request_free_form()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.create_transaction_request_refund"><code class="docutils literal notranslate"><span class="pre">TransactionRequestEndpoints.create_transaction_request_refund()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.create_transaction_request_sandbox_tan"><code class="docutils literal notranslate"><span class="pre">TransactionRequestEndpoints.create_transaction_request_sandbox_tan()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.create_transaction_request_sepa"><code class="docutils literal notranslate"><span class="pre">TransactionRequestEndpoints.create_transaction_request_sepa()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.create_transaction_request_simple"><code class="docutils literal notranslate"><span class="pre">TransactionRequestEndpoints.create_transaction_request_simple()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.get_transaction_request"><code class="docutils literal notranslate"><span class="pre">TransactionRequestEndpoints.get_transaction_request()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.get_transaction_request_by_id"><code class="docutils literal notranslate"><span class="pre">TransactionRequestEndpoints.get_transaction_request_by_id()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.get_transaction_requests"><code class="docutils literal notranslate"><span class="pre">TransactionRequestEndpoints.get_transaction_requests()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.get_transaction_request_types_at_bank"><code class="docutils literal notranslate"><span class="pre">TransactionRequestEndpoints.get_transaction_request_types_at_bank()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.get_transaction_request_types_for_account"><code class="docutils literal notranslate"><span class="pre">TransactionRequestEndpoints.get_transaction_request_types_for_account()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.create_transaction_request_attribute"><code class="docutils literal notranslate"><span class="pre">TransactionRequestEndpoints.create_transaction_request_attribute()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.update_transaction_request_attribute"><code class="docutils literal notranslate"><span class="pre">TransactionRequestEndpoints.update_transaction_request_attribute()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.get_transaction_request_attribute_by_id"><code class="docutils literal notranslate"><span class="pre">TransactionRequestEndpoints.get_transaction_request_attribute_by_id()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.get_transaction_request_attributes"><code class="docutils literal notranslate"><span class="pre">TransactionRequestEndpoints.get_transaction_request_attributes()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.get_transaction_request_attribute_definition"><code class="docutils literal notranslate"><span class="pre">TransactionRequestEndpoints.get_transaction_request_attribute_definition()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.create_or_update_transaction_request_attribute_definition"><code class="docutils literal notranslate"><span class="pre">TransactionRequestEndpoints.create_or_update_transaction_request_attribute_definition()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.delete_transaction_request_attribute_definition"><code class="docutils literal notranslate"><span class="pre">TransactionRequestEndpoints.delete_transaction_request_attribute_definition()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.update_transaction_request_status"><code class="docutils literal notranslate"><span class="pre">TransactionRequestEndpoints.update_transaction_request_status()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.answer_transaction_request_challenge"><code class="docutils literal notranslate"><span class="pre">TransactionRequestEndpoints.answer_transaction_request_challenge()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.create_historical_transactions"><code class="docutils literal notranslate"><span class="pre">TransactionRequestEndpoints.create_historical_transactions()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.save_historical_transactions"><code class="docutils literal notranslate"><span class="pre">TransactionRequestEndpoints.save_historical_transactions()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="openbankproject_client.standing_order.html">openbankproject_client.standing_order module</a></li>
 <li class="toctree-l1"><a class="reference internal" href="openbankproject_client.direct_debit.html">openbankproject_client.direct_debit module</a></li>
 </ul>
@@ -130,21 +205,522 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../modules.html">API Reference</a></li>
+          <li class="breadcrumb-item"><a href="openbankproject_client.html">openbankproject_client package</a></li>
       <li class="breadcrumb-item active">openbankproject_client.transaction_request module</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/modules/openbankproject_client.transaction_request.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
         <a href="openbankproject_client.transaction_metadata.html" class="btn btn-neutral float-left" title="openbankproject_client.transaction_metadata module" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="openbankproject_client.standing_order.html" class="btn btn-neutral float-right" title="openbankproject_client.standing_order module" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="openbankproject_client.user.html" class="btn btn-neutral float-right" title="openbankproject_client.user module" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
   </div>
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="openbankproject-client-transaction-request-module">
-<h1>openbankproject_client.transaction_request module<a class="headerlink" href="#openbankproject-client-transaction-request-module" title="Link to this heading"></a></h1>
+  <section id="module-openbankproject_client.transaction_request">
+<span id="openbankproject-client-transaction-request-module"></span><h1>openbankproject_client.transaction_request module<a class="headerlink" href="#module-openbankproject_client.transaction_request" title="Permalink to this heading"></a></h1>
+<p>Transaction Request endpoints for the OpenBankProject API Client.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="openbankproject_client.transaction_request.TransactionRequestEndpoints">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">openbankproject_client.transaction_request.</span></span><span class="sig-name descname"><span class="pre">TransactionRequestEndpoints</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/openbankproject_client/transaction_request.html#TransactionRequestEndpoints"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.13)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Transaction Request-related API endpoints.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.transaction_request.TransactionRequestEndpoints.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/openbankproject_client/transaction_request.html#TransactionRequestEndpoints.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Initialize the endpoint group.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>client</strong> – OpenBankProjectClient instance</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.transaction_request.TransactionRequestEndpoints.create_transaction_request_account">
+<span class="sig-name descname"><span class="pre">create_transaction_request_account</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">view_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/transaction_request.html#TransactionRequestEndpoints.create_transaction_request_account"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.create_transaction_request_account" title="Permalink to this definition"></a></dt>
+<dd><p>Create Transaction Request (ACCOUNT).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>view_id</strong> – View identifier</p></li>
+<li><p><strong>data</strong> – Transaction request data</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing created transaction request information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.transaction_request.TransactionRequestEndpoints.create_transaction_request_account_otp">
+<span class="sig-name descname"><span class="pre">create_transaction_request_account_otp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">view_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/transaction_request.html#TransactionRequestEndpoints.create_transaction_request_account_otp"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.create_transaction_request_account_otp" title="Permalink to this definition"></a></dt>
+<dd><p>Create Transaction Request (ACCOUNT_OTP).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>view_id</strong> – View identifier</p></li>
+<li><p><strong>data</strong> – Transaction request data with OTP</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing created transaction request information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.transaction_request.TransactionRequestEndpoints.create_transaction_request_agent_cash_withdrawal">
+<span class="sig-name descname"><span class="pre">create_transaction_request_agent_cash_withdrawal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">view_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/transaction_request.html#TransactionRequestEndpoints.create_transaction_request_agent_cash_withdrawal"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.create_transaction_request_agent_cash_withdrawal" title="Permalink to this definition"></a></dt>
+<dd><p>Create Transaction Request (AGENT_CASH_WITHDRAWAL).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>view_id</strong> – View identifier</p></li>
+<li><p><strong>data</strong> – Transaction request data for agent cash withdrawal</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing created transaction request information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.transaction_request.TransactionRequestEndpoints.create_transaction_request_card">
+<span class="sig-name descname"><span class="pre">create_transaction_request_card</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">view_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/transaction_request.html#TransactionRequestEndpoints.create_transaction_request_card"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.create_transaction_request_card" title="Permalink to this definition"></a></dt>
+<dd><p>Create Transaction Request (CARD).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>view_id</strong> – View identifier</p></li>
+<li><p><strong>data</strong> – Transaction request data for card</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing created transaction request information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.transaction_request.TransactionRequestEndpoints.create_transaction_request_counterparty">
+<span class="sig-name descname"><span class="pre">create_transaction_request_counterparty</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">view_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/transaction_request.html#TransactionRequestEndpoints.create_transaction_request_counterparty"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.create_transaction_request_counterparty" title="Permalink to this definition"></a></dt>
+<dd><p>Create Transaction Request (COUNTERPARTY).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>view_id</strong> – View identifier</p></li>
+<li><p><strong>data</strong> – Transaction request data for counterparty</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing created transaction request information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.transaction_request.TransactionRequestEndpoints.create_transaction_request_free_form">
+<span class="sig-name descname"><span class="pre">create_transaction_request_free_form</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">view_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/transaction_request.html#TransactionRequestEndpoints.create_transaction_request_free_form"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.create_transaction_request_free_form" title="Permalink to this definition"></a></dt>
+<dd><p>Create Transaction Request (FREE_FORM).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>view_id</strong> – View identifier</p></li>
+<li><p><strong>data</strong> – Transaction request data in free form</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing created transaction request information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.transaction_request.TransactionRequestEndpoints.create_transaction_request_refund">
+<span class="sig-name descname"><span class="pre">create_transaction_request_refund</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">view_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/transaction_request.html#TransactionRequestEndpoints.create_transaction_request_refund"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.create_transaction_request_refund" title="Permalink to this definition"></a></dt>
+<dd><p>Create Transaction Request (REFUND).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>view_id</strong> – View identifier</p></li>
+<li><p><strong>data</strong> – Transaction request data for refund</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing created transaction request information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.transaction_request.TransactionRequestEndpoints.create_transaction_request_sandbox_tan">
+<span class="sig-name descname"><span class="pre">create_transaction_request_sandbox_tan</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">view_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/transaction_request.html#TransactionRequestEndpoints.create_transaction_request_sandbox_tan"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.create_transaction_request_sandbox_tan" title="Permalink to this definition"></a></dt>
+<dd><p>Create Transaction Request (SANDBOX_TAN).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>view_id</strong> – View identifier</p></li>
+<li><p><strong>data</strong> – Transaction request data for sandbox TAN</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing created transaction request information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.transaction_request.TransactionRequestEndpoints.create_transaction_request_sepa">
+<span class="sig-name descname"><span class="pre">create_transaction_request_sepa</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">view_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/transaction_request.html#TransactionRequestEndpoints.create_transaction_request_sepa"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.create_transaction_request_sepa" title="Permalink to this definition"></a></dt>
+<dd><p>Create Transaction Request (SEPA).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>view_id</strong> – View identifier</p></li>
+<li><p><strong>data</strong> – Transaction request data for SEPA</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing created transaction request information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.transaction_request.TransactionRequestEndpoints.create_transaction_request_simple">
+<span class="sig-name descname"><span class="pre">create_transaction_request_simple</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">view_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/transaction_request.html#TransactionRequestEndpoints.create_transaction_request_simple"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.create_transaction_request_simple" title="Permalink to this definition"></a></dt>
+<dd><p>Create Transaction Request (SIMPLE).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>view_id</strong> – View identifier</p></li>
+<li><p><strong>data</strong> – Transaction request data for simple transfer</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing created transaction request information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.transaction_request.TransactionRequestEndpoints.get_transaction_request">
+<span class="sig-name descname"><span class="pre">get_transaction_request</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">view_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">transaction_request_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/transaction_request.html#TransactionRequestEndpoints.get_transaction_request"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.get_transaction_request" title="Permalink to this definition"></a></dt>
+<dd><p>Get Transaction Request.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>view_id</strong> – View identifier</p></li>
+<li><p><strong>transaction_request_id</strong> – Transaction request identifier</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing transaction request information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.transaction_request.TransactionRequestEndpoints.get_transaction_request_by_id">
+<span class="sig-name descname"><span class="pre">get_transaction_request_by_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">transaction_request_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/transaction_request.html#TransactionRequestEndpoints.get_transaction_request_by_id"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.get_transaction_request_by_id" title="Permalink to this definition"></a></dt>
+<dd><p>Get Transaction Request by ID.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>transaction_request_id</strong> – Transaction request identifier</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing transaction request information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.transaction_request.TransactionRequestEndpoints.get_transaction_requests">
+<span class="sig-name descname"><span class="pre">get_transaction_requests</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">view_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/transaction_request.html#TransactionRequestEndpoints.get_transaction_requests"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.get_transaction_requests" title="Permalink to this definition"></a></dt>
+<dd><p>Get Transaction Requests.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>view_id</strong> – View identifier</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing transaction requests information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.transaction_request.TransactionRequestEndpoints.get_transaction_request_types_at_bank">
+<span class="sig-name descname"><span class="pre">get_transaction_request_types_at_bank</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/transaction_request.html#TransactionRequestEndpoints.get_transaction_request_types_at_bank"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.get_transaction_request_types_at_bank" title="Permalink to this definition"></a></dt>
+<dd><p>Get Transaction Request Types at Bank.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>bank_id</strong> – Bank identifier</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing transaction request types information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.transaction_request.TransactionRequestEndpoints.get_transaction_request_types_for_account">
+<span class="sig-name descname"><span class="pre">get_transaction_request_types_for_account</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">view_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/transaction_request.html#TransactionRequestEndpoints.get_transaction_request_types_for_account"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.get_transaction_request_types_for_account" title="Permalink to this definition"></a></dt>
+<dd><p>Get Transaction Request Types for Account.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>view_id</strong> – View identifier</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing transaction request types information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.transaction_request.TransactionRequestEndpoints.create_transaction_request_attribute">
+<span class="sig-name descname"><span class="pre">create_transaction_request_attribute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">view_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">transaction_request_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/transaction_request.html#TransactionRequestEndpoints.create_transaction_request_attribute"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.create_transaction_request_attribute" title="Permalink to this definition"></a></dt>
+<dd><p>Create Transaction Request Attribute.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>view_id</strong> – View identifier</p></li>
+<li><p><strong>transaction_request_id</strong> – Transaction request identifier</p></li>
+<li><p><strong>data</strong> – Attribute data</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing created attribute information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.transaction_request.TransactionRequestEndpoints.update_transaction_request_attribute">
+<span class="sig-name descname"><span class="pre">update_transaction_request_attribute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">view_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">transaction_request_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">attribute_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/transaction_request.html#TransactionRequestEndpoints.update_transaction_request_attribute"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.update_transaction_request_attribute" title="Permalink to this definition"></a></dt>
+<dd><p>Update Transaction Request Attribute.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>view_id</strong> – View identifier</p></li>
+<li><p><strong>transaction_request_id</strong> – Transaction request identifier</p></li>
+<li><p><strong>attribute_id</strong> – Attribute identifier</p></li>
+<li><p><strong>data</strong> – Updated attribute data</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing updated attribute information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.transaction_request.TransactionRequestEndpoints.get_transaction_request_attribute_by_id">
+<span class="sig-name descname"><span class="pre">get_transaction_request_attribute_by_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">view_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">transaction_request_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">attribute_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/transaction_request.html#TransactionRequestEndpoints.get_transaction_request_attribute_by_id"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.get_transaction_request_attribute_by_id" title="Permalink to this definition"></a></dt>
+<dd><p>Get Transaction Request Attribute By Id.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>view_id</strong> – View identifier</p></li>
+<li><p><strong>transaction_request_id</strong> – Transaction request identifier</p></li>
+<li><p><strong>attribute_id</strong> – Attribute identifier</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing attribute information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.transaction_request.TransactionRequestEndpoints.get_transaction_request_attributes">
+<span class="sig-name descname"><span class="pre">get_transaction_request_attributes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">view_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">transaction_request_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/transaction_request.html#TransactionRequestEndpoints.get_transaction_request_attributes"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.get_transaction_request_attributes" title="Permalink to this definition"></a></dt>
+<dd><p>Get Transaction Request Attributes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>view_id</strong> – View identifier</p></li>
+<li><p><strong>transaction_request_id</strong> – Transaction request identifier</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing attributes information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.transaction_request.TransactionRequestEndpoints.get_transaction_request_attribute_definition">
+<span class="sig-name descname"><span class="pre">get_transaction_request_attribute_definition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/transaction_request.html#TransactionRequestEndpoints.get_transaction_request_attribute_definition"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.get_transaction_request_attribute_definition" title="Permalink to this definition"></a></dt>
+<dd><p>Get Transaction Request Attribute Definition.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>bank_id</strong> – Bank identifier</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing attribute definition information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.transaction_request.TransactionRequestEndpoints.create_or_update_transaction_request_attribute_definition">
+<span class="sig-name descname"><span class="pre">create_or_update_transaction_request_attribute_definition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/transaction_request.html#TransactionRequestEndpoints.create_or_update_transaction_request_attribute_definition"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.create_or_update_transaction_request_attribute_definition" title="Permalink to this definition"></a></dt>
+<dd><p>Create or Update Transaction Request Attribute Definition.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>data</strong> – Attribute definition data</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing created or updated attribute definition information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.transaction_request.TransactionRequestEndpoints.delete_transaction_request_attribute_definition">
+<span class="sig-name descname"><span class="pre">delete_transaction_request_attribute_definition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">attribute_definition_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/transaction_request.html#TransactionRequestEndpoints.delete_transaction_request_attribute_definition"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.delete_transaction_request_attribute_definition" title="Permalink to this definition"></a></dt>
+<dd><p>Delete Transaction Request Attribute Definition.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>attribute_definition_id</strong> – Attribute definition identifier</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing deletion status</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.transaction_request.TransactionRequestEndpoints.update_transaction_request_status">
+<span class="sig-name descname"><span class="pre">update_transaction_request_status</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">view_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">transaction_request_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/transaction_request.html#TransactionRequestEndpoints.update_transaction_request_status"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.update_transaction_request_status" title="Permalink to this definition"></a></dt>
+<dd><p>Update Transaction Request Status.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>view_id</strong> – View identifier</p></li>
+<li><p><strong>transaction_request_id</strong> – Transaction request identifier</p></li>
+<li><p><strong>data</strong> – Updated status data</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing updated transaction request information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.transaction_request.TransactionRequestEndpoints.answer_transaction_request_challenge">
+<span class="sig-name descname"><span class="pre">answer_transaction_request_challenge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">view_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">transaction_request_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">challenge_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/transaction_request.html#TransactionRequestEndpoints.answer_transaction_request_challenge"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.answer_transaction_request_challenge" title="Permalink to this definition"></a></dt>
+<dd><p>Answer Transaction Request Challenge.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>view_id</strong> – View identifier</p></li>
+<li><p><strong>transaction_request_id</strong> – Transaction request identifier</p></li>
+<li><p><strong>challenge_id</strong> – Challenge identifier</p></li>
+<li><p><strong>data</strong> – Challenge answer data</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing challenge response information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.transaction_request.TransactionRequestEndpoints.create_historical_transactions">
+<span class="sig-name descname"><span class="pre">create_historical_transactions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">view_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/transaction_request.html#TransactionRequestEndpoints.create_historical_transactions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.create_historical_transactions" title="Permalink to this definition"></a></dt>
+<dd><p>Create Historical Transactions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>view_id</strong> – View identifier</p></li>
+<li><p><strong>data</strong> – Historical transactions data</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing created transactions information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.transaction_request.TransactionRequestEndpoints.save_historical_transactions">
+<span class="sig-name descname"><span class="pre">save_historical_transactions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">view_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/transaction_request.html#TransactionRequestEndpoints.save_historical_transactions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.transaction_request.TransactionRequestEndpoints.save_historical_transactions" title="Permalink to this definition"></a></dt>
+<dd><p>Save Historical Transactions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>view_id</strong> – View identifier</p></li>
+<li><p><strong>data</strong> – Historical transactions data</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing saved transactions information</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
 </section>
 
 
@@ -152,7 +728,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="openbankproject_client.transaction_metadata.html" class="btn btn-neutral float-left" title="openbankproject_client.transaction_metadata module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="openbankproject_client.standing_order.html" class="btn btn-neutral float-right" title="openbankproject_client.standing_order module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="openbankproject_client.user.html" class="btn btn-neutral float-right" title="openbankproject_client.user module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

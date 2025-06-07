@@ -1,26 +1,26 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" data-content_root="../">
+<html class="writer-html5" lang="en">
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>openbankproject_client.extended_account module &mdash; OpenBankProject Client 1.0.0 documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
 
   
-      <script src="../_static/jquery.js?v=5d32c60e"></script>
-      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=8d563738"></script>
-      <script src="../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/jquery.js"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+      <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+      <script src="../_static/doctools.js"></script>
+      <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="openbankproject_client.extended_bank module" href="openbankproject_client.extended_bank.html" />
-    <link rel="prev" title="openbankproject_client.errors module" href="openbankproject_client.errors.html" /> 
+    <link rel="prev" title="openbankproject_client.examples module" href="openbankproject_client.examples.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -42,11 +42,55 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
-<ul>
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/quickstart.html">Quickstart Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/authentication.html">Authentication</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../modules.html">API Reference</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../modules.html#core-modules">Core Modules</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="openbankproject_client.html">openbankproject_client package</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject-client-library">OpenBankProject Client Library</a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.OpenBankProjectClient"><code class="docutils literal notranslate"><span class="pre">OpenBankProjectClient</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.DirectLoginAuth"><code class="docutils literal notranslate"><span class="pre">DirectLoginAuth</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.GatewayLoginAuth"><code class="docutils literal notranslate"><span class="pre">GatewayLoginAuth</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.Authentication"><code class="docutils literal notranslate"><span class="pre">Authentication</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.ApiError"><code class="docutils literal notranslate"><span class="pre">ApiError</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.AuthenticationError"><code class="docutils literal notranslate"><span class="pre">AuthenticationError</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.ResourceNotFoundError"><code class="docutils literal notranslate"><span class="pre">ResourceNotFoundError</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.ValidationError"><code class="docutils literal notranslate"><span class="pre">ValidationError</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.PermissionError"><code class="docutils literal notranslate"><span class="pre">PermissionError</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.RateLimitError"><code class="docutils literal notranslate"><span class="pre">RateLimitError</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.ServerError"><code class="docutils literal notranslate"><span class="pre">ServerError</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.ErrorHandler"><code class="docutils literal notranslate"><span class="pre">ErrorHandler</span></code></a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="openbankproject_client.html#submodules">Submodules</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="openbankproject_client.auth.html">openbankproject_client.auth module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="openbankproject_client.client.html">openbankproject_client.client module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="openbankproject_client.errors.html">openbankproject_client.errors module</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="../modules.html#account-management">Account Management</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="openbankproject_client.account_access.html">openbankproject_client.account_access module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="openbankproject_client.account_application.html">openbankproject_client.account_application module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="openbankproject_client.account_holder.html">openbankproject_client.account_holder module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="openbankproject_client.account_metadata.html">openbankproject_client.account_metadata module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="openbankproject_client.account_public.html">openbankproject_client.account_public module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">openbankproject_client.extended_account module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints"><code class="docutils literal notranslate"><span class="pre">ExtendedAccountEndpoints</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../modules.html#bank-management">Bank Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules.html#transaction-management">Transaction Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules.html#customer-management">Customer Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules.html#api-management">API Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules.html#user-management">User Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules.html#additional-features">Additional Features</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Core Components</span></p>
 <ul>
@@ -56,7 +100,43 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Account Management</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">openbankproject_client.extended_account module</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">openbankproject_client.extended_account module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints"><code class="docutils literal notranslate"><span class="pre">ExtendedAccountEndpoints</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.__init__"><code class="docutils literal notranslate"><span class="pre">ExtendedAccountEndpoints.__init__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.get_account_by_id"><code class="docutils literal notranslate"><span class="pre">ExtendedAccountEndpoints.get_account_by_id()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.get_account_views"><code class="docutils literal notranslate"><span class="pre">ExtendedAccountEndpoints.get_account_views()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.create_account_view"><code class="docutils literal notranslate"><span class="pre">ExtendedAccountEndpoints.create_account_view()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.update_account_view"><code class="docutils literal notranslate"><span class="pre">ExtendedAccountEndpoints.update_account_view()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.delete_account_view"><code class="docutils literal notranslate"><span class="pre">ExtendedAccountEndpoints.delete_account_view()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.get_account_permissions"><code class="docutils literal notranslate"><span class="pre">ExtendedAccountEndpoints.get_account_permissions()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.grant_account_access"><code class="docutils literal notranslate"><span class="pre">ExtendedAccountEndpoints.grant_account_access()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.revoke_account_access"><code class="docutils literal notranslate"><span class="pre">ExtendedAccountEndpoints.revoke_account_access()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.create_account"><code class="docutils literal notranslate"><span class="pre">ExtendedAccountEndpoints.create_account()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.close_account"><code class="docutils literal notranslate"><span class="pre">ExtendedAccountEndpoints.close_account()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.check_available_funds"><code class="docutils literal notranslate"><span class="pre">ExtendedAccountEndpoints.check_available_funds()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.get_account_with_balance"><code class="docutils literal notranslate"><span class="pre">ExtendedAccountEndpoints.get_account_with_balance()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.update_account_label"><code class="docutils literal notranslate"><span class="pre">ExtendedAccountEndpoints.update_account_label()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.get_account_attributes"><code class="docutils literal notranslate"><span class="pre">ExtendedAccountEndpoints.get_account_attributes()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.add_account_attribute"><code class="docutils literal notranslate"><span class="pre">ExtendedAccountEndpoints.add_account_attribute()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.update_account_attribute"><code class="docutils literal notranslate"><span class="pre">ExtendedAccountEndpoints.update_account_attribute()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.delete_account_attribute"><code class="docutils literal notranslate"><span class="pre">ExtendedAccountEndpoints.delete_account_attribute()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.get_account_tags"><code class="docutils literal notranslate"><span class="pre">ExtendedAccountEndpoints.get_account_tags()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.add_account_tag"><code class="docutils literal notranslate"><span class="pre">ExtendedAccountEndpoints.add_account_tag()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.delete_account_tag"><code class="docutils literal notranslate"><span class="pre">ExtendedAccountEndpoints.delete_account_tag()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.get_account_metadata"><code class="docutils literal notranslate"><span class="pre">ExtendedAccountEndpoints.get_account_metadata()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.get_account_by_iban"><code class="docutils literal notranslate"><span class="pre">ExtendedAccountEndpoints.get_account_by_iban()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.get_firehose_accounts"><code class="docutils literal notranslate"><span class="pre">ExtendedAccountEndpoints.get_firehose_accounts()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.get_firehose_transactions"><code class="docutils literal notranslate"><span class="pre">ExtendedAccountEndpoints.get_firehose_transactions()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.get_firehose_bank_transactions"><code class="docutils literal notranslate"><span class="pre">ExtendedAccountEndpoints.get_firehose_bank_transactions()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.get_account_statistics"><code class="docutils literal notranslate"><span class="pre">ExtendedAccountEndpoints.get_account_statistics()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.get_account_statements"><code class="docutils literal notranslate"><span class="pre">ExtendedAccountEndpoints.get_account_statements()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.get_account_statement"><code class="docutils literal notranslate"><span class="pre">ExtendedAccountEndpoints.get_account_statement()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.get_account_statement_transactions"><code class="docutils literal notranslate"><span class="pre">ExtendedAccountEndpoints.get_account_statement_transactions()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.generate_account_statement_pdf"><code class="docutils literal notranslate"><span class="pre">ExtendedAccountEndpoints.generate_account_statement_pdf()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="openbankproject_client.extended_bank.html">openbankproject_client.extended_bank module</a></li>
 <li class="toctree-l1"><a class="reference internal" href="openbankproject_client.account_holder.html">openbankproject_client.account_holder module</a></li>
 <li class="toctree-l1"><a class="reference internal" href="openbankproject_client.account_metadata.html">openbankproject_client.account_metadata module</a></li>
@@ -130,12 +210,14 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../modules.html">API Reference</a></li>
+          <li class="breadcrumb-item"><a href="openbankproject_client.html">openbankproject_client package</a></li>
       <li class="breadcrumb-item active">openbankproject_client.extended_account module</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/modules/openbankproject_client.extended_account.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
-        <a href="openbankproject_client.errors.html" class="btn btn-neutral float-left" title="openbankproject_client.errors module" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="openbankproject_client.examples.html" class="btn btn-neutral float-left" title="openbankproject_client.examples module" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="openbankproject_client.extended_bank.html" class="btn btn-neutral float-right" title="openbankproject_client.extended_bank module" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
   </div>
   <hr/>
@@ -143,15 +225,557 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="openbankproject-client-extended-account-module">
-<h1>openbankproject_client.extended_account module<a class="headerlink" href="#openbankproject-client-extended-account-module" title="Link to this heading"></a></h1>
+  <section id="module-openbankproject_client.extended_account">
+<span id="openbankproject-client-extended-account-module"></span><h1>openbankproject_client.extended_account module<a class="headerlink" href="#module-openbankproject_client.extended_account" title="Permalink to this heading"></a></h1>
+<p>Extended Account endpoints for the OpenBankProject API Client.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="openbankproject_client.extended_account.ExtendedAccountEndpoints">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">openbankproject_client.extended_account.</span></span><span class="sig-name descname"><span class="pre">ExtendedAccountEndpoints</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/openbankproject_client/extended_account.html#ExtendedAccountEndpoints"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.13)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Extended Account-related API endpoints.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.extended_account.ExtendedAccountEndpoints.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/openbankproject_client/extended_account.html#ExtendedAccountEndpoints.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Initialize the endpoint group.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>client</strong> – OpenBankProjectClient instance</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.extended_account.ExtendedAccountEndpoints.get_account_by_id">
+<span class="sig-name descname"><span class="pre">get_account_by_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/extended_account.html#ExtendedAccountEndpoints.get_account_by_id"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.get_account_by_id" title="Permalink to this definition"></a></dt>
+<dd><p>Get account by ID (across all banks).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>account_id</strong> – Account identifier</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing account information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.extended_account.ExtendedAccountEndpoints.get_account_views">
+<span class="sig-name descname"><span class="pre">get_account_views</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/extended_account.html#ExtendedAccountEndpoints.get_account_views"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.get_account_views" title="Permalink to this definition"></a></dt>
+<dd><p>Get views for an account.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing view information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.extended_account.ExtendedAccountEndpoints.create_account_view">
+<span class="sig-name descname"><span class="pre">create_account_view</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/extended_account.html#ExtendedAccountEndpoints.create_account_view"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.create_account_view" title="Permalink to this definition"></a></dt>
+<dd><p>Create a view for an account.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>data</strong> – View data</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing created view information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.extended_account.ExtendedAccountEndpoints.update_account_view">
+<span class="sig-name descname"><span class="pre">update_account_view</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">view_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/extended_account.html#ExtendedAccountEndpoints.update_account_view"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.update_account_view" title="Permalink to this definition"></a></dt>
+<dd><p>Update a view for an account.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>view_id</strong> – View identifier</p></li>
+<li><p><strong>data</strong> – Updated view data</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing updated view information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.extended_account.ExtendedAccountEndpoints.delete_account_view">
+<span class="sig-name descname"><span class="pre">delete_account_view</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">view_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/extended_account.html#ExtendedAccountEndpoints.delete_account_view"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.delete_account_view" title="Permalink to this definition"></a></dt>
+<dd><p>Delete a view for an account.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>view_id</strong> – View identifier</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing deletion status</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.extended_account.ExtendedAccountEndpoints.get_account_permissions">
+<span class="sig-name descname"><span class="pre">get_account_permissions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/extended_account.html#ExtendedAccountEndpoints.get_account_permissions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.get_account_permissions" title="Permalink to this definition"></a></dt>
+<dd><p>Get permissions for an account.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing permission information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.extended_account.ExtendedAccountEndpoints.grant_account_access">
+<span class="sig-name descname"><span class="pre">grant_account_access</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/extended_account.html#ExtendedAccountEndpoints.grant_account_access"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.grant_account_access" title="Permalink to this definition"></a></dt>
+<dd><p>Grant access to an account.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>data</strong> – Access grant data</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing grant status</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.extended_account.ExtendedAccountEndpoints.revoke_account_access">
+<span class="sig-name descname"><span class="pre">revoke_account_access</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">provider</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/extended_account.html#ExtendedAccountEndpoints.revoke_account_access"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.revoke_account_access" title="Permalink to this definition"></a></dt>
+<dd><p>Revoke access to an account.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>provider</strong> – Provider identifier</p></li>
+<li><p><strong>user_id</strong> – User identifier</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing revocation status</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.extended_account.ExtendedAccountEndpoints.create_account">
+<span class="sig-name descname"><span class="pre">create_account</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/extended_account.html#ExtendedAccountEndpoints.create_account"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.create_account" title="Permalink to this definition"></a></dt>
+<dd><p>Create a new account.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>data</strong> – Account data</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing created account information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.extended_account.ExtendedAccountEndpoints.close_account">
+<span class="sig-name descname"><span class="pre">close_account</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/extended_account.html#ExtendedAccountEndpoints.close_account"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.close_account" title="Permalink to this definition"></a></dt>
+<dd><p>Close an account.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing closure status</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.extended_account.ExtendedAccountEndpoints.check_available_funds">
+<span class="sig-name descname"><span class="pre">check_available_funds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">view_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">amount</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">currency</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/extended_account.html#ExtendedAccountEndpoints.check_available_funds"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.check_available_funds" title="Permalink to this definition"></a></dt>
+<dd><p>Check if an account has available funds.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>view_id</strong> – View identifier</p></li>
+<li><p><strong>amount</strong> – Amount to check</p></li>
+<li><p><strong>currency</strong> – Currency of the amount</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing available funds information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.extended_account.ExtendedAccountEndpoints.get_account_with_balance">
+<span class="sig-name descname"><span class="pre">get_account_with_balance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/extended_account.html#ExtendedAccountEndpoints.get_account_with_balance"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.get_account_with_balance" title="Permalink to this definition"></a></dt>
+<dd><p>Get account by ID with balance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing account information with balance</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.extended_account.ExtendedAccountEndpoints.update_account_label">
+<span class="sig-name descname"><span class="pre">update_account_label</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/extended_account.html#ExtendedAccountEndpoints.update_account_label"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.update_account_label" title="Permalink to this definition"></a></dt>
+<dd><p>Update account label.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>data</strong> – Updated label data</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing updated account information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.extended_account.ExtendedAccountEndpoints.get_account_attributes">
+<span class="sig-name descname"><span class="pre">get_account_attributes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/extended_account.html#ExtendedAccountEndpoints.get_account_attributes"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.get_account_attributes" title="Permalink to this definition"></a></dt>
+<dd><p>Get attributes for an account.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing account attribute information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.extended_account.ExtendedAccountEndpoints.add_account_attribute">
+<span class="sig-name descname"><span class="pre">add_account_attribute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/extended_account.html#ExtendedAccountEndpoints.add_account_attribute"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.add_account_attribute" title="Permalink to this definition"></a></dt>
+<dd><p>Add an attribute to an account.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>data</strong> – Attribute data</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing added attribute information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.extended_account.ExtendedAccountEndpoints.update_account_attribute">
+<span class="sig-name descname"><span class="pre">update_account_attribute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">attribute_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/extended_account.html#ExtendedAccountEndpoints.update_account_attribute"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.update_account_attribute" title="Permalink to this definition"></a></dt>
+<dd><p>Update an attribute of an account.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>attribute_id</strong> – Attribute identifier</p></li>
+<li><p><strong>data</strong> – Updated attribute data</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing updated attribute information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.extended_account.ExtendedAccountEndpoints.delete_account_attribute">
+<span class="sig-name descname"><span class="pre">delete_account_attribute</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">attribute_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/extended_account.html#ExtendedAccountEndpoints.delete_account_attribute"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.delete_account_attribute" title="Permalink to this definition"></a></dt>
+<dd><p>Delete an attribute from an account.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>attribute_id</strong> – Attribute identifier</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing deletion status</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.extended_account.ExtendedAccountEndpoints.get_account_tags">
+<span class="sig-name descname"><span class="pre">get_account_tags</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">view_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/extended_account.html#ExtendedAccountEndpoints.get_account_tags"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.get_account_tags" title="Permalink to this definition"></a></dt>
+<dd><p>Get tags for an account.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>view_id</strong> – View identifier</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing account tag information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.extended_account.ExtendedAccountEndpoints.add_account_tag">
+<span class="sig-name descname"><span class="pre">add_account_tag</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">view_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/extended_account.html#ExtendedAccountEndpoints.add_account_tag"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.add_account_tag" title="Permalink to this definition"></a></dt>
+<dd><p>Add a tag to an account.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>view_id</strong> – View identifier</p></li>
+<li><p><strong>data</strong> – Tag data</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing added tag information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.extended_account.ExtendedAccountEndpoints.delete_account_tag">
+<span class="sig-name descname"><span class="pre">delete_account_tag</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">view_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">tag_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/extended_account.html#ExtendedAccountEndpoints.delete_account_tag"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.delete_account_tag" title="Permalink to this definition"></a></dt>
+<dd><p>Delete a tag from an account.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>view_id</strong> – View identifier</p></li>
+<li><p><strong>tag_id</strong> – Tag identifier</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing deletion status</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.extended_account.ExtendedAccountEndpoints.get_account_metadata">
+<span class="sig-name descname"><span class="pre">get_account_metadata</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">view_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/extended_account.html#ExtendedAccountEndpoints.get_account_metadata"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.get_account_metadata" title="Permalink to this definition"></a></dt>
+<dd><p>Get metadata for an account.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>view_id</strong> – View identifier</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing account metadata information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.extended_account.ExtendedAccountEndpoints.get_account_by_iban">
+<span class="sig-name descname"><span class="pre">get_account_by_iban</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iban</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/extended_account.html#ExtendedAccountEndpoints.get_account_by_iban"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.get_account_by_iban" title="Permalink to this definition"></a></dt>
+<dd><p>Get account by IBAN.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>iban</strong> – IBAN identifier</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing account information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.extended_account.ExtendedAccountEndpoints.get_firehose_accounts">
+<span class="sig-name descname"><span class="pre">get_firehose_accounts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/extended_account.html#ExtendedAccountEndpoints.get_firehose_accounts"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.get_firehose_accounts" title="Permalink to this definition"></a></dt>
+<dd><p>Get firehose accounts at a specific bank.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>bank_id</strong> – Bank identifier</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing firehose account information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.extended_account.ExtendedAccountEndpoints.get_firehose_transactions">
+<span class="sig-name descname"><span class="pre">get_firehose_transactions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/extended_account.html#ExtendedAccountEndpoints.get_firehose_transactions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.get_firehose_transactions" title="Permalink to this definition"></a></dt>
+<dd><p>Get firehose transactions for an account.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing firehose transaction information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.extended_account.ExtendedAccountEndpoints.get_firehose_bank_transactions">
+<span class="sig-name descname"><span class="pre">get_firehose_bank_transactions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/extended_account.html#ExtendedAccountEndpoints.get_firehose_bank_transactions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.get_firehose_bank_transactions" title="Permalink to this definition"></a></dt>
+<dd><p>Get firehose transactions for a bank.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>bank_id</strong> – Bank identifier</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing firehose bank transaction information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.extended_account.ExtendedAccountEndpoints.get_account_statistics">
+<span class="sig-name descname"><span class="pre">get_account_statistics</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">view_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/extended_account.html#ExtendedAccountEndpoints.get_account_statistics"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.get_account_statistics" title="Permalink to this definition"></a></dt>
+<dd><p>Get statistics for an account.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>view_id</strong> – View identifier</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing account statistics information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.extended_account.ExtendedAccountEndpoints.get_account_statements">
+<span class="sig-name descname"><span class="pre">get_account_statements</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/extended_account.html#ExtendedAccountEndpoints.get_account_statements"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.get_account_statements" title="Permalink to this definition"></a></dt>
+<dd><p>Get statements for an account.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing account statement information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.extended_account.ExtendedAccountEndpoints.get_account_statement">
+<span class="sig-name descname"><span class="pre">get_account_statement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">statement_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/extended_account.html#ExtendedAccountEndpoints.get_account_statement"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.get_account_statement" title="Permalink to this definition"></a></dt>
+<dd><p>Get statement by ID for an account.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>statement_id</strong> – Statement identifier</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing account statement information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.extended_account.ExtendedAccountEndpoints.get_account_statement_transactions">
+<span class="sig-name descname"><span class="pre">get_account_statement_transactions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">statement_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/extended_account.html#ExtendedAccountEndpoints.get_account_statement_transactions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.get_account_statement_transactions" title="Permalink to this definition"></a></dt>
+<dd><p>Get transactions for a statement.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>statement_id</strong> – Statement identifier</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing statement transaction information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.extended_account.ExtendedAccountEndpoints.generate_account_statement_pdf">
+<span class="sig-name descname"><span class="pre">generate_account_statement_pdf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">statement_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/extended_account.html#ExtendedAccountEndpoints.generate_account_statement_pdf"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.extended_account.ExtendedAccountEndpoints.generate_account_statement_pdf" title="Permalink to this definition"></a></dt>
+<dd><p>Generate PDF for a statement.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>statement_id</strong> – Statement identifier</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing PDF generation information</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="openbankproject_client.errors.html" class="btn btn-neutral float-left" title="openbankproject_client.errors module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="openbankproject_client.examples.html" class="btn btn-neutral float-left" title="openbankproject_client.examples module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="openbankproject_client.extended_bank.html" class="btn btn-neutral float-right" title="openbankproject_client.extended_bank module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

@@ -1,0 +1,489 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>openbankproject_client.client &mdash; OpenBankProject Client 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+
+  
+      <script src="../../_static/jquery.js"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+      <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+      <script src="../../_static/doctools.js"></script>
+      <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #2980B9" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            OpenBankProject Client
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/quickstart.html">Quickstart Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/authentication.html">Authentication</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules.html">API Reference</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Core Components</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.client.html">openbankproject_client.client module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.auth.html">openbankproject_client.auth module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.errors.html">openbankproject_client.errors module</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Account Management</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.extended_account.html">openbankproject_client.extended_account module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.extended_bank.html">openbankproject_client.extended_bank module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.account_holder.html">openbankproject_client.account_holder module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.account_metadata.html">openbankproject_client.account_metadata module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.account_public.html">openbankproject_client.account_public module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.account_application.html">openbankproject_client.account_application module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.account_access.html">openbankproject_client.account_access module</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Transaction Management</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.transaction.html">openbankproject_client.transaction module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.transaction_metadata.html">openbankproject_client.transaction_metadata module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.transaction_request.html">openbankproject_client.transaction_request module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.standing_order.html">openbankproject_client.standing_order module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.direct_debit.html">openbankproject_client.direct_debit module</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">User Management</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.user.html">openbankproject_client.user module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.customer.html">openbankproject_client.customer module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.role.html">openbankproject_client.role module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.kyc.html">openbankproject_client.kyc module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.user_invitation.html">openbankproject_client.user_invitation module</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Management</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.api_management.html">openbankproject_client.api_management module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.api_favorite.html">openbankproject_client.api_favorite module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.api_collection.html">openbankproject_client.api_collection module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.api_configuration.html">openbankproject_client.api_configuration module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.dynamic_endpoint.html">openbankproject_client.dynamic_endpoint module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.dynamic_entity.html">openbankproject_client.dynamic_entity module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.dynamic_message_doc.html">openbankproject_client.dynamic_message_doc module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.dynamic_resource_doc.html">openbankproject_client.dynamic_resource_doc module</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Additional Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.atm.html">openbankproject_client.atm module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.branch.html">openbankproject_client.branch module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.card.html">openbankproject_client.card module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.consent.html">openbankproject_client.consent module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.counterparty.html">openbankproject_client.counterparty module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.counterparty_metadata.html">openbankproject_client.counterparty_metadata module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.counterparty_limits.html">openbankproject_client.counterparty_limits module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.customer_meeting.html">openbankproject_client.customer_meeting module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.customer_message.html">openbankproject_client.customer_message module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.fx.html">openbankproject_client.fx module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.metric.html">openbankproject_client.metric module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.product.html">openbankproject_client.product module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.scope.html">openbankproject_client.scope module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.view_custom.html">openbankproject_client.view_custom module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.view_system.html">openbankproject_client.view_system module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.webhook.html">openbankproject_client.webhook module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.webui_props.html">openbankproject_client.webui_props module</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.examples.html">openbankproject_client.examples module</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #2980B9" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">OpenBankProject Client</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Module code</a></li>
+      <li class="breadcrumb-item active">openbankproject_client.client</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for openbankproject_client.client</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">OpenBankProject API Client</span>
+
+<span class="sd">This module provides a comprehensive client for interacting with the OpenBankProject API v5.1.0.</span>
+<span class="sd">It includes support for all API endpoints, authentication methods, and error handling.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">List</span><span class="p">,</span> <span class="n">Optional</span><span class="p">,</span> <span class="n">Union</span><span class="p">,</span> <span class="n">Any</span>
+
+<span class="kn">from</span> <span class="nn">.auth</span> <span class="kn">import</span> <span class="n">DirectLoginAuth</span><span class="p">,</span> <span class="n">GatewayLoginAuth</span>
+<span class="kn">from</span> <span class="nn">.errors</span> <span class="kn">import</span> <span class="p">(</span>
+    <span class="n">ApiError</span><span class="p">,</span> <span class="n">AuthenticationError</span><span class="p">,</span> <span class="n">ResourceNotFoundError</span><span class="p">,</span> 
+    <span class="n">ValidationError</span><span class="p">,</span> <span class="ne">PermissionError</span><span class="p">,</span> <span class="n">ServerError</span>
+<span class="p">)</span>
+
+<span class="c1"># Import all endpoint modules</span>
+<span class="kn">from</span> <span class="nn">.account_access</span> <span class="kn">import</span> <span class="n">AccountAccessEndpoints</span>
+<span class="kn">from</span> <span class="nn">.account_application</span> <span class="kn">import</span> <span class="n">AccountApplicationEndpoints</span>
+<span class="kn">from</span> <span class="nn">.account_holder</span> <span class="kn">import</span> <span class="n">AccountHolderEndpoints</span>
+<span class="kn">from</span> <span class="nn">.account_metadata</span> <span class="kn">import</span> <span class="n">AccountMetadataEndpoints</span>
+<span class="kn">from</span> <span class="nn">.account_public</span> <span class="kn">import</span> <span class="n">AccountPublicEndpoints</span>
+<span class="kn">from</span> <span class="nn">.api_collection</span> <span class="kn">import</span> <span class="n">ApiCollectionEndpoints</span>
+<span class="kn">from</span> <span class="nn">.api_configuration</span> <span class="kn">import</span> <span class="n">ApiConfigurationEndpoints</span>
+<span class="kn">from</span> <span class="nn">.api_favorite</span> <span class="kn">import</span> <span class="n">ApiFavoriteEndpoints</span>
+<span class="kn">from</span> <span class="nn">.api_management</span> <span class="kn">import</span> <span class="n">ApiManagementEndpoints</span>
+<span class="kn">from</span> <span class="nn">.atm</span> <span class="kn">import</span> <span class="n">AtmEndpoints</span>
+<span class="kn">from</span> <span class="nn">.branch</span> <span class="kn">import</span> <span class="n">BranchEndpoints</span>
+<span class="kn">from</span> <span class="nn">.card</span> <span class="kn">import</span> <span class="n">CardEndpoints</span>
+<span class="kn">from</span> <span class="nn">.connector_method</span> <span class="kn">import</span> <span class="n">ConnectorMethodEndpoints</span>
+<span class="kn">from</span> <span class="nn">.consent</span> <span class="kn">import</span> <span class="n">ConsentEndpoints</span>
+<span class="kn">from</span> <span class="nn">.counterparty</span> <span class="kn">import</span> <span class="n">CounterpartyEndpoints</span>
+<span class="kn">from</span> <span class="nn">.counterparty_limits</span> <span class="kn">import</span> <span class="n">CounterpartyLimitsEndpoints</span>
+<span class="kn">from</span> <span class="nn">.counterparty_metadata</span> <span class="kn">import</span> <span class="n">CounterpartyMetadataEndpoints</span>
+<span class="kn">from</span> <span class="nn">.customer</span> <span class="kn">import</span> <span class="n">CustomerEndpoints</span>
+<span class="kn">from</span> <span class="nn">.customer_meeting</span> <span class="kn">import</span> <span class="n">CustomerMeetingEndpoints</span>
+<span class="kn">from</span> <span class="nn">.customer_message</span> <span class="kn">import</span> <span class="n">CustomerMessageEndpoints</span>
+<span class="kn">from</span> <span class="nn">.direct_debit</span> <span class="kn">import</span> <span class="n">DirectDebitEndpoints</span>
+<span class="kn">from</span> <span class="nn">.dynamic_endpoint</span> <span class="kn">import</span> <span class="n">DynamicEndpointEndpoints</span>
+<span class="kn">from</span> <span class="nn">.dynamic_entity</span> <span class="kn">import</span> <span class="n">DynamicEntityEndpoints</span>
+<span class="kn">from</span> <span class="nn">.dynamic_message_doc</span> <span class="kn">import</span> <span class="n">DynamicMessageDocEndpoints</span>
+<span class="kn">from</span> <span class="nn">.dynamic_resource_doc</span> <span class="kn">import</span> <span class="n">DynamicResourceDocEndpoints</span>
+<span class="kn">from</span> <span class="nn">.extended_account</span> <span class="kn">import</span> <span class="n">ExtendedAccountEndpoints</span>
+<span class="kn">from</span> <span class="nn">.extended_bank</span> <span class="kn">import</span> <span class="n">ExtendedBankEndpoints</span>
+<span class="kn">from</span> <span class="nn">.fx</span> <span class="kn">import</span> <span class="n">FxEndpoints</span>
+<span class="kn">from</span> <span class="nn">.kyc</span> <span class="kn">import</span> <span class="n">KycEndpoints</span>
+<span class="kn">from</span> <span class="nn">.metric</span> <span class="kn">import</span> <span class="n">MetricEndpoints</span>
+<span class="kn">from</span> <span class="nn">.product</span> <span class="kn">import</span> <span class="n">ProductEndpoints</span>
+<span class="kn">from</span> <span class="nn">.role</span> <span class="kn">import</span> <span class="n">RoleEndpoints</span>
+<span class="kn">from</span> <span class="nn">.scheduled_event</span> <span class="kn">import</span> <span class="n">ScheduledEventEndpoints</span>
+<span class="kn">from</span> <span class="nn">.scope</span> <span class="kn">import</span> <span class="n">ScopeEndpoints</span>
+<span class="kn">from</span> <span class="nn">.standing_order</span> <span class="kn">import</span> <span class="n">StandingOrderEndpoints</span>
+<span class="kn">from</span> <span class="nn">.transaction</span> <span class="kn">import</span> <span class="n">TransactionEndpoints</span>
+<span class="kn">from</span> <span class="nn">.transaction_metadata</span> <span class="kn">import</span> <span class="n">TransactionMetadataEndpoints</span>
+<span class="kn">from</span> <span class="nn">.transaction_request</span> <span class="kn">import</span> <span class="n">TransactionRequestEndpoints</span>
+<span class="kn">from</span> <span class="nn">.user</span> <span class="kn">import</span> <span class="n">UserEndpoints</span>
+<span class="kn">from</span> <span class="nn">.user_invitation</span> <span class="kn">import</span> <span class="n">UserInvitationEndpoints</span>
+<span class="kn">from</span> <span class="nn">.view_custom</span> <span class="kn">import</span> <span class="n">ViewCustomEndpoints</span>
+<span class="kn">from</span> <span class="nn">.view_system</span> <span class="kn">import</span> <span class="n">ViewSystemEndpoints</span>
+<span class="kn">from</span> <span class="nn">.webhook</span> <span class="kn">import</span> <span class="n">WebhookEndpoints</span>
+<span class="kn">from</span> <span class="nn">.webui_props</span> <span class="kn">import</span> <span class="n">WebUiPropsEndpoints</span>
+
+
+<div class="viewcode-block" id="OpenBankProjectClient"><a class="viewcode-back" href="../../modules/openbankproject_client.client.html#openbankproject_client.OpenBankProjectClient">[docs]</a><span class="k">class</span> <span class="nc">OpenBankProjectClient</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Client for the OpenBankProject API.</span>
+<span class="sd">    </span>
+<span class="sd">    This client provides access to all API endpoints and handles authentication,</span>
+<span class="sd">    request formatting, and error handling.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    
+<div class="viewcode-block" id="OpenBankProjectClient.__init__"><a class="viewcode-back" href="../../modules/openbankproject_client.client.html#openbankproject_client.OpenBankProjectClient.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> 
+        <span class="n">base_url</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;https://api.openbankproject.com&quot;</span><span class="p">,</span>
+        <span class="n">api_version</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;v5.1.0&quot;</span><span class="p">,</span>
+        <span class="n">direct_login_token</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">username</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">password</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">consumer_key</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">gateway_login_token</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">timeout</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">30</span>
+    <span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Initialize the OpenBankProject API client.</span>
+<span class="sd">        </span>
+<span class="sd">        Args:</span>
+<span class="sd">            base_url: Base URL of the API server</span>
+<span class="sd">            api_version: API version to use</span>
+<span class="sd">            direct_login_token: Pre-generated DirectLogin token (if available)</span>
+<span class="sd">            username: Username for DirectLogin authentication</span>
+<span class="sd">            password: Password for DirectLogin authentication</span>
+<span class="sd">            consumer_key: Consumer key for DirectLogin authentication</span>
+<span class="sd">            gateway_login_token: Pre-generated GatewayLogin token (if available)</span>
+<span class="sd">            timeout: Request timeout in seconds</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">base_url</span> <span class="o">=</span> <span class="n">base_url</span><span class="o">.</span><span class="n">rstrip</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">api_version</span> <span class="o">=</span> <span class="n">api_version</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">timeout</span> <span class="o">=</span> <span class="n">timeout</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">session</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">Session</span><span class="p">()</span>
+        
+        <span class="c1"># Set up authentication</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">auth</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">if</span> <span class="n">direct_login_token</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">auth</span> <span class="o">=</span> <span class="n">DirectLoginAuth</span><span class="p">(</span><span class="n">token</span><span class="o">=</span><span class="n">direct_login_token</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">username</span> <span class="ow">and</span> <span class="n">password</span> <span class="ow">and</span> <span class="n">consumer_key</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">auth</span> <span class="o">=</span> <span class="n">DirectLoginAuth</span><span class="p">(</span>
+                <span class="n">username</span><span class="o">=</span><span class="n">username</span><span class="p">,</span>
+                <span class="n">password</span><span class="o">=</span><span class="n">password</span><span class="p">,</span>
+                <span class="n">consumer_key</span><span class="o">=</span><span class="n">consumer_key</span>
+            <span class="p">)</span>
+        <span class="k">elif</span> <span class="n">gateway_login_token</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">auth</span> <span class="o">=</span> <span class="n">GatewayLoginAuth</span><span class="p">(</span><span class="n">token</span><span class="o">=</span><span class="n">gateway_login_token</span><span class="p">)</span>
+            
+        <span class="c1"># Initialize endpoint groups</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">account_access</span> <span class="o">=</span> <span class="n">AccountAccessEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">account_application</span> <span class="o">=</span> <span class="n">AccountApplicationEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">account_holder</span> <span class="o">=</span> <span class="n">AccountHolderEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">account_metadata</span> <span class="o">=</span> <span class="n">AccountMetadataEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">account_public</span> <span class="o">=</span> <span class="n">AccountPublicEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">api_collection</span> <span class="o">=</span> <span class="n">ApiCollectionEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">api_configuration</span> <span class="o">=</span> <span class="n">ApiConfigurationEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">api_favorite</span> <span class="o">=</span> <span class="n">ApiFavoriteEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">api_management</span> <span class="o">=</span> <span class="n">ApiManagementEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">atm</span> <span class="o">=</span> <span class="n">AtmEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">branch</span> <span class="o">=</span> <span class="n">BranchEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">card</span> <span class="o">=</span> <span class="n">CardEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">connector_method</span> <span class="o">=</span> <span class="n">ConnectorMethodEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">consent</span> <span class="o">=</span> <span class="n">ConsentEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">counterparty</span> <span class="o">=</span> <span class="n">CounterpartyEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">counterparty_limits</span> <span class="o">=</span> <span class="n">CounterpartyLimitsEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">counterparty_metadata</span> <span class="o">=</span> <span class="n">CounterpartyMetadataEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">customer</span> <span class="o">=</span> <span class="n">CustomerEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">customer_meeting</span> <span class="o">=</span> <span class="n">CustomerMeetingEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">customer_message</span> <span class="o">=</span> <span class="n">CustomerMessageEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">direct_debit</span> <span class="o">=</span> <span class="n">DirectDebitEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">dynamic_endpoint</span> <span class="o">=</span> <span class="n">DynamicEndpointEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">dynamic_entity</span> <span class="o">=</span> <span class="n">DynamicEntityEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">dynamic_message_doc</span> <span class="o">=</span> <span class="n">DynamicMessageDocEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">dynamic_resource_doc</span> <span class="o">=</span> <span class="n">DynamicResourceDocEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">extended_account</span> <span class="o">=</span> <span class="n">ExtendedAccountEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">extended_bank</span> <span class="o">=</span> <span class="n">ExtendedBankEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fx</span> <span class="o">=</span> <span class="n">FxEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">kyc</span> <span class="o">=</span> <span class="n">KycEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">metric</span> <span class="o">=</span> <span class="n">MetricEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">product</span> <span class="o">=</span> <span class="n">ProductEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">role</span> <span class="o">=</span> <span class="n">RoleEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">scheduled_event</span> <span class="o">=</span> <span class="n">ScheduledEventEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">scope</span> <span class="o">=</span> <span class="n">ScopeEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">standing_order</span> <span class="o">=</span> <span class="n">StandingOrderEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">transaction</span> <span class="o">=</span> <span class="n">TransactionEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">transaction_metadata</span> <span class="o">=</span> <span class="n">TransactionMetadataEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">transaction_request</span> <span class="o">=</span> <span class="n">TransactionRequestEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">user</span> <span class="o">=</span> <span class="n">UserEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">user_invitation</span> <span class="o">=</span> <span class="n">UserInvitationEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">view_custom</span> <span class="o">=</span> <span class="n">ViewCustomEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">view_system</span> <span class="o">=</span> <span class="n">ViewSystemEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">webhook</span> <span class="o">=</span> <span class="n">WebhookEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">webui_props</span> <span class="o">=</span> <span class="n">WebUiPropsEndpoints</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="OpenBankProjectClient._build_url"><a class="viewcode-back" href="../../modules/openbankproject_client.client.html#openbankproject_client.OpenBankProjectClient._build_url">[docs]</a>    <span class="k">def</span> <span class="nf">_build_url</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Build a full URL for the given endpoint.</span>
+<span class="sd">        </span>
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint: API endpoint path</span>
+<span class="sd">            </span>
+<span class="sd">        Returns:</span>
+<span class="sd">            Full URL including base URL and API version</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># Remove leading slash if present</span>
+        <span class="n">endpoint</span> <span class="o">=</span> <span class="n">endpoint</span><span class="o">.</span><span class="n">lstrip</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">api_version</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">endpoint</span><span class="si">}</span><span class="s2">&quot;</span></div>
+    
+<div class="viewcode-block" id="OpenBankProjectClient._handle_response"><a class="viewcode-back" href="../../modules/openbankproject_client.client.html#openbankproject_client.OpenBankProjectClient._handle_response">[docs]</a>    <span class="k">def</span> <span class="nf">_handle_response</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">:</span> <span class="n">requests</span><span class="o">.</span><span class="n">Response</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Handle API response and raise appropriate exceptions for errors.</span>
+<span class="sd">        </span>
+<span class="sd">        Args:</span>
+<span class="sd">            response: Response object from requests</span>
+<span class="sd">            </span>
+<span class="sd">        Returns:</span>
+<span class="sd">            Parsed JSON response as dictionary</span>
+<span class="sd">            </span>
+<span class="sd">        Raises:</span>
+<span class="sd">            AuthenticationError: For authentication issues (401)</span>
+<span class="sd">            PermissionError: For permission issues (403)</span>
+<span class="sd">            ResourceNotFoundError: When resource is not found (404)</span>
+<span class="sd">            ValidationError: For validation errors (400)</span>
+<span class="sd">            ServerError: For server errors (5xx)</span>
+<span class="sd">            ApiError: For other API errors</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">response_json</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+        <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+            <span class="n">response_json</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="p">:</span> <span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">}</span>
+            
+        <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">&gt;=</span> <span class="mi">200</span> <span class="ow">and</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">&lt;</span> <span class="mi">300</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">response_json</span>
+            
+        <span class="n">error_msg</span> <span class="o">=</span> <span class="n">response_json</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;message&#39;</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+        
+        <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">401</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">AuthenticationError</span><span class="p">(</span><span class="n">error_msg</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span><span class="p">,</span> <span class="n">response_json</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">403</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">PermissionError</span><span class="p">(</span><span class="n">error_msg</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span><span class="p">,</span> <span class="n">response_json</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">404</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">ResourceNotFoundError</span><span class="p">(</span><span class="n">error_msg</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span><span class="p">,</span> <span class="n">response_json</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">400</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">ValidationError</span><span class="p">(</span><span class="n">error_msg</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span><span class="p">,</span> <span class="n">response_json</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">&gt;=</span> <span class="mi">500</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">ServerError</span><span class="p">(</span><span class="n">error_msg</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span><span class="p">,</span> <span class="n">response_json</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">ApiError</span><span class="p">(</span><span class="n">error_msg</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span><span class="p">,</span> <span class="n">response_json</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="OpenBankProjectClient.request"><a class="viewcode-back" href="../../modules/openbankproject_client.client.html#openbankproject_client.OpenBankProjectClient.request">[docs]</a>    <span class="k">def</span> <span class="nf">request</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">method</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">endpoint</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Make a request to the API.</span>
+<span class="sd">        </span>
+<span class="sd">        Args:</span>
+<span class="sd">            method: HTTP method (GET, POST, PUT, DELETE)</span>
+<span class="sd">            endpoint: API endpoint path</span>
+<span class="sd">            **kwargs: Additional arguments to pass to requests</span>
+<span class="sd">            </span>
+<span class="sd">        Returns:</span>
+<span class="sd">            Parsed JSON response as dictionary</span>
+<span class="sd">            </span>
+<span class="sd">        Raises:</span>
+<span class="sd">            Various exceptions based on API response</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">url</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_build_url</span><span class="p">(</span><span class="n">endpoint</span><span class="p">)</span>
+        
+        <span class="c1"># Add authentication headers if available</span>
+        <span class="n">headers</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s1">&#39;headers&#39;</span><span class="p">,</span> <span class="p">{})</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">auth</span><span class="p">:</span>
+            <span class="n">auth_headers</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">auth</span><span class="o">.</span><span class="n">get_headers</span><span class="p">()</span>
+            <span class="n">headers</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">auth_headers</span><span class="p">)</span>
+            
+        <span class="c1"># Set default content type for requests with body</span>
+        <span class="k">if</span> <span class="n">method</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;POST&#39;</span><span class="p">,</span> <span class="s1">&#39;PUT&#39;</span><span class="p">,</span> <span class="s1">&#39;PATCH&#39;</span><span class="p">]</span> <span class="ow">and</span> <span class="s1">&#39;data&#39;</span> <span class="ow">in</span> <span class="n">kwargs</span><span class="p">:</span>
+            <span class="k">if</span> <span class="s1">&#39;content-type&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">{</span><span class="n">k</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span> <span class="n">v</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">headers</span><span class="o">.</span><span class="n">items</span><span class="p">()}:</span>
+                <span class="n">headers</span><span class="p">[</span><span class="s1">&#39;Content-Type&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;application/json&#39;</span>
+                
+            <span class="c1"># Convert data to JSON if it&#39;s a dict</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">kwargs</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">],</span> <span class="nb">dict</span><span class="p">):</span>
+                <span class="n">kwargs</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">kwargs</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">])</span>
+                
+        <span class="n">kwargs</span><span class="p">[</span><span class="s1">&#39;headers&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">headers</span>
+        <span class="n">kwargs</span><span class="p">[</span><span class="s1">&#39;timeout&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;timeout&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">timeout</span><span class="p">)</span>
+        
+        <span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="n">method</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_handle_response</span><span class="p">(</span><span class="n">response</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="OpenBankProjectClient.get"><a class="viewcode-back" href="../../modules/openbankproject_client.client.html#openbankproject_client.OpenBankProjectClient.get">[docs]</a>    <span class="k">def</span> <span class="nf">get</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Make a GET request to the API.</span>
+<span class="sd">        </span>
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint: API endpoint path</span>
+<span class="sd">            **kwargs: Additional arguments to pass to requests</span>
+<span class="sd">            </span>
+<span class="sd">        Returns:</span>
+<span class="sd">            Parsed JSON response as dictionary</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s1">&#39;GET&#39;</span><span class="p">,</span> <span class="n">endpoint</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="OpenBankProjectClient.post"><a class="viewcode-back" href="../../modules/openbankproject_client.client.html#openbankproject_client.OpenBankProjectClient.post">[docs]</a>    <span class="k">def</span> <span class="nf">post</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Make a POST request to the API.</span>
+<span class="sd">        </span>
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint: API endpoint path</span>
+<span class="sd">            **kwargs: Additional arguments to pass to requests</span>
+<span class="sd">            </span>
+<span class="sd">        Returns:</span>
+<span class="sd">            Parsed JSON response as dictionary</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s1">&#39;POST&#39;</span><span class="p">,</span> <span class="n">endpoint</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="OpenBankProjectClient.put"><a class="viewcode-back" href="../../modules/openbankproject_client.client.html#openbankproject_client.OpenBankProjectClient.put">[docs]</a>    <span class="k">def</span> <span class="nf">put</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Make a PUT request to the API.</span>
+<span class="sd">        </span>
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint: API endpoint path</span>
+<span class="sd">            **kwargs: Additional arguments to pass to requests</span>
+<span class="sd">            </span>
+<span class="sd">        Returns:</span>
+<span class="sd">            Parsed JSON response as dictionary</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s1">&#39;PUT&#39;</span><span class="p">,</span> <span class="n">endpoint</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="OpenBankProjectClient.delete"><a class="viewcode-back" href="../../modules/openbankproject_client.client.html#openbankproject_client.OpenBankProjectClient.delete">[docs]</a>    <span class="k">def</span> <span class="nf">delete</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Make a DELETE request to the API.</span>
+<span class="sd">        </span>
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint: API endpoint path</span>
+<span class="sd">            **kwargs: Additional arguments to pass to requests</span>
+<span class="sd">            </span>
+<span class="sd">        Returns:</span>
+<span class="sd">            Parsed JSON response as dictionary</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s1">&#39;DELETE&#39;</span><span class="p">,</span> <span class="n">endpoint</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="OpenBankProjectClient.authenticate"><a class="viewcode-back" href="../../modules/openbankproject_client.client.html#openbankproject_client.OpenBankProjectClient.authenticate">[docs]</a>    <span class="k">def</span> <span class="nf">authenticate</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Authenticate with the API if not already authenticated.</span>
+<span class="sd">        </span>
+<span class="sd">        Returns:</span>
+<span class="sd">            True if authentication was successful</span>
+<span class="sd">            </span>
+<span class="sd">        Raises:</span>
+<span class="sd">            AuthenticationError: If authentication fails</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">auth</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">auth</span><span class="o">.</span><span class="n">authenticate</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">False</span></div></div>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Joseph Pollack.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,21 +1,21 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" data-content_root="./">
+<html class="writer-html5" lang="en">
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Welcome to OpenBankProject Client Documentation &mdash; OpenBankProject Client 1.0.0 documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css" />
 
   
-      <script src="_static/jquery.js?v=5d32c60e"></script>
-      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="_static/documentation_options.js?v=8d563738"></script>
-      <script src="_static/doctools.js?v=9bcbadda"></script>
-      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/jquery.js"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+      <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+      <script src="_static/doctools.js"></script>
+      <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -41,11 +41,12 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="getting_started/installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="getting_started/quickstart.html">Quickstart Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="getting_started/authentication.html">Authentication</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">API Reference</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Core Components</span></p>
 <ul>
@@ -142,10 +143,10 @@
            <div itemprop="articleBody">
              
   <section id="welcome-to-openbankproject-client-documentation">
-<h1>Welcome to OpenBankProject Client Documentation<a class="headerlink" href="#welcome-to-openbankproject-client-documentation" title="Link to this heading"></a></h1>
-<p>The OpenBankProject Client is a Python library that provides a comprehensive interface to the OpenBankProject API. This documentation will help you understand how to use the client effectively.</p>
+<h1>Welcome to OpenBankProject Client Documentation<a class="headerlink" href="#welcome-to-openbankproject-client-documentation" title="Permalink to this heading"></a></h1>
+<p>This library provides a Python client for interacting with the OpenBankProject API. It supports various authentication methods and provides a comprehensive set of features for working with banks, accounts, transactions, and more.</p>
 <div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="getting_started/installation.html">Installation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="getting_started/installation.html#requirements">Requirements</a></li>
@@ -169,92 +170,263 @@
 <li class="toctree-l2"><a class="reference internal" href="getting_started/authentication.html#error-handling">Error Handling</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">API Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules.html#core-modules">Core Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules.html#account-management">Account Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules.html#bank-management">Bank Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules.html#transaction-management">Transaction Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules.html#customer-management">Customer Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules.html#api-management">API Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules.html#user-management">User Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules.html#additional-features">Additional Features</a></li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">Core Components</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.client.html">openbankproject_client.client module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.auth.html">openbankproject_client.auth module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.errors.html">openbankproject_client.errors module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.client.html">openbankproject_client.client module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.client.html#openbankproject_client.client.OpenBankProjectClient"><code class="docutils literal notranslate"><span class="pre">OpenBankProjectClient</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.auth.html">openbankproject_client.auth module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.auth.html#openbankproject_client.auth.DirectLoginAuth"><code class="docutils literal notranslate"><span class="pre">DirectLoginAuth</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.auth.html#openbankproject_client.auth.GatewayLoginAuth"><code class="docutils literal notranslate"><span class="pre">GatewayLoginAuth</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.auth.html#openbankproject_client.auth.Authentication"><code class="docutils literal notranslate"><span class="pre">Authentication</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.errors.html">openbankproject_client.errors module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.errors.html#openbankproject_client.errors.ApiError"><code class="docutils literal notranslate"><span class="pre">ApiError</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.errors.html#openbankproject_client.errors.AuthenticationError"><code class="docutils literal notranslate"><span class="pre">AuthenticationError</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.errors.html#openbankproject_client.errors.ResourceNotFoundError"><code class="docutils literal notranslate"><span class="pre">ResourceNotFoundError</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.errors.html#openbankproject_client.errors.ValidationError"><code class="docutils literal notranslate"><span class="pre">ValidationError</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.errors.html#openbankproject_client.errors.PermissionError"><code class="docutils literal notranslate"><span class="pre">PermissionError</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.errors.html#openbankproject_client.errors.RateLimitError"><code class="docutils literal notranslate"><span class="pre">RateLimitError</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.errors.html#openbankproject_client.errors.ServerError"><code class="docutils literal notranslate"><span class="pre">ServerError</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.errors.html#openbankproject_client.errors.ErrorHandler"><code class="docutils literal notranslate"><span class="pre">ErrorHandler</span></code></a></li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">Account Management</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.extended_account.html">openbankproject_client.extended_account module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.extended_bank.html">openbankproject_client.extended_bank module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.account_holder.html">openbankproject_client.account_holder module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.account_metadata.html">openbankproject_client.account_metadata module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.account_public.html">openbankproject_client.account_public module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.account_application.html">openbankproject_client.account_application module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.account_access.html">openbankproject_client.account_access module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.extended_account.html">openbankproject_client.extended_account module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.extended_account.html#openbankproject_client.extended_account.ExtendedAccountEndpoints"><code class="docutils literal notranslate"><span class="pre">ExtendedAccountEndpoints</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.extended_bank.html">openbankproject_client.extended_bank module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.extended_bank.html#openbankproject_client.extended_bank.ExtendedBankEndpoints"><code class="docutils literal notranslate"><span class="pre">ExtendedBankEndpoints</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.account_holder.html">openbankproject_client.account_holder module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.account_holder.html#openbankproject_client.account_holder.AccountHolderEndpoints"><code class="docutils literal notranslate"><span class="pre">AccountHolderEndpoints</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.account_metadata.html">openbankproject_client.account_metadata module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.account_metadata.html#openbankproject_client.account_metadata.AccountMetadataEndpoints"><code class="docutils literal notranslate"><span class="pre">AccountMetadataEndpoints</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.account_public.html">openbankproject_client.account_public module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.account_public.html#openbankproject_client.account_public.AccountPublicEndpoints"><code class="docutils literal notranslate"><span class="pre">AccountPublicEndpoints</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.account_application.html">openbankproject_client.account_application module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.account_application.html#openbankproject_client.account_application.AccountApplicationEndpoints"><code class="docutils literal notranslate"><span class="pre">AccountApplicationEndpoints</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.account_access.html">openbankproject_client.account_access module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.account_access.html#openbankproject_client.account_access.AccountAccessEndpoints"><code class="docutils literal notranslate"><span class="pre">AccountAccessEndpoints</span></code></a></li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">Transaction Management</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.transaction.html">openbankproject_client.transaction module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.transaction_metadata.html">openbankproject_client.transaction_metadata module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.transaction_request.html">openbankproject_client.transaction_request module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.standing_order.html">openbankproject_client.standing_order module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.direct_debit.html">openbankproject_client.direct_debit module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.transaction.html">openbankproject_client.transaction module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.transaction.html#openbankproject_client.transaction.TransactionEndpoints"><code class="docutils literal notranslate"><span class="pre">TransactionEndpoints</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.transaction_metadata.html">openbankproject_client.transaction_metadata module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.transaction_metadata.html#openbankproject_client.transaction_metadata.TransactionMetadataEndpoints"><code class="docutils literal notranslate"><span class="pre">TransactionMetadataEndpoints</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.transaction_request.html">openbankproject_client.transaction_request module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.transaction_request.html#openbankproject_client.transaction_request.TransactionRequestEndpoints"><code class="docutils literal notranslate"><span class="pre">TransactionRequestEndpoints</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.standing_order.html">openbankproject_client.standing_order module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.standing_order.html#openbankproject_client.standing_order.StandingOrderEndpoints"><code class="docutils literal notranslate"><span class="pre">StandingOrderEndpoints</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.direct_debit.html">openbankproject_client.direct_debit module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.direct_debit.html#openbankproject_client.direct_debit.DirectDebitEndpoints"><code class="docutils literal notranslate"><span class="pre">DirectDebitEndpoints</span></code></a></li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">User Management</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.user.html">openbankproject_client.user module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.customer.html">openbankproject_client.customer module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.role.html">openbankproject_client.role module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.kyc.html">openbankproject_client.kyc module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.user_invitation.html">openbankproject_client.user_invitation module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.user.html">openbankproject_client.user module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.user.html#openbankproject_client.user.UserEndpoints"><code class="docutils literal notranslate"><span class="pre">UserEndpoints</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.customer.html">openbankproject_client.customer module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.customer.html#openbankproject_client.customer.CustomerEndpoints"><code class="docutils literal notranslate"><span class="pre">CustomerEndpoints</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.role.html">openbankproject_client.role module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.role.html#openbankproject_client.role.RoleEndpoints"><code class="docutils literal notranslate"><span class="pre">RoleEndpoints</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.kyc.html">openbankproject_client.kyc module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.kyc.html#openbankproject_client.kyc.KycEndpoints"><code class="docutils literal notranslate"><span class="pre">KycEndpoints</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.user_invitation.html">openbankproject_client.user_invitation module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.user_invitation.html#openbankproject_client.user_invitation.UserInvitationEndpoints"><code class="docutils literal notranslate"><span class="pre">UserInvitationEndpoints</span></code></a></li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">API Management</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.api_management.html">openbankproject_client.api_management module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.api_favorite.html">openbankproject_client.api_favorite module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.api_collection.html">openbankproject_client.api_collection module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.api_configuration.html">openbankproject_client.api_configuration module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.dynamic_endpoint.html">openbankproject_client.dynamic_endpoint module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.dynamic_entity.html">openbankproject_client.dynamic_entity module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.dynamic_message_doc.html">openbankproject_client.dynamic_message_doc module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.dynamic_resource_doc.html">openbankproject_client.dynamic_resource_doc module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.api_management.html">openbankproject_client.api_management module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.api_management.html#openbankproject_client.api_management.ApiManagementEndpoints"><code class="docutils literal notranslate"><span class="pre">ApiManagementEndpoints</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.api_favorite.html">openbankproject_client.api_favorite module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.api_favorite.html#openbankproject_client.api_favorite.ApiFavoriteEndpoints"><code class="docutils literal notranslate"><span class="pre">ApiFavoriteEndpoints</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.api_collection.html">openbankproject_client.api_collection module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.api_collection.html#openbankproject_client.api_collection.ApiCollectionEndpoints"><code class="docutils literal notranslate"><span class="pre">ApiCollectionEndpoints</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.api_configuration.html">openbankproject_client.api_configuration module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.api_configuration.html#openbankproject_client.api_configuration.ApiConfigurationEndpoints"><code class="docutils literal notranslate"><span class="pre">ApiConfigurationEndpoints</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.dynamic_endpoint.html">openbankproject_client.dynamic_endpoint module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.dynamic_endpoint.html#openbankproject_client.dynamic_endpoint.DynamicEndpointEndpoints"><code class="docutils literal notranslate"><span class="pre">DynamicEndpointEndpoints</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.dynamic_entity.html">openbankproject_client.dynamic_entity module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.dynamic_entity.html#openbankproject_client.dynamic_entity.DynamicEntityEndpoints"><code class="docutils literal notranslate"><span class="pre">DynamicEntityEndpoints</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.dynamic_message_doc.html">openbankproject_client.dynamic_message_doc module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.dynamic_message_doc.html#openbankproject_client.dynamic_message_doc.DynamicMessageDocEndpoints"><code class="docutils literal notranslate"><span class="pre">DynamicMessageDocEndpoints</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.dynamic_resource_doc.html">openbankproject_client.dynamic_resource_doc module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.dynamic_resource_doc.html#openbankproject_client.dynamic_resource_doc.DynamicResourceDocEndpoints"><code class="docutils literal notranslate"><span class="pre">DynamicResourceDocEndpoints</span></code></a></li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">Additional Features</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.atm.html">openbankproject_client.atm module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.branch.html">openbankproject_client.branch module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.card.html">openbankproject_client.card module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.consent.html">openbankproject_client.consent module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.counterparty.html">openbankproject_client.counterparty module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.counterparty_metadata.html">openbankproject_client.counterparty_metadata module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.counterparty_limits.html">openbankproject_client.counterparty_limits module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.customer_meeting.html">openbankproject_client.customer_meeting module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.customer_message.html">openbankproject_client.customer_message module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.fx.html">openbankproject_client.fx module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.metric.html">openbankproject_client.metric module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.product.html">openbankproject_client.product module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.scope.html">openbankproject_client.scope module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.view_custom.html">openbankproject_client.view_custom module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.view_system.html">openbankproject_client.view_system module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.webhook.html">openbankproject_client.webhook module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.webui_props.html">openbankproject_client.webui_props module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.atm.html">openbankproject_client.atm module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.atm.html#openbankproject_client.atm.AtmEndpoints"><code class="docutils literal notranslate"><span class="pre">AtmEndpoints</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.branch.html">openbankproject_client.branch module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.branch.html#openbankproject_client.branch.BranchEndpoints"><code class="docutils literal notranslate"><span class="pre">BranchEndpoints</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.card.html">openbankproject_client.card module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.card.html#openbankproject_client.card.CardEndpoints"><code class="docutils literal notranslate"><span class="pre">CardEndpoints</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.consent.html">openbankproject_client.consent module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.consent.html#openbankproject_client.consent.ConsentEndpoints"><code class="docutils literal notranslate"><span class="pre">ConsentEndpoints</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.counterparty.html">openbankproject_client.counterparty module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.counterparty.html#openbankproject_client.counterparty.CounterpartyEndpoints"><code class="docutils literal notranslate"><span class="pre">CounterpartyEndpoints</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.counterparty_metadata.html">openbankproject_client.counterparty_metadata module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.counterparty_metadata.html#openbankproject_client.counterparty_metadata.CounterpartyMetadataEndpoints"><code class="docutils literal notranslate"><span class="pre">CounterpartyMetadataEndpoints</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.counterparty_limits.html">openbankproject_client.counterparty_limits module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.counterparty_limits.html#openbankproject_client.counterparty_limits.CounterpartyLimitsEndpoints"><code class="docutils literal notranslate"><span class="pre">CounterpartyLimitsEndpoints</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.customer_meeting.html">openbankproject_client.customer_meeting module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.customer_meeting.html#openbankproject_client.customer_meeting.CustomerMeetingEndpoints"><code class="docutils literal notranslate"><span class="pre">CustomerMeetingEndpoints</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.customer_message.html">openbankproject_client.customer_message module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.customer_message.html#openbankproject_client.customer_message.CustomerMessageEndpoints"><code class="docutils literal notranslate"><span class="pre">CustomerMessageEndpoints</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.fx.html">openbankproject_client.fx module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.fx.html#openbankproject_client.fx.FxEndpoints"><code class="docutils literal notranslate"><span class="pre">FxEndpoints</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.metric.html">openbankproject_client.metric module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.metric.html#openbankproject_client.metric.MetricEndpoints"><code class="docutils literal notranslate"><span class="pre">MetricEndpoints</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.product.html">openbankproject_client.product module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.product.html#openbankproject_client.product.ProductEndpoints"><code class="docutils literal notranslate"><span class="pre">ProductEndpoints</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.scope.html">openbankproject_client.scope module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.scope.html#openbankproject_client.scope.ScopeEndpoints"><code class="docutils literal notranslate"><span class="pre">ScopeEndpoints</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.view_custom.html">openbankproject_client.view_custom module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.view_custom.html#openbankproject_client.view_custom.ViewCustomEndpoints"><code class="docutils literal notranslate"><span class="pre">ViewCustomEndpoints</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.view_system.html">openbankproject_client.view_system module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.view_system.html#openbankproject_client.view_system.ViewSystemEndpoints"><code class="docutils literal notranslate"><span class="pre">ViewSystemEndpoints</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.webhook.html">openbankproject_client.webhook module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.webhook.html#openbankproject_client.webhook.WebhookEndpoints"><code class="docutils literal notranslate"><span class="pre">WebhookEndpoints</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.webui_props.html">openbankproject_client.webui_props module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.webui_props.html#openbankproject_client.webui_props.WebUiPropsEndpoints"><code class="docutils literal notranslate"><span class="pre">WebUiPropsEndpoints</span></code></a></li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">Examples</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.examples.html">openbankproject_client.examples module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/openbankproject_client.examples.html">openbankproject_client.examples module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.examples.html#openbankproject_client.examples.authenticate_with_direct_login"><code class="docutils literal notranslate"><span class="pre">authenticate_with_direct_login()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.examples.html#openbankproject_client.examples.authenticate_with_gateway_login"><code class="docutils literal notranslate"><span class="pre">authenticate_with_gateway_login()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.examples.html#openbankproject_client.examples.get_banks_example"><code class="docutils literal notranslate"><span class="pre">get_banks_example()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.examples.html#openbankproject_client.examples.get_accounts_example"><code class="docutils literal notranslate"><span class="pre">get_accounts_example()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.examples.html#openbankproject_client.examples.get_transactions_example"><code class="docutils literal notranslate"><span class="pre">get_transactions_example()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.examples.html#openbankproject_client.examples.create_transaction_request_example"><code class="docutils literal notranslate"><span class="pre">create_transaction_request_example()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.examples.html#openbankproject_client.examples.create_counterparty_example"><code class="docutils literal notranslate"><span class="pre">create_counterparty_example()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.examples.html#openbankproject_client.examples.get_customer_example"><code class="docutils literal notranslate"><span class="pre">get_customer_example()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.examples.html#openbankproject_client.examples.create_meeting_example"><code class="docutils literal notranslate"><span class="pre">create_meeting_example()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.examples.html#openbankproject_client.examples.create_consent_example"><code class="docutils literal notranslate"><span class="pre">create_consent_example()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.examples.html#openbankproject_client.examples.create_standing_order_example"><code class="docutils literal notranslate"><span class="pre">create_standing_order_example()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.examples.html#openbankproject_client.examples.create_direct_debit_example"><code class="docutils literal notranslate"><span class="pre">create_direct_debit_example()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.examples.html#openbankproject_client.examples.error_handling_example"><code class="docutils literal notranslate"><span class="pre">error_handling_example()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/openbankproject_client.examples.html#openbankproject_client.examples.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
+</ul>
+</li>
 </ul>
 </div>
 </section>
 <section id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Link to this heading"></a></h1>
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this heading"></a></h1>
 <ul class="simple">
 <li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
 <li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>

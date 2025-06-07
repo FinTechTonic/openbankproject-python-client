@@ -1,0 +1,496 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>openbankproject_client.examples &mdash; OpenBankProject Client 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+
+  
+      <script src="../../_static/jquery.js"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+      <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+      <script src="../../_static/doctools.js"></script>
+      <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #2980B9" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            OpenBankProject Client
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/quickstart.html">Quickstart Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/authentication.html">Authentication</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules.html">API Reference</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Core Components</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.client.html">openbankproject_client.client module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.auth.html">openbankproject_client.auth module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.errors.html">openbankproject_client.errors module</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Account Management</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.extended_account.html">openbankproject_client.extended_account module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.extended_bank.html">openbankproject_client.extended_bank module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.account_holder.html">openbankproject_client.account_holder module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.account_metadata.html">openbankproject_client.account_metadata module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.account_public.html">openbankproject_client.account_public module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.account_application.html">openbankproject_client.account_application module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.account_access.html">openbankproject_client.account_access module</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Transaction Management</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.transaction.html">openbankproject_client.transaction module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.transaction_metadata.html">openbankproject_client.transaction_metadata module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.transaction_request.html">openbankproject_client.transaction_request module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.standing_order.html">openbankproject_client.standing_order module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.direct_debit.html">openbankproject_client.direct_debit module</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">User Management</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.user.html">openbankproject_client.user module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.customer.html">openbankproject_client.customer module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.role.html">openbankproject_client.role module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.kyc.html">openbankproject_client.kyc module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.user_invitation.html">openbankproject_client.user_invitation module</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Management</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.api_management.html">openbankproject_client.api_management module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.api_favorite.html">openbankproject_client.api_favorite module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.api_collection.html">openbankproject_client.api_collection module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.api_configuration.html">openbankproject_client.api_configuration module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.dynamic_endpoint.html">openbankproject_client.dynamic_endpoint module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.dynamic_entity.html">openbankproject_client.dynamic_entity module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.dynamic_message_doc.html">openbankproject_client.dynamic_message_doc module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.dynamic_resource_doc.html">openbankproject_client.dynamic_resource_doc module</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Additional Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.atm.html">openbankproject_client.atm module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.branch.html">openbankproject_client.branch module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.card.html">openbankproject_client.card module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.consent.html">openbankproject_client.consent module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.counterparty.html">openbankproject_client.counterparty module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.counterparty_metadata.html">openbankproject_client.counterparty_metadata module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.counterparty_limits.html">openbankproject_client.counterparty_limits module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.customer_meeting.html">openbankproject_client.customer_meeting module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.customer_message.html">openbankproject_client.customer_message module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.fx.html">openbankproject_client.fx module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.metric.html">openbankproject_client.metric module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.product.html">openbankproject_client.product module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.scope.html">openbankproject_client.scope module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.view_custom.html">openbankproject_client.view_custom module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.view_system.html">openbankproject_client.view_system module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.webhook.html">openbankproject_client.webhook module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.webui_props.html">openbankproject_client.webui_props module</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/openbankproject_client.examples.html">openbankproject_client.examples module</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #2980B9" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">OpenBankProject Client</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Module code</a></li>
+      <li class="breadcrumb-item active">openbankproject_client.examples</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for openbankproject_client.examples</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Usage examples for the OpenBankProject API Client.</span>
+
+<span class="sd">This module provides examples of how to use the OpenBankProject API client</span>
+<span class="sd">for common banking operations.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">openbankproject_client</span> <span class="kn">import</span> <span class="n">OpenBankProjectClient</span>
+
+
+<div class="viewcode-block" id="authenticate_with_direct_login"><a class="viewcode-back" href="../../modules/openbankproject_client.examples.html#openbankproject_client.examples.authenticate_with_direct_login">[docs]</a><span class="k">def</span> <span class="nf">authenticate_with_direct_login</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Example of authenticating with DirectLogin.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Initialize client with DirectLogin credentials</span>
+    <span class="n">client</span> <span class="o">=</span> <span class="n">OpenBankProjectClient</span><span class="p">(</span>
+        <span class="n">base_url</span><span class="o">=</span><span class="s2">&quot;https://api.openbankproject.com&quot;</span><span class="p">,</span>
+        <span class="n">api_version</span><span class="o">=</span><span class="s2">&quot;v5.1.0&quot;</span><span class="p">,</span>
+        <span class="n">username</span><span class="o">=</span><span class="s2">&quot;your_username&quot;</span><span class="p">,</span>
+        <span class="n">password</span><span class="o">=</span><span class="s2">&quot;your_password&quot;</span><span class="p">,</span>
+        <span class="n">consumer_key</span><span class="o">=</span><span class="s2">&quot;your_consumer_key&quot;</span>
+    <span class="p">)</span>
+    
+    <span class="c1"># Authenticate (this happens automatically on the first API call)</span>
+    <span class="n">client</span><span class="o">.</span><span class="n">authenticate</span><span class="p">()</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Successfully authenticated with DirectLogin&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">client</span></div>
+
+
+<div class="viewcode-block" id="authenticate_with_gateway_login"><a class="viewcode-back" href="../../modules/openbankproject_client.examples.html#openbankproject_client.examples.authenticate_with_gateway_login">[docs]</a><span class="k">def</span> <span class="nf">authenticate_with_gateway_login</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Example of authenticating with GatewayLogin.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Initialize client with GatewayLogin token</span>
+    <span class="n">client</span> <span class="o">=</span> <span class="n">OpenBankProjectClient</span><span class="p">(</span>
+        <span class="n">base_url</span><span class="o">=</span><span class="s2">&quot;https://api.openbankproject.com&quot;</span><span class="p">,</span>
+        <span class="n">api_version</span><span class="o">=</span><span class="s2">&quot;v5.1.0&quot;</span><span class="p">,</span>
+        <span class="n">gateway_login_token</span><span class="o">=</span><span class="s2">&quot;your_gateway_login_token&quot;</span>
+    <span class="p">)</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Successfully initialized with GatewayLogin token&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">client</span></div>
+
+
+<div class="viewcode-block" id="get_banks_example"><a class="viewcode-back" href="../../modules/openbankproject_client.examples.html#openbankproject_client.examples.get_banks_example">[docs]</a><span class="k">def</span> <span class="nf">get_banks_example</span><span class="p">(</span><span class="n">client</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Example of getting a list of banks.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Get all banks</span>
+    <span class="n">banks</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">extended_bank</span><span class="o">.</span><span class="n">get_banks</span><span class="p">()</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Found </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">banks</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;banks&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">[]))</span><span class="si">}</span><span class="s2"> banks&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">bank</span> <span class="ow">in</span> <span class="n">banks</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;banks&#39;</span><span class="p">,</span> <span class="p">[]):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Bank ID: </span><span class="si">{</span><span class="n">bank</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">, Name: </span><span class="si">{</span><span class="n">bank</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;full_name&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">banks</span></div>
+
+
+<div class="viewcode-block" id="get_accounts_example"><a class="viewcode-back" href="../../modules/openbankproject_client.examples.html#openbankproject_client.examples.get_accounts_example">[docs]</a><span class="k">def</span> <span class="nf">get_accounts_example</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Example of getting accounts for a bank.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Get private accounts for a bank</span>
+    <span class="n">accounts</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">extended_account</span><span class="o">.</span><span class="n">get_private_accounts_at_bank</span><span class="p">(</span><span class="n">bank_id</span><span class="p">)</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Found </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">accounts</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;accounts&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">[]))</span><span class="si">}</span><span class="s2"> accounts at bank </span><span class="si">{</span><span class="n">bank_id</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">account</span> <span class="ow">in</span> <span class="n">accounts</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;accounts&#39;</span><span class="p">,</span> <span class="p">[]):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Account ID: </span><span class="si">{</span><span class="n">account</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">, Label: </span><span class="si">{</span><span class="n">account</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;label&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">accounts</span></div>
+
+
+<div class="viewcode-block" id="get_transactions_example"><a class="viewcode-back" href="../../modules/openbankproject_client.examples.html#openbankproject_client.examples.get_transactions_example">[docs]</a><span class="k">def</span> <span class="nf">get_transactions_example</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">,</span> <span class="n">account_id</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Example of getting transactions for an account.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Get transactions for an account (using owner view)</span>
+    <span class="n">transactions</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">transaction</span><span class="o">.</span><span class="n">get_transactions_for_account</span><span class="p">(</span><span class="n">bank_id</span><span class="p">,</span> <span class="n">account_id</span><span class="p">,</span> <span class="s2">&quot;owner&quot;</span><span class="p">)</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Found </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">transactions</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;transactions&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">[]))</span><span class="si">}</span><span class="s2"> transactions for account </span><span class="si">{</span><span class="n">account_id</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">transaction</span> <span class="ow">in</span> <span class="n">transactions</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;transactions&#39;</span><span class="p">,</span> <span class="p">[])[:</span><span class="mi">5</span><span class="p">]:</span>  <span class="c1"># Show first 5 transactions</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Transaction ID: </span><span class="si">{</span><span class="n">transaction</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">, Amount: </span><span class="si">{</span><span class="n">transaction</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;details&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;value&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;amount&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">transactions</span></div>
+
+
+<div class="viewcode-block" id="create_transaction_request_example"><a class="viewcode-back" href="../../modules/openbankproject_client.examples.html#openbankproject_client.examples.create_transaction_request_example">[docs]</a><span class="k">def</span> <span class="nf">create_transaction_request_example</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">,</span> <span class="n">account_id</span><span class="p">,</span> <span class="n">counterparty_id</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Example of creating a transaction request.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Create a transaction request to a counterparty</span>
+    <span class="n">transaction_data</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;to&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;bank_id&quot;</span><span class="p">:</span> <span class="n">bank_id</span><span class="p">,</span>
+            <span class="s2">&quot;account_id&quot;</span><span class="p">:</span> <span class="n">counterparty_id</span>
+        <span class="p">},</span>
+        <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;EUR&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;amount&quot;</span><span class="p">:</span> <span class="s2">&quot;10.00&quot;</span>
+        <span class="p">},</span>
+        <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Test payment&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;challenge_type&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+    <span class="p">}</span>
+    
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">transaction_request</span><span class="o">.</span><span class="n">create_transaction_request_counterparty</span><span class="p">(</span>
+            <span class="n">bank_id</span><span class="p">,</span> <span class="n">account_id</span><span class="p">,</span> <span class="s2">&quot;owner&quot;</span><span class="p">,</span> <span class="n">transaction_data</span>
+        <span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Transaction request created with ID: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">result</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error creating transaction request: </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">None</span></div>
+
+
+<div class="viewcode-block" id="create_counterparty_example"><a class="viewcode-back" href="../../modules/openbankproject_client.examples.html#openbankproject_client.examples.create_counterparty_example">[docs]</a><span class="k">def</span> <span class="nf">create_counterparty_example</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">,</span> <span class="n">account_id</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Example of creating a counterparty.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Create a new counterparty</span>
+    <span class="n">counterparty_data</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Test Counterparty&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;other_account_routing_scheme&quot;</span><span class="p">:</span> <span class="s2">&quot;IBAN&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;other_account_routing_address&quot;</span><span class="p">:</span> <span class="s2">&quot;DE89370400440532013000&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;other_account_secondary_routing_scheme&quot;</span><span class="p">:</span> <span class="s2">&quot;BIC&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;other_account_secondary_routing_address&quot;</span><span class="p">:</span> <span class="s2">&quot;DEUTDEFF&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;other_bank_routing_scheme&quot;</span><span class="p">:</span> <span class="s2">&quot;BIC&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;other_bank_routing_address&quot;</span><span class="p">:</span> <span class="s2">&quot;DEUTDEFF&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;other_branch_routing_scheme&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;other_branch_routing_address&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;is_beneficiary&quot;</span><span class="p">:</span> <span class="kc">True</span>
+    <span class="p">}</span>
+    
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">counterparty</span><span class="o">.</span><span class="n">create_counterparty_explicit</span><span class="p">(</span>
+            <span class="n">bank_id</span><span class="p">,</span> <span class="n">account_id</span><span class="p">,</span> <span class="s2">&quot;owner&quot;</span><span class="p">,</span> <span class="n">counterparty_data</span>
+        <span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Counterparty created with ID: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;counterparty_id&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">result</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error creating counterparty: </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">None</span></div>
+
+
+<div class="viewcode-block" id="get_customer_example"><a class="viewcode-back" href="../../modules/openbankproject_client.examples.html#openbankproject_client.examples.get_customer_example">[docs]</a><span class="k">def</span> <span class="nf">get_customer_example</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">,</span> <span class="n">customer_id</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Example of getting customer information.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">customer</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">customer</span><span class="o">.</span><span class="n">get_customer</span><span class="p">(</span><span class="n">bank_id</span><span class="p">,</span> <span class="n">customer_id</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Customer: </span><span class="si">{</span><span class="n">customer</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;customer_number&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">, Name: </span><span class="si">{</span><span class="n">customer</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;legal_name&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">customer</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error getting customer: </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">None</span></div>
+
+
+<div class="viewcode-block" id="create_meeting_example"><a class="viewcode-back" href="../../modules/openbankproject_client.examples.html#openbankproject_client.examples.create_meeting_example">[docs]</a><span class="k">def</span> <span class="nf">create_meeting_example</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">,</span> <span class="n">customer_id</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Example of creating a customer meeting.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">meeting_data</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;provider_id&quot;</span><span class="p">:</span> <span class="s2">&quot;video_conference_provider&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;purpose_id&quot;</span><span class="p">:</span> <span class="s2">&quot;customer_onboarding&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;date&quot;</span><span class="p">:</span> <span class="s2">&quot;2023-12-01T10:00:00Z&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;details&quot;</span><span class="p">:</span> <span class="s2">&quot;Initial customer onboarding meeting&quot;</span>
+    <span class="p">}</span>
+    
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">customer_meeting</span><span class="o">.</span><span class="n">create_meeting</span><span class="p">(</span><span class="n">bank_id</span><span class="p">,</span> <span class="n">customer_id</span><span class="p">,</span> <span class="n">meeting_data</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Meeting created with ID: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;meeting_id&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">result</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error creating meeting: </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">None</span></div>
+
+
+<div class="viewcode-block" id="create_consent_example"><a class="viewcode-back" href="../../modules/openbankproject_client.examples.html#openbankproject_client.examples.create_consent_example">[docs]</a><span class="k">def</span> <span class="nf">create_consent_example</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Example of creating a consent.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">consent_data</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;consent_type&quot;</span><span class="p">:</span> <span class="s2">&quot;account_access&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;network_id&quot;</span><span class="p">:</span> <span class="s2">&quot;network_id&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;phone_number&quot;</span><span class="p">:</span> <span class="s2">&quot;+44123456789&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;user@example.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;consumer_id&quot;</span><span class="p">:</span> <span class="s2">&quot;consumer_id&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;valid_from&quot;</span><span class="p">:</span> <span class="s2">&quot;2023-01-01T00:00:00Z&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;time_to_live&quot;</span><span class="p">:</span> <span class="mi">3600</span><span class="p">,</span>
+        <span class="s2">&quot;everything&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+        <span class="s2">&quot;views&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;owner&quot;</span><span class="p">],</span>
+        <span class="s2">&quot;accounts&quot;</span><span class="p">:</span> <span class="p">[{</span><span class="s2">&quot;bank_id&quot;</span><span class="p">:</span> <span class="n">bank_id</span><span class="p">,</span> <span class="s2">&quot;account_id&quot;</span><span class="p">:</span> <span class="s2">&quot;account_id&quot;</span><span class="p">}],</span>
+        <span class="s2">&quot;entitlements&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;entitlements&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span><span class="s2">&quot;bank_id&quot;</span><span class="p">:</span> <span class="n">bank_id</span><span class="p">,</span> <span class="s2">&quot;role_name&quot;</span><span class="p">:</span> <span class="s2">&quot;CanGetCustomer&quot;</span><span class="p">}</span>
+            <span class="p">]</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">consent</span><span class="o">.</span><span class="n">create_consent</span><span class="p">(</span><span class="n">bank_id</span><span class="p">,</span> <span class="n">consent_data</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Consent created with ID: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;consent_id&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">result</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error creating consent: </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">None</span></div>
+
+
+<div class="viewcode-block" id="create_standing_order_example"><a class="viewcode-back" href="../../modules/openbankproject_client.examples.html#openbankproject_client.examples.create_standing_order_example">[docs]</a><span class="k">def</span> <span class="nf">create_standing_order_example</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">,</span> <span class="n">account_id</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Example of creating a standing order.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">standing_order_data</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Monthly Rent&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;start_date&quot;</span><span class="p">:</span> <span class="s2">&quot;2023-01-01&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;end_date&quot;</span><span class="p">:</span> <span class="s2">&quot;2023-12-31&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;frequency&quot;</span><span class="p">:</span> <span class="s2">&quot;Monthly&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;amount&quot;</span><span class="p">:</span> <span class="s2">&quot;1000.00&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;EUR&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;to&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;bank_id&quot;</span><span class="p">:</span> <span class="n">bank_id</span><span class="p">,</span>
+            <span class="s2">&quot;account_id&quot;</span><span class="p">:</span> <span class="s2">&quot;target_account_id&quot;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">standing_order</span><span class="o">.</span><span class="n">create_standing_order</span><span class="p">(</span><span class="n">bank_id</span><span class="p">,</span> <span class="n">account_id</span><span class="p">,</span> <span class="s2">&quot;owner&quot;</span><span class="p">,</span> <span class="n">standing_order_data</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Standing order created with ID: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;standing_order_id&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">result</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error creating standing order: </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">None</span></div>
+
+
+<div class="viewcode-block" id="create_direct_debit_example"><a class="viewcode-back" href="../../modules/openbankproject_client.examples.html#openbankproject_client.examples.create_direct_debit_example">[docs]</a><span class="k">def</span> <span class="nf">create_direct_debit_example</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">,</span> <span class="n">account_id</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Example of creating a direct debit.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">direct_debit_data</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;customer_id&quot;</span><span class="p">:</span> <span class="s2">&quot;customer_id&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;user_id&quot;</span><span class="p">:</span> <span class="s2">&quot;user_id&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;counterparty_id&quot;</span><span class="p">:</span> <span class="s2">&quot;counterparty_id&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;date_signed&quot;</span><span class="p">:</span> <span class="s2">&quot;2023-01-01&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;date_starts&quot;</span><span class="p">:</span> <span class="s2">&quot;2023-01-15&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;date_expires&quot;</span><span class="p">:</span> <span class="s2">&quot;2023-12-31&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;active&quot;</span><span class="p">:</span> <span class="kc">True</span>
+    <span class="p">}</span>
+    
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">direct_debit</span><span class="o">.</span><span class="n">create_direct_debit</span><span class="p">(</span><span class="n">bank_id</span><span class="p">,</span> <span class="n">account_id</span><span class="p">,</span> <span class="s2">&quot;owner&quot;</span><span class="p">,</span> <span class="n">direct_debit_data</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Direct debit created with ID: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;direct_debit_id&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">result</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error creating direct debit: </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">None</span></div>
+
+
+<div class="viewcode-block" id="error_handling_example"><a class="viewcode-back" href="../../modules/openbankproject_client.examples.html#openbankproject_client.examples.error_handling_example">[docs]</a><span class="k">def</span> <span class="nf">error_handling_example</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Example of handling API errors.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="kn">from</span> <span class="nn">openbankproject_client</span> <span class="kn">import</span> <span class="p">(</span>
+        <span class="n">ApiError</span><span class="p">,</span> <span class="n">AuthenticationError</span><span class="p">,</span> <span class="n">ResourceNotFoundError</span><span class="p">,</span> 
+        <span class="n">ValidationError</span><span class="p">,</span> <span class="ne">PermissionError</span><span class="p">,</span> <span class="n">ServerError</span>
+    <span class="p">)</span>
+    
+    <span class="n">client</span> <span class="o">=</span> <span class="n">OpenBankProjectClient</span><span class="p">(</span>
+        <span class="n">base_url</span><span class="o">=</span><span class="s2">&quot;https://api.openbankproject.com&quot;</span><span class="p">,</span>
+        <span class="n">api_version</span><span class="o">=</span><span class="s2">&quot;v5.1.0&quot;</span><span class="p">,</span>
+        <span class="n">username</span><span class="o">=</span><span class="s2">&quot;invalid_username&quot;</span><span class="p">,</span>
+        <span class="n">password</span><span class="o">=</span><span class="s2">&quot;invalid_password&quot;</span><span class="p">,</span>
+        <span class="n">consumer_key</span><span class="o">=</span><span class="s2">&quot;invalid_key&quot;</span>
+    <span class="p">)</span>
+    
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c1"># This will fail due to invalid credentials</span>
+        <span class="n">client</span><span class="o">.</span><span class="n">extended_bank</span><span class="o">.</span><span class="n">get_banks</span><span class="p">()</span>
+    <span class="k">except</span> <span class="n">AuthenticationError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Authentication error: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">except</span> <span class="n">ResourceNotFoundError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Resource not found: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">except</span> <span class="n">ValidationError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Validation error: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">PermissionError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Permission error: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">except</span> <span class="n">ServerError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Server error: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">except</span> <span class="n">ApiError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;API error: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Unexpected error: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="main"><a class="viewcode-back" href="../../modules/openbankproject_client.examples.html#openbankproject_client.examples.main">[docs]</a><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Run all examples.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Replace these with valid values for your environment</span>
+    <span class="n">bank_id</span> <span class="o">=</span> <span class="s2">&quot;your_bank_id&quot;</span>
+    <span class="n">account_id</span> <span class="o">=</span> <span class="s2">&quot;your_account_id&quot;</span>
+    <span class="n">customer_id</span> <span class="o">=</span> <span class="s2">&quot;your_customer_id&quot;</span>
+    <span class="n">counterparty_id</span> <span class="o">=</span> <span class="s2">&quot;your_counterparty_id&quot;</span>
+    
+    <span class="c1"># Authenticate</span>
+    <span class="n">client</span> <span class="o">=</span> <span class="n">authenticate_with_direct_login</span><span class="p">()</span>
+    
+    <span class="c1"># Run examples</span>
+    <span class="n">get_banks_example</span><span class="p">(</span><span class="n">client</span><span class="p">)</span>
+    <span class="n">get_accounts_example</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">)</span>
+    <span class="n">get_transactions_example</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">,</span> <span class="n">account_id</span><span class="p">)</span>
+    <span class="n">create_counterparty_example</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">,</span> <span class="n">account_id</span><span class="p">)</span>
+    <span class="n">create_transaction_request_example</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">,</span> <span class="n">account_id</span><span class="p">,</span> <span class="n">counterparty_id</span><span class="p">)</span>
+    <span class="n">get_customer_example</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">,</span> <span class="n">customer_id</span><span class="p">)</span>
+    <span class="n">create_meeting_example</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">,</span> <span class="n">customer_id</span><span class="p">)</span>
+    <span class="n">create_consent_example</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">)</span>
+    <span class="n">create_standing_order_example</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">,</span> <span class="n">account_id</span><span class="p">)</span>
+    <span class="n">create_direct_debit_example</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">bank_id</span><span class="p">,</span> <span class="n">account_id</span><span class="p">)</span>
+    
+    <span class="c1"># Error handling example</span>
+    <span class="n">error_handling_example</span><span class="p">()</span></div>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Joseph Pollack.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

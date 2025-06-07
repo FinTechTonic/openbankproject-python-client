@@ -3,5 +3,5 @@ openbankproject\_client.counterparty\_limits module
 
 .. automodule:: openbankproject_client.counterparty_limits
    :members:
-   :show-inheritance:
    :undoc-members:
+   :show-inheritance:

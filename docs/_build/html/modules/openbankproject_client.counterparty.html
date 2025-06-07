@@ -1,25 +1,25 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" data-content_root="../">
+<html class="writer-html5" lang="en">
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>openbankproject_client.counterparty module &mdash; OpenBankProject Client 1.0.0 documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
 
   
-      <script src="../_static/jquery.js?v=5d32c60e"></script>
-      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=8d563738"></script>
-      <script src="../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/jquery.js"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+      <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+      <script src="../_static/doctools.js"></script>
+      <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="openbankproject_client.counterparty_metadata module" href="openbankproject_client.counterparty_metadata.html" />
+    <link rel="next" title="openbankproject_client.counterparty_limits module" href="openbankproject_client.counterparty_limits.html" />
     <link rel="prev" title="openbankproject_client.consent module" href="openbankproject_client.consent.html" /> 
 </head>
 
@@ -42,11 +42,63 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
-<ul>
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/quickstart.html">Quickstart Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started/authentication.html">Authentication</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../modules.html">API Reference</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../modules.html#core-modules">Core Modules</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="openbankproject_client.html">openbankproject_client package</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject-client-library">OpenBankProject Client Library</a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.OpenBankProjectClient"><code class="docutils literal notranslate"><span class="pre">OpenBankProjectClient</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.DirectLoginAuth"><code class="docutils literal notranslate"><span class="pre">DirectLoginAuth</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.GatewayLoginAuth"><code class="docutils literal notranslate"><span class="pre">GatewayLoginAuth</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.Authentication"><code class="docutils literal notranslate"><span class="pre">Authentication</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.ApiError"><code class="docutils literal notranslate"><span class="pre">ApiError</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.AuthenticationError"><code class="docutils literal notranslate"><span class="pre">AuthenticationError</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.ResourceNotFoundError"><code class="docutils literal notranslate"><span class="pre">ResourceNotFoundError</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.ValidationError"><code class="docutils literal notranslate"><span class="pre">ValidationError</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.PermissionError"><code class="docutils literal notranslate"><span class="pre">PermissionError</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.RateLimitError"><code class="docutils literal notranslate"><span class="pre">RateLimitError</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.ServerError"><code class="docutils literal notranslate"><span class="pre">ServerError</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="openbankproject_client.html#openbankproject_client.ErrorHandler"><code class="docutils literal notranslate"><span class="pre">ErrorHandler</span></code></a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="openbankproject_client.html#submodules">Submodules</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="openbankproject_client.auth.html">openbankproject_client.auth module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="openbankproject_client.client.html">openbankproject_client.client module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="openbankproject_client.errors.html">openbankproject_client.errors module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../modules.html#account-management">Account Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules.html#bank-management">Bank Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules.html#transaction-management">Transaction Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules.html#customer-management">Customer Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules.html#api-management">API Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules.html#user-management">User Management</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../modules.html#additional-features">Additional Features</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="openbankproject_client.card.html">openbankproject_client.card module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="openbankproject_client.connector_method.html">openbankproject_client.connector_method module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="openbankproject_client.consent.html">openbankproject_client.consent module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">openbankproject_client.counterparty module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#openbankproject_client.counterparty.CounterpartyEndpoints"><code class="docutils literal notranslate"><span class="pre">CounterpartyEndpoints</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="openbankproject_client.counterparty_limits.html">openbankproject_client.counterparty_limits module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="openbankproject_client.counterparty_metadata.html">openbankproject_client.counterparty_metadata module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="openbankproject_client.fx.html">openbankproject_client.fx module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="openbankproject_client.metric.html">openbankproject_client.metric module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="openbankproject_client.product.html">openbankproject_client.product module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="openbankproject_client.scheduled_event.html">openbankproject_client.scheduled_event module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="openbankproject_client.view_custom.html">openbankproject_client.view_custom module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="openbankproject_client.view_system.html">openbankproject_client.view_system module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="openbankproject_client.webhook.html">openbankproject_client.webhook module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="openbankproject_client.webui_props.html">openbankproject_client.webui_props module</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Core Components</span></p>
 <ul>
@@ -97,7 +149,24 @@
 <li class="toctree-l1"><a class="reference internal" href="openbankproject_client.branch.html">openbankproject_client.branch module</a></li>
 <li class="toctree-l1"><a class="reference internal" href="openbankproject_client.card.html">openbankproject_client.card module</a></li>
 <li class="toctree-l1"><a class="reference internal" href="openbankproject_client.consent.html">openbankproject_client.consent module</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">openbankproject_client.counterparty module</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">openbankproject_client.counterparty module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#openbankproject_client.counterparty.CounterpartyEndpoints"><code class="docutils literal notranslate"><span class="pre">CounterpartyEndpoints</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.counterparty.CounterpartyEndpoints.__init__"><code class="docutils literal notranslate"><span class="pre">CounterpartyEndpoints.__init__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.counterparty.CounterpartyEndpoints.create_counterparty_explicit"><code class="docutils literal notranslate"><span class="pre">CounterpartyEndpoints.create_counterparty_explicit()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.counterparty.CounterpartyEndpoints.create_counterparty_for_any_account"><code class="docutils literal notranslate"><span class="pre">CounterpartyEndpoints.create_counterparty_for_any_account()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.counterparty.CounterpartyEndpoints.get_counterparties_explicit"><code class="docutils literal notranslate"><span class="pre">CounterpartyEndpoints.get_counterparties_explicit()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.counterparty.CounterpartyEndpoints.get_counterparties_for_any_account"><code class="docutils literal notranslate"><span class="pre">CounterpartyEndpoints.get_counterparties_for_any_account()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.counterparty.CounterpartyEndpoints.get_counterparty_by_id_explicit"><code class="docutils literal notranslate"><span class="pre">CounterpartyEndpoints.get_counterparty_by_id_explicit()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.counterparty.CounterpartyEndpoints.get_counterparty_by_id_for_any_account"><code class="docutils literal notranslate"><span class="pre">CounterpartyEndpoints.get_counterparty_by_id_for_any_account()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.counterparty.CounterpartyEndpoints.get_counterparty_by_name_for_any_account"><code class="docutils literal notranslate"><span class="pre">CounterpartyEndpoints.get_counterparty_by_name_for_any_account()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.counterparty.CounterpartyEndpoints.get_other_account_by_id"><code class="docutils literal notranslate"><span class="pre">CounterpartyEndpoints.get_other_account_by_id()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.counterparty.CounterpartyEndpoints.get_other_accounts_of_one_account"><code class="docutils literal notranslate"><span class="pre">CounterpartyEndpoints.get_other_accounts_of_one_account()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.counterparty.CounterpartyEndpoints.delete_counterparty_explicit"><code class="docutils literal notranslate"><span class="pre">CounterpartyEndpoints.delete_counterparty_explicit()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#openbankproject_client.counterparty.CounterpartyEndpoints.delete_counterparty_for_any_account"><code class="docutils literal notranslate"><span class="pre">CounterpartyEndpoints.delete_counterparty_for_any_account()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="openbankproject_client.counterparty_metadata.html">openbankproject_client.counterparty_metadata module</a></li>
 <li class="toctree-l1"><a class="reference internal" href="openbankproject_client.counterparty_limits.html">openbankproject_client.counterparty_limits module</a></li>
 <li class="toctree-l1"><a class="reference internal" href="openbankproject_client.customer_meeting.html">openbankproject_client.customer_meeting module</a></li>
@@ -130,21 +199,248 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../modules.html">API Reference</a></li>
+          <li class="breadcrumb-item"><a href="openbankproject_client.html">openbankproject_client package</a></li>
       <li class="breadcrumb-item active">openbankproject_client.counterparty module</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/modules/openbankproject_client.counterparty.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
         <a href="openbankproject_client.consent.html" class="btn btn-neutral float-left" title="openbankproject_client.consent module" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="openbankproject_client.counterparty_metadata.html" class="btn btn-neutral float-right" title="openbankproject_client.counterparty_metadata module" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="openbankproject_client.counterparty_limits.html" class="btn btn-neutral float-right" title="openbankproject_client.counterparty_limits module" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
   </div>
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="openbankproject-client-counterparty-module">
-<h1>openbankproject_client.counterparty module<a class="headerlink" href="#openbankproject-client-counterparty-module" title="Link to this heading"></a></h1>
+  <section id="module-openbankproject_client.counterparty">
+<span id="openbankproject-client-counterparty-module"></span><h1>openbankproject_client.counterparty module<a class="headerlink" href="#module-openbankproject_client.counterparty" title="Permalink to this heading"></a></h1>
+<p>Counterparty endpoints for the OpenBankProject API Client.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="openbankproject_client.counterparty.CounterpartyEndpoints">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">openbankproject_client.counterparty.</span></span><span class="sig-name descname"><span class="pre">CounterpartyEndpoints</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/openbankproject_client/counterparty.html#CounterpartyEndpoints"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.counterparty.CounterpartyEndpoints" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.13)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Counterparty-related API endpoints.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.counterparty.CounterpartyEndpoints.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/openbankproject_client/counterparty.html#CounterpartyEndpoints.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.counterparty.CounterpartyEndpoints.__init__" title="Permalink to this definition"></a></dt>
+<dd><p>Initialize the endpoint group.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>client</strong> – OpenBankProjectClient instance</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.counterparty.CounterpartyEndpoints.create_counterparty_explicit">
+<span class="sig-name descname"><span class="pre">create_counterparty_explicit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">view_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/counterparty.html#CounterpartyEndpoints.create_counterparty_explicit"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.counterparty.CounterpartyEndpoints.create_counterparty_explicit" title="Permalink to this definition"></a></dt>
+<dd><p>Create Counterparty (Explicit).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>view_id</strong> – View identifier</p></li>
+<li><p><strong>data</strong> – Counterparty data</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing created counterparty information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.counterparty.CounterpartyEndpoints.create_counterparty_for_any_account">
+<span class="sig-name descname"><span class="pre">create_counterparty_for_any_account</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">view_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/counterparty.html#CounterpartyEndpoints.create_counterparty_for_any_account"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.counterparty.CounterpartyEndpoints.create_counterparty_for_any_account" title="Permalink to this definition"></a></dt>
+<dd><p>Create Counterparty for any account (Explicit).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>view_id</strong> – View identifier</p></li>
+<li><p><strong>data</strong> – Counterparty data</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing created counterparty information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.counterparty.CounterpartyEndpoints.get_counterparties_explicit">
+<span class="sig-name descname"><span class="pre">get_counterparties_explicit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">view_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/counterparty.html#CounterpartyEndpoints.get_counterparties_explicit"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.counterparty.CounterpartyEndpoints.get_counterparties_explicit" title="Permalink to this definition"></a></dt>
+<dd><p>Get Counterparties (Explicit).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>view_id</strong> – View identifier</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing counterparties information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.counterparty.CounterpartyEndpoints.get_counterparties_for_any_account">
+<span class="sig-name descname"><span class="pre">get_counterparties_for_any_account</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">view_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/counterparty.html#CounterpartyEndpoints.get_counterparties_for_any_account"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.counterparty.CounterpartyEndpoints.get_counterparties_for_any_account" title="Permalink to this definition"></a></dt>
+<dd><p>Get Counterparties for any account (Explicit).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>view_id</strong> – View identifier</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing counterparties information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.counterparty.CounterpartyEndpoints.get_counterparty_by_id_explicit">
+<span class="sig-name descname"><span class="pre">get_counterparty_by_id_explicit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">view_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">counterparty_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/counterparty.html#CounterpartyEndpoints.get_counterparty_by_id_explicit"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.counterparty.CounterpartyEndpoints.get_counterparty_by_id_explicit" title="Permalink to this definition"></a></dt>
+<dd><p>Get Counterparty by Id (Explicit).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>view_id</strong> – View identifier</p></li>
+<li><p><strong>counterparty_id</strong> – Counterparty identifier</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing counterparty information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.counterparty.CounterpartyEndpoints.get_counterparty_by_id_for_any_account">
+<span class="sig-name descname"><span class="pre">get_counterparty_by_id_for_any_account</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">view_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">counterparty_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/counterparty.html#CounterpartyEndpoints.get_counterparty_by_id_for_any_account"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.counterparty.CounterpartyEndpoints.get_counterparty_by_id_for_any_account" title="Permalink to this definition"></a></dt>
+<dd><p>Get Counterparty by Id for any account (Explicit).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>view_id</strong> – View identifier</p></li>
+<li><p><strong>counterparty_id</strong> – Counterparty identifier</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing counterparty information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.counterparty.CounterpartyEndpoints.get_counterparty_by_name_for_any_account">
+<span class="sig-name descname"><span class="pre">get_counterparty_by_name_for_any_account</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">view_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/counterparty.html#CounterpartyEndpoints.get_counterparty_by_name_for_any_account"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.counterparty.CounterpartyEndpoints.get_counterparty_by_name_for_any_account" title="Permalink to this definition"></a></dt>
+<dd><p>Get Counterparty by name for any account (Explicit).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>view_id</strong> – View identifier</p></li>
+<li><p><strong>name</strong> – Counterparty name</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing counterparty information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.counterparty.CounterpartyEndpoints.get_other_account_by_id">
+<span class="sig-name descname"><span class="pre">get_other_account_by_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">view_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">other_account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/counterparty.html#CounterpartyEndpoints.get_other_account_by_id"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.counterparty.CounterpartyEndpoints.get_other_account_by_id" title="Permalink to this definition"></a></dt>
+<dd><p>Get Other Account by Id.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>view_id</strong> – View identifier</p></li>
+<li><p><strong>other_account_id</strong> – Other account identifier</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing other account information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.counterparty.CounterpartyEndpoints.get_other_accounts_of_one_account">
+<span class="sig-name descname"><span class="pre">get_other_accounts_of_one_account</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">view_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/counterparty.html#CounterpartyEndpoints.get_other_accounts_of_one_account"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.counterparty.CounterpartyEndpoints.get_other_accounts_of_one_account" title="Permalink to this definition"></a></dt>
+<dd><p>Get Other Accounts of one Account.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>view_id</strong> – View identifier</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing other accounts information</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.counterparty.CounterpartyEndpoints.delete_counterparty_explicit">
+<span class="sig-name descname"><span class="pre">delete_counterparty_explicit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">view_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">counterparty_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/counterparty.html#CounterpartyEndpoints.delete_counterparty_explicit"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.counterparty.CounterpartyEndpoints.delete_counterparty_explicit" title="Permalink to this definition"></a></dt>
+<dd><p>Delete Counterparty (Explicit).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>view_id</strong> – View identifier</p></li>
+<li><p><strong>counterparty_id</strong> – Counterparty identifier</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing deletion status</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="openbankproject_client.counterparty.CounterpartyEndpoints.delete_counterparty_for_any_account">
+<span class="sig-name descname"><span class="pre">delete_counterparty_for_any_account</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bank_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">account_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">view_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">counterparty_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="(in Python v3.13)"><span class="pre">Dict</span></a></span></span><a class="reference internal" href="../_modules/openbankproject_client/counterparty.html#CounterpartyEndpoints.delete_counterparty_for_any_account"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#openbankproject_client.counterparty.CounterpartyEndpoints.delete_counterparty_for_any_account" title="Permalink to this definition"></a></dt>
+<dd><p>Delete Counterparty for any account (Explicit).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bank_id</strong> – Bank identifier</p></li>
+<li><p><strong>account_id</strong> – Account identifier</p></li>
+<li><p><strong>view_id</strong> – View identifier</p></li>
+<li><p><strong>counterparty_id</strong> – Counterparty identifier</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dict containing deletion status</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
 </section>
 
 
@@ -152,7 +448,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="openbankproject_client.consent.html" class="btn btn-neutral float-left" title="openbankproject_client.consent module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="openbankproject_client.counterparty_metadata.html" class="btn btn-neutral float-right" title="openbankproject_client.counterparty_metadata module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="openbankproject_client.counterparty_limits.html" class="btn btn-neutral float-right" title="openbankproject_client.counterparty_limits module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
